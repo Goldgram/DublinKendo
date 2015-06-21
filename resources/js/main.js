@@ -253,10 +253,10 @@ function showOverlay(overlay){
             rowString += '<div class="contentPadding"><img src="'+row["source"]+'" alt="'+row["altText"]+'"></div>';
             break;
           case "link":
-            rowString += '<a href="'+row["source"]+'" target="_blank"><div class="shortContentPadding"><p class="boldFont fontSize16 colorBlue floatLeft">'+row["text"]+'</p><div class="linkTriangle16 floatLeft"></div><div class="clearBoth"></div></div></a>';
+            rowString += '<a href="'+row["source"]+'" target="_blank"><div class="shortContentPadding"><p class="boldFont fontSize16Paragraph colorBlue floatLeft">'+row["text"]+'</p><div class="linkTriangle16 floatLeft"></div><div class="clearBoth"></div></div></a>';
             break;
           case "document":
-            rowString += '<a href="'+row["source"]+'" target="_blank"><div class="shortContentPadding posRel"><div class="documentIcon"></div><p class="documentText boldFont fontSize16 colorBlue">'+row["text"]+'</p></div></a>';
+            rowString += '<a href="'+row["source"]+'" target="_blank"><div class="shortContentPadding posRel"><div class="documentIcon"></div><p class="documentText boldFont fontSize16Paragraph colorBlue">'+row["text"]+'</p></div></a>';
             break;
           case "gallery":
             rowString += '<div class="contentPadding"><img src="'+row["source"]+'" alt="'+row["altText"]+'"><p class="fontSize16Paragraph">'+row["text"]+'</p></div>';

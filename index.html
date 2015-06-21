@@ -11,8 +11,12 @@
 		<link rel="canonical" href="http://www.dublinkendo.com/">
 		<link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="resources/css/normalize.min.css">
-		<link rel="stylesheet" href="resources/css/flexslider.css">
 		<link rel="stylesheet" href="resources/css/main.min.css">
+		<!--[if lte IE 7]>
+		  <script type="text/javascript">
+		    window.location = "oldie.html";
+		  </script>
+		<![endif]-->
 	</head>
 	<body>
 		<!-- facebook include -->
@@ -29,7 +33,7 @@
 
 		<img id="scrollToTop" class="noSelectClick displayNone" src="resources/images/scroll-top-button.png" alt="Scroll to top">
 		
-		<header id="header">
+		<div id="header">
 			<div class="contentContainer">
 				<div id="headerContent">
 					<a href="/" id="clubHeaderLogo" class="floatLeft">
@@ -63,9 +67,9 @@
 					</div>
 				</div>
 			</div>
-		</header>
+		</div>
 
-		<section id="welcome" class="parallaxContainer" data-image-src="resources/images/dublin-kendo-background-bogu.jpg" data-natural-width="1400" data-natural-height="800" data-position="top" data-parallax="scroll">
+		<div id="welcome"  class="section parallaxContainer" data-image-src="resources/images/dublin-kendo-background-bogu.jpg" data-natural-width="1400" data-natural-height="800" data-position="top" data-parallax="scroll">
 			<div class="contentContainer">
 				<h2 id="welcomeContent1" class="textCenter boldFont fontSize40"></h2>
 				<p id="welcomeContent2" class="textCenter fontSize40"></p>
@@ -73,9 +77,9 @@
 					<p class="borderButton noSelectClick fontSize25 condensedFont scrollToClick" scroll-to="contactUs">JOIN NOW</p>
 				</div>
 			</div>
-		</section>
+		</div>
 		
-		<section id="iconLinks">
+		<div id="iconLinks" class="section">
 			<div class="contentContainer">
 				<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="ourClub" overlay="history">
 					<div class="homeIcons homeIcon1 marginAuto marginBottom10"></div>
@@ -96,9 +100,9 @@
 				</div>
 				<div class="clearBoth"></div>
 			</div>
-		</section>
+		</div>
 		
-		<section id="ourClub">
+		<div id="ourClub" class="section">
 			<div class="contentContainer posRel">
 				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding floatLeft">OUR CLUB</h2>
 				<div class="fb-like floatLeft" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="300" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
@@ -112,9 +116,9 @@
 				<p class="boldFont contentPadding floatRight textRight fontSize16Paragraph noSelectClick overlayClick" overlay="history">READ MORE</p>
 				<div class="clearBoth"></div>
 			</div>
-		</section>
+		</div>
 		
-		<section id="martialArts">
+		<div id="martialArts" class="section">
 			<div class="contentContainer">
 				<div class="martialArtsImageContainer floatLeft">
 					<div class="contentPadding">
@@ -145,9 +149,9 @@
 				</div>
 				<div class="clearBoth"></div>
 			</div>
-		</section>
+		</div>
 		
-		<section id="news">
+		<div id="news" class="section">
 			<div class="contentContainer">
 				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">NEWS</h2>
 				<div id="newsItems">
@@ -176,9 +180,9 @@
 				</div>
 				<div class="clearBoth"></div>
 			</div>
-		</section>
+		</div>
 		
-		<section id="dojos">
+		<div id="dojos" class="section">
 			<div class="contentContainer">
 				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">KEIKO SCHEDULE</h2>
 				<div id="dojosContent">
@@ -204,11 +208,11 @@
 					</div>-->
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<section id="seiza" class="parallaxContainer" data-image-src="resources/images/dublin-kendo-background-seiza.jpg" data-natural-width="1400" data-natural-height="800" data-parallax="scroll"></section>
+		<div id="seiza"  class="section parallaxContainer" data-image-src="resources/images/dublin-kendo-background-seiza.jpg" data-natural-width="1400" data-natural-height="800" data-parallax="scroll"></div>
 
-		<section id="contactUs">
+		<div id="contactUs" class="section">
 			<div class="contentContainer">
 				<div class="contactUsSeperatePadding">
 					<h2 class="condensedFont fontSize30 marginBottom30">GET IN TOUCH</h2>
@@ -274,9 +278,9 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<footer id="footer">
+		<div id="footer">
 			<div class="contentContainer">
 				<div id="footerContent">
 					<div id="footerLinks" class="floatLeft posRel marginBottom20">
@@ -290,7 +294,7 @@
 					<div class="clearBoth"></div>
 				</div>
 			</div>
-		</footer>
+		</div>
 		
 		<div id="kendoOverlay" class="blackOverlay">
 			<div id="kendoOverlayContentPadding">
@@ -313,16 +317,16 @@
 						<!-- link -->
 						<!-- <a href="" target="_blank">
 							<div class="shortContentPadding">
-								<p class="boldFont fontSize16 colorBlue floatLeft">Link Text</p>
+								<p class="boldFont fontSize16Paragraph colorBlue floatLeft">Link Text</p>
 								<div class="linkTriangle16 floatLeft"></div>
 									<div class="clearBoth"></div>
 							</div>
 						</a> -->
 						<!-- document link -->
 						<!-- <a href="" target="_blank">
-							<div class="shortContentPadding">
-								<div class="documentIcon floatLeft"></div>
-								<p class="boldFont fontSize16 colorBlue">Document Text</p>
+							<div class="shortContentPadding posRel">
+								<div class="documentIcon"></div>
+								<p class="documentText boldFont fontSize16Paragraph colorBlue">Document Text</p>
 							</div>
 						</a> -->
 						<!-- space -->
@@ -395,7 +399,6 @@
 		
 		<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
 		<script type="text/javascript" src="resources/js/parallax.min.js"></script>
-		<script type="text/javascript" src="resources/js/flexslider.min.js"></script>
 		<script type="text/javascript" src="resources/js/siteData.js"></script>
 		<script type="text/javascript" src="resources/js/main.min.js"></script>
 	</body>

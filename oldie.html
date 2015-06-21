@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Dublin Kendo Kobukai - Browser Error</title>
+		<meta name="description" content="Learn Kendo in Dublin! Dublin Kendo Club is the largest Kendo club in Ireland. Beginners are always welcome, we have courses starting every week!">
+		<meta name="keywords" content="Kendo, Budo, Dublin, Japanese Martial Arts, Iaido, Kenjutsu, Ireland, Kendo Federation, Martial Art, Samurai, Japan, Budo Dublin, Budo Ireland, Ireland kendo, Irish kendo federation, Japanese swords, Kendo Dublin, Kendo Ireland, Kendo na hEireann, Practice kendo, Training kendo, Martial Art Dublin, martial art Ireland">
+		<meta name="copyright" content="Dublin Kendo Club">
+		<link rel="canonical" href="http://www.dublinkendo.com/oldie.html">
+		<link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="resources/css/normalize.min.css">
+		<link rel="stylesheet" href="resources/css/main.min.css">
+		<style type="text/css">
+			#oldieContainer {
+				margin: 0 auto;
+				width: 800px;
+			}
+			#oldieHeader:link, #oldieHeader:visited, #oldieHeader:hover, #oldieHeader:focus, #oldieHeader:active {
+				color: #000096;
+			}
+			#oldieHeader img {
+				width: 54px;
+				height:54px;
+			}
+			#oldieHeader h1 {
+				padding: 5px 0 0 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="oldieContainer" class="contentPadding">
+			<br>
+			<div class="contentPadding">
+				<a href="/" id="oldieHeader" >
+					<img class="floatLeft" src="resources/images/dublin-kendo-club-logo-blue.png" alt="Dublin Kendo Club Logo">
+					<h1 class=" condensedFont fontSize40 floatLeft">DUBLIN KENDO KOBUKAI</h1>
+					<div class="clearBoth"></div>
+				</a>
+			</div>
+			<br>
+			<div class="contentPadding">
+				<p class="boldFont fontSize20 marginBottom10">Unsupported Browser</p>
+				<p class="fontSize16Paragraph marginBottom10">Your web browser does not support this website, please upgrade your browser to continue.</p>
+			</div>
+			<br>
+			<div class="contentPadding">
+				<p class="boldFont fontSize20 marginBottom10">Contact</p>
+				<p class="fontSize16Paragraph marginBottom10">Alternitively you can contact us by email or phone:</p>
+				<a id="contactUsEmailLink" href="" target="_top">
+					<p class="fontSize16Paragraph marginBottom10"></p>
+				</a>
+				<a id="contactUsPhoneLink" href="">
+					<p class="fontSize16Paragraph marginBottom10"></p>
+				</a>
+			</div>
+		</div>
+		<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="resources/js/siteData.js"></script>
+		<script type="text/javascript">
+		  $("#contactUsEmailLink").attr("href",siteData["contact"]["email"]["href"]);
+		  $("#contactUsEmailLink p").text(siteData["contact"]["email"]["text"]);
+		  $("#contactUsPhoneLink").attr("href",siteData["contact"]["phone"]["href"]);
+		  $("#contactUsPhoneLink p").text(siteData["contact"]["phone"]["text"]);
+		</script>
+	</body>
+</html>
