@@ -43,8 +43,8 @@ h1, h2, p {
 	padding:0;
 	font-weight: normal;
 }
-section, footer, #kendoOverlayContent {
-	padding: 70px 10px;
+section, footer {
+	padding: 70px 14px;
 }
 .contentContainer {
 	margin: 0 auto;
@@ -53,7 +53,6 @@ section, footer, #kendoOverlayContent {
 .parallaxContainer {
 	background: transparent;
 	background-color:#323232;
-	// max-width: 1400px;
 }
 .noSelectClick {
 	cursor: pointer;
@@ -83,7 +82,6 @@ section, footer, #kendoOverlayContent {
 .textJustify { text-align: justify; }
 .textRight { text-align: right; }
 
-// .fontSize14 { font-size:14px; line-height:14px; }
 .fontSize16 { font-size:16px; line-height:16px; }
 .fontSize16Paragraph { font-size:16px; line-height:19px; }
 .fontSize18 { font-size:18px; line-height:18px; }
@@ -100,9 +98,7 @@ section, footer, #kendoOverlayContent {
 .marginBottom10 { margin-bottom:10px; }
 .marginBottom15 { margin-bottom:15px; }
 .marginBottom20 { margin-bottom:20px; }
-// .marginBottom25 { margin-bottom:25px; }
 .marginBottom30 { margin-bottom:30px; }
-// .marginBottom40 { margin-bottom:40px; }
 
 .floatLeft { float: left; }
 .floatRight { float: right; }
@@ -112,14 +108,6 @@ section, footer, #kendoOverlayContent {
 .posRel { position:relative; }
 .overflowHidden { overflow: hidden; }
 
-// .linkTriangle14 {
-// 	width: 0;
-// 	height: 0;
-// 	border-top: 5px solid transparent;
-// 	border-bottom: 5px solid transparent;
-// 	border-left: 7px solid #000096;
-// 	margin: 2px 0 0 5px;
-// }
 .linkTriangle16 {
 	width: 0;
 	height: 0;
@@ -151,6 +139,7 @@ section, footer, #kendoOverlayContent {
 	right: 10px;
 	width: 40px;
 	height: 40px;
+	z-index: 10;
 }
 header {
 	#mobileNavigation {
@@ -181,7 +170,7 @@ header {
 		}
 	}
 	#headerContent {
-		padding: 20px 10px 20px 20px;
+		padding: 20px 14px 20px 24px;
 		#clubHeaderLogo {
 			&:link, &:visited, &:hover, &:focus, &:active {
 				color: #000096;
@@ -222,7 +211,7 @@ header {
 }
 #welcome {
 	h2, p{
-		text-shadow: 0px 0px 1px rgba(0,0,0,0.75);
+		text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
 	}
 	h2 {
 		margin: 48px 0 5px 0;
@@ -262,7 +251,7 @@ header {
 }
 #martialArts {
 	p {
-		text-shadow: 0px 0px 1px rgba(0,0,0,0.75);
+		text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
 	}
 	.martialArtsImageContainer {
 		width: 33.333%;
@@ -307,6 +296,11 @@ header {
 	a {
 		color: #000096;
 		text-decoration: none;
+	}
+	#contactUsLinks {
+		font-size: 18px;
+		line-height: 26px;
+		br { display: none; }
 	}
 	#contactUsFeedback {
 		color:#fff;
@@ -392,36 +386,72 @@ footer {
 }
 
 #kendoOverlay {
+	display:none;
+	z-index:20;
 	position:fixed;
 	top:0;
 	left:0;
+	min-width: 320px;
 	width:100%;
 	height:100%;
 	color:#ffffff;
-	overflow:auto;
-	&.overlayWhite { background-color:#ffffff; color:#323232; }
-	&.overlayBlue { background-color:#000096; }
-	&.overlayBlack { background-color:#000000; }
-	&.overlayGrey { background-color:#323232; }
-	
-	&.overlayBlue, &.overlayBlack, &.overlayGrey {
-		.colorBlue {
-			color:#afafff;
+	overflow:hidden;
+	#kendoOverlayContentPadding {
+		padding: 10px 14px 70px 14px;
+		text-align:justify;
+		a {
+		text-decoration: none;
+		}
+		img { width:100%; }
+		#closeXGrey, #closeXWhite {
+			margin: 6px 10px 6px 0;
+			width: 48px;
+			height: 48px;
+		}
+		#closeXGrey {
+			display: none;
+		}
+		#closeXWhite {
+			display: inline;
+		}
+		.documentIcon {
+			width: 13px;
+			height: 16px;
+			background-image:url(../images/document-icon.png);
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			margin-right: 5px;
+		}
+		.block75 { width: 75%; }
+		.block66 { width: 66.666%; }
+		.block50 { width: 50%; }
+		.block33 { width: 33.333%; }
+		.block25 { width: 25%; }
+	}
+	&.blueOverlay { background-color:#000096; }
+	&.blackOverlay { background-color:#000000; }
+	&.greyOverlay { background-color:#323232; }
+	&.whiteOverlay { 
+		background-color:#ffffff;
+		color:#323232;
+		#closeXGrey {
+			display: inline !important;
+		}
+		#closeXWhite {
+			display: none !important;
+		}
+		.documentIcon {
+			background-position: -15px 0 !important;
 		}
 	}
-	a {
-		text-decoration: none;
+	&.blueOverlay, &.blackOverlay, &.greyOverlay {
+		.colorBlue {
+			color:#cdcdff;
+		}
+		.linkTriangle16 {
+			border-left-color:#cdcdff;
+		}
 	}
-	img {
-		width: 100%;
-	}
-
-
-
-
-
-
-
 }
 
 
@@ -452,10 +482,14 @@ footer {
 			width: 64%;
 		}
 	}
+	#kendoOverlay #kendoOverlayContentPadding {
+		.block75 { width: 50%; }
+		.block25 { width: 50%; }
+	}
 }
 @media only screen and (max-width: 767px) {
-	section, footer, #kendoOverlayContent {
-		padding: 50px 10px;
+	section, footer {
+		padding: 50px 14px;
 	}
 	.clearBothLessThan768 {
 		clear: both;
@@ -493,11 +527,24 @@ footer {
 			width: 70%;
 		}
 	}
+	#kendoOverlay {
+		#kendoOverlayContentPadding {
+			padding: 10px 14px 40px 14px;
+			#closeXGrey, #closeXWhite {
+				margin: 0 10px;
+				width: 40px;
+				height: 40px;
+			}
+			h2 { padding-right:60px; }
+			#closeButtonClear { display:none; }
+		}
+	}
 }
 @media only screen and (max-width: 599px) {
-	section, footer, #kendoOverlayContent {
+	section, footer {
 		padding: 30px 10px;
 	}
+	.textJustify { text-align: left; }
 	#iconLinks {
 		.iconLinksItem {
 			width: 94%;
@@ -568,9 +615,15 @@ footer {
 			width: 100%;
 		}
 	}
+	#kendoOverlay {
+		#kendoOverlayContentPadding {
+			text-align:left;
+			.block75, .block66, .block50, .block33, .block25 { width: 100%; }
+		}
+	}
 }
 @media only screen and (max-width: 479px) {
-	section, footer, #kendoOverlayContent {
+	section, footer {
 		padding: 20px 10px;
 	}
 	header {
@@ -582,6 +635,10 @@ footer {
 				}
 			}
 		}
+	}
+	#contactUs #contactUsLinks {
+		span { display: none; }
+		br { display: inline; }
 	}
 }
 

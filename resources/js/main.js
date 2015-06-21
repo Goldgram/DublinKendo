@@ -1,9 +1,11 @@
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
 /* map id's*/
 for (var i in siteData["homepageIdMapping"]) {
-  $("#"+i).text(siteData["homepageIdMapping"][i]);
+  $("#"+i).html(siteData["homepageIdMapping"][i]);
 }
+/* date easter egg */
+var today = new Date();
+$("#dateText").text(today.getDate());
 /* add news content*/
 var newsCurrentPageIndex = 1;
 var newsMaxPages = Math.ceil(siteData["news"].length/3);
@@ -17,11 +19,11 @@ function populateNews(pageIndex) {
   }
   for (var i = startIndex; i < endIndex; i++) {
     var news = siteData["news"][i];
-    newsString += '<div class="newsItem"><div class="contentPadding"><div' + (news["overlay"] ? ' class="noSelectClick overlayClick" overlay="news'+i+'"' :'' ) +'>';
+    newsString += '<div class="newsItem"><div class="contentPadding"><div' + (news["overlayId"] ? ' class="noSelectClick overlayClick" overlay="'+news["overlayId"]+'"' :'' ) +'>';
     newsString += '<img class="newsImage marginBottom15" src="'+news["image"]+'" alt="'+news["title"]+'" onerror="this.src=\'resources/images/news-default.jpg\'" alt="'+news["title"]+'">';
     newsString += '<p class="boldFont fontSize20Paragraph marginBottom15">'+news["title"]+'</p>';
     newsString += '<p class="fontSize16Paragraph textJustify marginBottom10">'+news["content"]+'</p>';
-    newsString += news["overlay"] ? '<p class="boldFont fontSize16 marginBottom30">READ MORE</p>' : '';
+    newsString += news["overlayId"] ? '<p class="boldFont fontSize16 marginBottom30 textRight">READ MORE</p>' : '';
     newsString += '</div></div></div>';
   }
   newsString += '<div class="clearBoth"></div>';
@@ -87,8 +89,8 @@ $(document).on("click", ".newsPagination", function() {
   $("#contactUsPhoneLink").text(siteData["contact"]["phone"]["text"]);
   
   /* footer links */
-  for (var i = 0; i < siteData["footerLinks"].length; i++) {
-    $("#footerLinksInner").append('<h2 class="condensedFont fontSize25 marginBottom15 noSelectClick overlayClick" overlay="'+siteData["footerLinks"][i]["overlay"]+'">'+siteData["footerLinks"][i]["text"]+'</h2>');
+  for (var k = 0; k < siteData["footerLinks"].length; k++) {
+    $("#footerLinksInner").append('<h2 class="condensedFont fontSize25 marginBottom15 noSelectClick overlayClick" overlay="'+siteData["footerLinks"][k]["overlayId"]+'">'+siteData["footerLinks"][k]["text"]+'</h2>');
   }
   
   /* get FB footer include */
@@ -102,19 +104,12 @@ $(window).load(function() {
   $(".parallaxContainer").css("background-color","transparent");
 });
 
-$(document).ready(function() {
-  /* date easter egg */
-  var today = new Date();
-  $("#dateText").text(today.getDate());
-});
-
-
 /* mobile nav */
 $(document).on("click", "#mobileButton", function() {
   $("#mobileNavigation").stop(true, true).slideToggle();
 });
 /* scroll functionality */
-var scrollSpeed =  isMobile ? 0.4 : 0.8;
+var scrollSpeed =  isMobile ? 0.4 : 0.75;
 var scrollingToTop = false;
 $(document).on("click", "#scrollToTop", function() {
   scrollingToTop = true;
@@ -135,7 +130,8 @@ $(window).scroll(function() {
 $(document).on("click", ".scrollToClick", function() {
   var screenHeight = $(window).height();
   var clickElement = $(this).attr("overlay");
-  var element = $("#"+$(this).attr("scroll-to"));
+  var elementScrollTo = $(this).attr("scroll-to");
+  var element = $("#"+elementScrollTo);
   var elementHeight = element.outerHeight();
   var elementOffsetTop = element.offset().top + 10;
   if (elementHeight<screenHeight) {
@@ -143,22 +139,19 @@ $(document).on("click", ".scrollToClick", function() {
   }
   $("html body").animate({ scrollTop: elementOffsetTop }, elementOffsetTop*scrollSpeed, function() {
     clickElement && showOverlay(clickElement);
+    if (elementScrollTo==="contactUs") {
+      $( "#contactUsContent1FirstName" ).focus();
+    }
   });
-});
-/* overlay functionality*/
-function showOverlay(overlay){
-  console.log("show overlay: "+overlay);
-}
-$(document).on("click", ".overlayClick", function() {
-  showOverlay($(this).attr("overlay"));
 });
 /* submit forms */
 $(document).on("click", ".submitButton", function() {
+  var postTo,dataSource;
   var emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   var errorArray = [];
   if ($(this).attr("submit-type")==="question") {
-    var postTo = "contact.php";
-    var dataSource = "#contactUsContent3";
+    postTo = "contact.php";
+    dataSource = "#contactUsContent3";
     if ($(dataSource+"Name").val()==="") {
       errorArray.push("Name");
     }
@@ -169,8 +162,8 @@ $(document).on("click", ".submitButton", function() {
       errorArray.push("Message");
     }
   } else {
-    var postTo = "join.php";
-    var dataSource = "#contactUsContent1";
+    postTo = "join.php";
+    dataSource = "#contactUsContent1";
     if ($(dataSource+"FirstName").val()==="") {
       errorArray.push("First Name");
     }
@@ -216,8 +209,84 @@ $(document).on("click", ".submitButton", function() {
       } else {
         $("#contactUsFeedback p").text("Error: please try again later.");
         $("#contactUsFeedback").css("background-color","#d75452");
-      } 
+      }
       $("#contactUsFeedback").slideDown();
     });
+  }
+});
+/* overlay functionality*/
+var lastOverlay = "";
+var topBeforeOverlay = 0;
+function showOverlay(overlay){
+  if (siteData["overlays"][overlay]) {
+    if (overlay!==lastOverlay) {
+      lastOverlay = overlay;
+      $("#kendoOverlay").removeClass().addClass(siteData["overlays"][overlay]["style"]+"Overlay");
+      var overlayString = "";
+      var data = siteData["overlays"][overlay]["data"];
+      var dataLength = data.length;
+      var clearBoth = '<div class="clearBoth"></div>';
+      var sizeCount = 0;
+      for (var i = 0; i < dataLength; i++) {
+        var row = data[i];
+        var rowString = "";
+        var rowSize = row["size"] ? parseInt(row["size"],10) : 0;
+        sizeCount += rowSize;
+        if (sizeCount>0 && rowSize===0) { // || sizeCount>100
+          sizeCount = rowSize;
+          rowString += clearBoth;
+        }
+        if (rowSize>0) {
+          rowString += '<div class="float'+ (row["float"] ? row["float"].charAt(0).toUpperCase()+row["float"].slice(1) : 'Left') +' block'+rowSize+'">';
+        }
+        switch(row["type"]) {
+          case "header":
+            rowString += '<h2 class="contentPadding condensedFont fontSize30 marginBottom10">'+row["text"].toUpperCase()+'</h2>';
+            break;
+          case "subheader":
+            rowString += '<p class="contentPadding boldFont fontSize20">'+row["text"]+'</p>';
+            break;
+          case "paragraph":
+            rowString += '<p class="shortContentPadding fontSize16Paragraph">'+row["text"]+'</p>';
+            break;
+          case "image":
+            rowString += '<div class="contentPadding"><img src="'+row["source"]+'" alt="'+row["altText"]+'"></div>';
+            break;
+          case "link":
+            rowString += '<a href="'+row["source"]+'" target="_blank"><div class="shortContentPadding"><p class="boldFont fontSize16 colorBlue floatLeft">'+row["text"]+'</p><div class="linkTriangle16 floatLeft"></div><div class="clearBoth"></div></div></a>';
+            break;
+          case "document":
+            rowString += '<a href="'+row["source"]+'" target="_blank"><div class="shortContentPadding"><div class="documentIcon floatLeft"></div><p class="boldFont fontSize16 colorBlue">'+row["text"]+'</p></div></a>';
+            break;
+          case "gallery":
+            rowString += '<div class="contentPadding"><img src="'+row["source"]+'" alt="'+row["altText"]+'"><p class="fontSize16Paragraph">'+row["text"]+'</p></div>';
+            break;
+          case "break":
+            rowString += '<br>';
+            break;
+          case "clear":
+            break;
+        }
+        if (rowSize>0) {
+          rowString += '</div>';
+        }
+        overlayString += rowString;
+      }
+      overlayString += clearBoth;
+      $("#kendoOverlayContent").html(overlayString);
+    }
+    topBeforeOverlay = $(document).scrollTop();
+    $("#kendoOverlay").fadeIn(300, function() {
+      $("body").css("overflow","hidden");
+      $("#kendoOverlay").css("overflow","auto");
+    });
+  }
+}
+$(document).on("click", ".overlayClick", function() {
+  if ($(this).attr("overlay")) {
+    showOverlay($(this).attr("overlay"));
+  } else {
+    $("body").css("overflow","auto");
+    $("#kendoOverlay").css("overflow","hidden").fadeOut();
   }
 });

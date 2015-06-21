@@ -165,7 +165,7 @@
 					</div> -->
 				</div>
 				<div id="newsMore" class="newsPagination noSelectClick contentPadding floatRight displayNone">
-					<p class="boldFont fontSize18 floatLeft">MORE</p>
+					<p class="boldFont fontSize18 floatLeft">MORE NEWS</p>
 					<div class="moreTriangle floatLeft"></div>
 					<div class="clearBoth"></div>
 				</div>
@@ -212,8 +212,11 @@
 			<div class="contentContainer">
 				<div class="contactUsSeperatePadding">
 					<h2 class="condensedFont fontSize30 marginBottom30">GET IN TOUCH</h2>
-					<p class="fontSize18 marginBottom5 boldFont">
-						<a id="contactUsEmailLink" href="" target="_top"></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a id="contactUsPhoneLink"href=""></a>
+					<p id="contactUsLinks" class="marginBottom5 boldFont">
+						<a id="contactUsEmailLink" href="" target="_top"></a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+						<br>
+						<a id="contactUsPhoneLink" href=""></a>
 					</p>
 				</div>
 			</div>
@@ -231,11 +234,11 @@
 							<p class="boldFont fontSize20 marginBottom20">Join Now:</p>
 							<form>
 								<p class="fontSize16 marginBottom5">First Name</p>
-								<input id="contactUsContent3FirstName" type="text" name="Fname" maxlength="50" class="marginBottom15">
+								<input id="contactUsContent1FirstName" type="text" name="Fname" maxlength="50" class="marginBottom15">
 								<p class="fontSize16 marginBottom5">Last Name</p>
-								<input id="contactUsContent3LastName" type="text" name="Lname" maxlength="80" class="marginBottom15">
+								<input id="contactUsContent1LastName" type="text" name="Lname" maxlength="80" class="marginBottom15">
 								<p class="fontSize16 marginBottom5">Email</p>
-								<input id="contactUsContent3Email" type="text" name="Email" maxlength="80" class="marginBottom15">
+								<input id="contactUsContent1Email" type="text" name="Email" maxlength="80" class="marginBottom15">
 								<p class="submitButton noSelectClick fontSize22 condensedFont floatLeft" submit-type="join">JOIN</p>
 								<img class="loading floatLeft displayNone" src="resources/images/loading.gif">
 								<div class="clearBoth"></div>
@@ -257,11 +260,11 @@
 									<option value="Other">Other</option>
 								</select>
 								<p class="fontSize16 marginBottom5">Name</p>
-								<input id="contactUsContent1Name" type="text" name="name" maxlength="80" class="marginBottom15">
+								<input id="contactUsContent3Name" type="text" name="name" maxlength="80" class="marginBottom15">
 								<p class="fontSize16 marginBottom5">Email</p>
-								<input id="contactUsContent1Email" type="text" name="email" maxlength="80" class="marginBottom15">
+								<input id="contactUsContent3Email" type="text" name="email" maxlength="80" class="marginBottom15">
 								<p class="fontSize16 marginBottom5">Message</p>
-								<textarea id="contactUsContent1Text" name="message" maxlength="1000" class="marginBottom15"></textarea>
+								<textarea id="contactUsContent3Text" name="message" maxlength="1000" class="marginBottom15"></textarea>
 								<p class="submitButton noSelectClick fontSize22 condensedFont floatLeft" submit-type="question">SEND</p>
 								<img class="loading floatLeft displayNone" src="resources/images/loading.gif">
 								<div class="clearBoth"></div>
@@ -289,29 +292,111 @@
 			</div>
 		</footer>
 		
+		<div id="kendoOverlay" class="blackOverlay">
+			<div id="kendoOverlayContentPadding">
+				<div class="contentContainer">
+					<img id="closeXWhite" class="noSelectClick overlayClick floatRight" src="resources/images/close-x-white.png" alt="close">
+					<img id="closeXGrey" class="noSelectClick overlayClick floatRight" src="resources/images/close-x-grey.png" alt="close">
+					<div id="closeButtonClear" class="clearBoth"></div>
+					<div id="kendoOverlayContent">
+						<!-- templates -->
+						<!-- header -->
+						<!-- <h2 class="contentPadding condensedFont fontSize30 marginBottom10">HEADER</h2> -->
+						<!-- subheader -->
+						<!-- <p class="contentPadding boldFont fontSize20">SubHeader</p> -->
+						<!-- text content -->
+						<!-- <p class="shortContentPadding fontSize16Paragraph">Content Text</p> -->
+						<!-- image -->
+						<!-- <div class="contentPadding">
+							<img src="https://placekitten.com/g/1000/200" alt="image alt text">
+						</div> -->
+						<!-- link -->
+						<!-- <a href="" target="_blank">
+							<div class="shortContentPadding">
+								<p class="boldFont fontSize16 colorBlue floatLeft">Link Text</p>
+								<div class="linkTriangle16 floatLeft"></div>
+									<div class="clearBoth"></div>
+							</div>
+						</a> -->
+						<!-- document link -->
+						<!-- <a href="" target="_blank">
+							<div class="shortContentPadding">
+								<div class="documentIcon floatLeft"></div>
+								<p class="boldFont fontSize16 colorBlue">Document Text</p>
+							</div>
+						</a> -->
+						<!-- space -->
+						<!-- <br> -->
+						<!-- container blocks -->
+						<!-- half -->
+						<!-- <div class="floatLeft block50">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+						<div class="floatLeft block50">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+						<div class="clearBoth"></div>-->
+						<!-- third -->
+						<!--<div class="floatLeft block33">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+						<div class="floatLeft block33">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+						<div class="floatLeft block33">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+						<div class="clearBoth"></div> -->
+						<!-- 66% alternative -->
+						<!-- <div class="floatLeft block66">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+						<div class="floatLeft block33">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+						<div class="clearBoth"></div> -->
+						<!-- quarter -->
+						<!-- <div class="floatLeft block25">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+						</div>
+						<div class="floatLeft block25">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+						</div>
+						<div class="floatLeft block25">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+						</div>
+						<div class="floatLeft block25">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+						</div>
+						<div class="clearBoth"></div> -->
+						<!-- 75% alternative -->
+						<!-- <div class="floatLeft block75">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+						</div>
+						<div class="floatLeft block25">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+						</div>
+						<div class="clearBoth"></div> -->
+						<!-- 50% alternative -->
+					<!-- 	<div class="floatLeft block50">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+						</div>
+						<div class="floatLeft block25">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+						</div>
+						<div class="floatLeft block25">
+							<p class="shortContentPadding fontSize16Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+						</div>
+						<div class="clearBoth"></div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
 		<script type="text/javascript" src="resources/js/parallax.min.js"></script>
 		<script type="text/javascript" src="resources/js/flexslider.min.js"></script>
 		<script type="text/javascript" src="resources/js/siteData.js"></script>
 		<script type="text/javascript" src="resources/js/main.min.js"></script>
-
-
-		<!-- <div id="kendoOverlay" class="overlayBlue">
-			X
-			<div id="kendoOverlayContent">
-				<div class="contentContainer">
-					<h2 class="contentPadding condensedFont fontSize30 marginBottom10">HEADER</h2>
-					<p class="contentPadding boldFont fontSize20">SubHeader</p>
-					<p class="shortContentPadding fontSize16Paragraph">Content Text</p>
-					<img class="contentPadding" src="resources/images/news/news-competition.jpg" alt="">
-					<a href="">
-						<div class="shortContentPadding">
-							<p class="boldFont fontSize16 colorBlue">Link Text</p>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div> -->
-		
 	</body>
 </html>
