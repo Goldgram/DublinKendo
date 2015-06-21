@@ -112,6 +112,10 @@ section, footer {
   font-size: 20px;
   line-height: 23px; }
 
+.fontSize22 {
+  font-size: 22px;
+  line-height: 22px; }
+
 .fontSize25 {
   font-size: 25px;
   line-height: 25px; }
@@ -156,6 +160,9 @@ section, footer {
 
 .posRel {
   position: relative; }
+
+.overflowHidden {
+  overflow: hidden; }
 
 .linkTriangle14 {
   width: 0;
@@ -300,40 +307,74 @@ header #headerContent {
     margin: 5px 0; }
 
 #contactUs {
-  background-color: #323232;
+  background-color: #fff;
   padding: 70px 0; }
   #contactUs .contactUsSeperatePadding {
-    padding: 0 10px; }
+    padding: 10px 20px; }
+  #contactUs a {
+    color: #000096;
+    text-decoration: none; }
   #contactUs #contactUsFeedback {
     color: #fff;
-    background-color: red; }
+    background-color: #d75452; }
   #contactUs #contactUsContent1, #contactUs #contactUsContent3 {
     width: 44%; }
   #contactUs #contactUsContent2 {
     width: 12%;
-    margin-top: 150px; }
-  #contactUs select, #contactUs input, #contactUs textarea {
-    background-color: #323232; }
+    height: 200px; }
+    #contactUs #contactUsContent2 div {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin: 0 0 0 -1px;
+      background-color: #323232;
+      width: 2px;
+      height: 500px; }
+    #contactUs #contactUsContent2 p {
+      position: absolute;
+      background-color: #fff;
+      top: 170px;
+      left: 50%;
+      padding: 20px;
+      margin: -10px 0 0 -32px; }
+  #contactUs select, #contactUs input, #contactUs textarea, #contactUs .submitButton {
+    background-color: #fff; }
   #contactUs select {
     cursor: pointer; }
-  #contactUs input[type="text"], #contactUs textarea {
-    border: 1px solid #fff;
+  #contactUs input, #contactUs textarea {
+    border: 1px solid #323232;
     width: 96%;
     padding: 3px 1% 3px 2%; }
-  #contactUs input[type="text"] {
+  #contactUs input {
     height: 20px; }
   #contactUs textarea {
     resize: none;
     height: 64px; }
-  #contactUs input[type="submit"] {
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 5px 7px; }
+  #contactUs .submitButton {
+    color: #323232;
+    border: 2px solid #323232;
+    padding: 6px 8px; }
+  #contactUs .loading {
+    margin: 2px 0 0 10px; }
 
 footer {
   background-color: #000; }
+  footer #footerContent {
+    padding: 20px;
+    min-height: 60px; }
+    footer #footerContent #footerLinks #footerLogo {
+      position: absolute;
+      left: 0;
+      top: 0; }
+    footer #footerContent #footerLinks #footerLinksInner {
+      padding-left: 100px; }
+    footer #footerContent #footerFacebook {
+      width: 70%;
+      overflow: hidden; }
+      footer #footerContent #footerFacebook .fb-like-box {
+        margin: 0 -10px; }
 
-#welcome, #ourClub, #martialArts, #news, #contactUs, footer {
+#welcome, #ourClub, #martialArts, #news, footer {
   color: #fff; }
 
 /* Media Queries */
@@ -393,7 +434,20 @@ footer {
   #contactUs #contactUsContent1, #contactUs #contactUsContent2, #contactUs #contactUsContent3 {
     width: 100%; }
   #contactUs #contactUsContent2 {
-    margin: 40px 0; } }
+    height: 80px; }
+    #contactUs #contactUsContent2 div {
+      top: 50%;
+      left: 0;
+      margin: -1px 0 0 0;
+      width: 100%;
+      height: 2px; }
+    #contactUs #contactUsContent2 p {
+      top: 11px;
+      margin: 0 0 0 -27px; }
+  #contactUs .submitButton {
+    padding: 8px 10px; }
+  #contactUs .loading {
+    margin: 5px 0 0 10px; } }
 @media only screen and (max-width: 479px) {
   header #mobileNavigation #mobileNavigationContent {
     padding: 6px 10%; }

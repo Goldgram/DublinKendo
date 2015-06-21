@@ -80,15 +80,30 @@ $(document).on("click", ".newsPagination", function() {
   }
 });
 
+function renderFacebookFooter() {
+  var fbWidth = $("#facebookContainer").width()+20;
+  $("#facebookContainer").append('<div class="fb-like-box" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="'+fbWidth+'" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>');
+}
+
 $(window).load(function() {
   /* parallax show on load*/
   $(".parallaxContainer").css("background-color","transparent");
+
+  // renderFacebookFooter();
+  
 });
 
 $(document).ready(function() {
   /* date easter egg */
   var today = new Date();
   $("#dateText").text(today.getDate());
+
+  // var fbWidth = $("#footerFacebook").width()+20;
+  // $("#footerFacebook").append('<div class="fb-like-box" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="'+fbWidth+'" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>');
+
+  renderFacebookFooter();
+
+
 });
 
 
@@ -134,4 +149,73 @@ function showOverlay(overlay){
 }
 $(document).on("click", ".overlayClick", function() {
   showOverlay($(this).attr("overlay"));
+});
+/* submit forms */
+$(document).on("click", ".submitButton", function() {
+  var emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  var errorArray = [];
+  if ($(this).attr("submit-type")==="question") {
+    var postTo = "contact.php";
+    var dataSource = "#contactUsContent1";
+    if ($("#contactUsContent1Name").val()==="") {
+      errorArray.push("Name");
+    }
+    if ($("#contactUsContent1Email").val()==="" || !$("#contactUsContent1Email").val().match(emailRegex)) {
+      errorArray.push("Email Address");
+    }
+    if ($("#contactUsContent1Text").val()==="") {
+      errorArray.push("Message");
+    }
+  } else {
+    var postTo = "join.php";
+    var dataSource = "#contactUsContent3";
+    if ($("#contactUsContent3FirstName").val()==="") {
+      errorArray.push("First Name");
+    }
+    if ($("#contactUsContent3LastName").val()==="") {
+      errorArray.push("Last Name");
+    }
+    if ($("#contactUsContent3Email").val()==="" || !$("#contactUsContent3Email").val().match(emailRegex)) {
+      errorArray.push("Email Address");
+    }
+  }
+  $(".loading").hide();
+  if (errorArray.length>0) {
+    var errorText = "Error: you must enter a valid ";
+    var errorCount = 1;
+    for (var i = 0; i < errorArray.length; i++) {
+      if (errorCount>1) {
+        errorText += ", ";
+        if (errorCount===errorArray.length) {
+          errorText += " and ";
+        }
+      }
+      errorText += errorArray[i];
+      errorCount++;
+    }
+    errorText += ".";
+    $("#contactUsFeedback p").text(errorText);
+    $("#contactUsFeedback").css("background-color","#d75452");
+    $("html body").animate({ scrollTop: $("#contactUs").offset().top + 60 },300);
+    $("#contactUsFeedback").slideDown();
+  } else {
+    $(dataSource+" .loading").show();
+    var data = $(dataSource+" form").serialize();
+    $.post(postTo, data, function(response) {
+      $(dataSource+" .loading").hide();
+      $("html body").animate({ scrollTop: $("#contactUs").offset().top + 60 },300);
+      if (response["success"]===true) {
+        if (postTo==="contact.php") {
+          $("#contactUsFeedback p").text("Thanks, a reply will be sent as soon as possible.");
+        } else if (postTo==="join.php") {
+          $("#contactUsFeedback p").text("Thanks for your interest, an email have been sent your email.");
+        }
+        $("#contactUsFeedback").css("background-color","#000096");
+      } else {
+        $("#contactUsFeedback p").text("Error: please try again later.");
+        $("#contactUsFeedback").css("background-color","#d75452");
+      } 
+      $("#contactUsFeedback").slideDown();
+    });
+  }
 });
