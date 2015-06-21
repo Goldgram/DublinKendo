@@ -43,7 +43,7 @@ h1, h2, p {
 	padding:0;
 	font-weight: normal;
 }
-section, footer {
+section, footer, #kendoOverlayContent {
 	padding: 70px 10px;
 }
 .contentContainer {
@@ -83,7 +83,7 @@ section, footer {
 .textJustify { text-align: justify; }
 .textRight { text-align: right; }
 
-.fontSize14 { font-size:14px; line-height:14px; }
+// .fontSize14 { font-size:14px; line-height:14px; }
 .fontSize16 { font-size:16px; line-height:16px; }
 .fontSize16Paragraph { font-size:16px; line-height:19px; }
 .fontSize18 { font-size:18px; line-height:18px; }
@@ -108,25 +108,26 @@ section, footer {
 .floatRight { float: right; }
 .clearBoth { clear: both; }
 .contentPadding { padding: 10px; }
+.shortContentPadding { padding: 5px 10px; }
 .posRel { position:relative; }
 .overflowHidden { overflow: hidden; }
 
-.linkTriangle14 {
-	width: 0;
-	height: 0;
-	border-top: 5px solid transparent;
-	border-bottom: 5px solid transparent;
-	border-left: 7px solid #000096;
-	margin: 2px 0 0 5px;
-}
-// .linkTriangle16 {
+// .linkTriangle14 {
 // 	width: 0;
 // 	height: 0;
-// 	border-top: 6px solid transparent;
-// 	border-bottom: 6px solid transparent;
-// 	border-left: 8px solid #000096;
+// 	border-top: 5px solid transparent;
+// 	border-bottom: 5px solid transparent;
+// 	border-left: 7px solid #000096;
 // 	margin: 2px 0 0 5px;
 // }
+.linkTriangle16 {
+	width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 8px solid #000096;
+	margin: 2px 0 0 5px;
+}
 .moreTriangle {
 	width: 0;
 	height: 0;
@@ -298,7 +299,8 @@ header {
 }
 #contactUs {
 	background-color: #fff;
-	padding: 70px 0;
+	padding-left:0;
+	padding-right:0;
 	.contactUsSeperatePadding {
 		padding: 10px 20px;
 	}
@@ -310,7 +312,7 @@ header {
 		color:#fff;
 		background-color: #d75452;
 	}
-	#contactUsContent1,  #contactUsContent3 {
+	#contactUsContent3,  #contactUsContent1 {
 		width: 44%;
 	}
 	#contactUsContent2 {
@@ -330,8 +332,8 @@ header {
 			background-color: #fff;
 			top: 170px;
 			left: 50%;
-			padding: 20px;
-			margin: -10px 0 0 -32px;
+			padding: 20px 10px;
+			margin: -10px 0 0 -23px;
 		}
 	}
 	select, input, textarea, .submitButton {
@@ -361,15 +363,12 @@ header {
 		margin:2px 0 0 10px;
 	}
 }
-
 footer {
 	background-color: #000;
 	#footerContent {
 		padding: 20px;
 		min-height: 60px;
 		#footerLinks {
-			// width: 32%;
-			// padding-left: 4%;
 			#footerLogo {
 				position: absolute;
 				left: 0;
@@ -378,42 +377,52 @@ footer {
 			#footerLinksInner {
 				padding-left: 100px;
 			}
-			
 		}
-		// #footerFacebook {
-		// 	width: 280px;
-		// 	overflow: hidden;
-		// 	// width: 28%;
-		// 	margin-left: 30px;
-		// 	h2 {
-		// 		// padding-left: 5px;
-		// 	}
-		// 	.fb-like-box {
-		// 		margin-left:-10px; 
-		// 	}
-			
-		// }
-		// #footerPosts {
-		// 	width: 292px;
-		// 	padding-left: 30px;
-		// 	// width: 28%;
-		// 	// padding-left: 4%;
-		// }
 		#footerFacebook {
 			width: 70%;
 			overflow: hidden;
 			.fb-like-box {
-				margin: 0 -10px;
+				margin: 0 0 0 -10px;
 			}
 		}
 	}
 }
-
-
 #welcome, #ourClub, #martialArts, #news, footer {
 	color: #fff;
 }
 
+#kendoOverlay {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	color:#ffffff;
+	overflow:auto;
+	&.overlayWhite { background-color:#ffffff; color:#323232; }
+	&.overlayBlue { background-color:#000096; }
+	&.overlayBlack { background-color:#000000; }
+	&.overlayGrey { background-color:#323232; }
+	
+	&.overlayBlue, &.overlayBlack, &.overlayGrey {
+		.colorBlue {
+			color:#afafff;
+		}
+	}
+	a {
+		text-decoration: none;
+	}
+	img {
+		width: 100%;
+	}
+
+
+
+
+
+
+
+}
 
 
 
@@ -435,10 +444,18 @@ footer {
 	.contentContainer {
 		width: 100%;
 	}
+	footer #footerContent {
+		#footerLinks #footerLinksInner {
+			padding-left: 90px;
+		}
+		#footerFacebook {
+			width: 64%;
+		}
+	}
 }
 @media only screen and (max-width: 767px) {
-	section, footer {
-		padding: 60px 10px;
+	section, footer, #kendoOverlayContent {
+		padding: 50px 10px;
 	}
 	.clearBothLessThan768 {
 		clear: both;
@@ -468,8 +485,19 @@ footer {
 	#dojos .locations {
 		width: 50%;
 	}
+	footer #footerContent {
+		#footerLinks #footerLinksInner {
+			padding: 80px 0 0 0;
+		}
+		#footerFacebook {
+			width: 70%;
+		}
+	}
 }
 @media only screen and (max-width: 599px) {
+	section, footer, #kendoOverlayContent {
+		padding: 30px 10px;
+	}
 	#iconLinks {
 		.iconLinksItem {
 			width: 94%;
@@ -498,7 +526,7 @@ footer {
 		width: 100%;
 	}
 	#contactUs {
-		#contactUsContent1, #contactUsContent2,  #contactUsContent3 {
+		#contactUsContent3, #contactUsContent2,  #contactUsContent1 {
 			width: 100%;
 		}
 		#contactUsContent2 {
@@ -513,6 +541,7 @@ footer {
 			p {
 				top: 11px;
 				margin: 0 0 0 -27px;
+				padding: 20px;
 			}
 		}
 		.submitButton {
@@ -522,8 +551,28 @@ footer {
 			margin: 5px 0 0 10px;
 		}
 	}
+	footer #footerContent {
+		#footerLinks {
+			width: 100%;
+			#footerLinksInner {
+				padding: 0 0 0 80px;
+				
+				h2 {
+					// clear: both;
+					// float: right;
+					text-align: right;
+				}
+			}
+		}
+		#footerFacebook {
+			width: 100%;
+		}
+	}
 }
 @media only screen and (max-width: 479px) {
+	section, footer, #kendoOverlayContent {
+		padding: 20px 10px;
+	}
 	header {
 		#mobileNavigation {
 			#mobileNavigationContent {
@@ -536,17 +585,18 @@ footer {
 	}
 }
 
-
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 999px) {
-	// body { color:red;}
-
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
-}
-@media only screen and (max-width: 479px) {
-
+/* 
+Make the Facebook Like box responsive (fluid width)
+https://developers.facebook.com/docs/reference/plugins/like-box/  
+This element holds injected scripts inside iframes that in 
+some cases may stretch layouts. So, we're just hiding it. 
+*/
+#footerFacebook {
+	#fb-root {
+	  display: none;
+	}
+	/* To fill the container and nothing else */
+	.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+	  width: 100% !important;
+	}
 }

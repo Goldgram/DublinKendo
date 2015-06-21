@@ -196,8 +196,8 @@
 								<img class="mapImages" src="http://maps.googleapis.com/maps/api/staticmap?center=53.360736,-6.243031&markers=53.360736,-6.243031&zoom=15&size=560x300&sensor=false&scale=1">
 							</a>
 							<a href="http://maps.google.com/?q=53.360736,-6.243031" class="marginBottom20" target="_blank">
-								<p class="boldFont fontSize14 colorBlue floatLeft">Google Maps</p>
-								<div class="linkTriangle14 floatLeft"></div>
+								<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>
+								<div class="linkTriangle16 floatLeft"></div>
 								<div class="clearBoth"></div>
 							</a>
 						</div>
@@ -213,7 +213,7 @@
 				<div class="contactUsSeperatePadding">
 					<h2 class="condensedFont fontSize30 marginBottom30">GET IN TOUCH</h2>
 					<p class="fontSize18 marginBottom5 boldFont">
-						<a href="mailto:hello@kendo.ie?Subject=Contact%20Dublin%20Kendo" target="_top">hello@kendo.ie</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="tel:5551234567">+353 1 876 5432</a>
+						<a id="contactUsEmailLink" href="" target="_top"></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a id="contactUsPhoneLink"href=""></a>
 					</p>
 				</div>
 			</div>
@@ -227,7 +227,25 @@
 			<div class="contentContainer">
 				<div class="contactUsSeperatePadding">
 					<div class="overflowHidden">
-						<div id="contactUsContent1" class="floatLeft">
+						<div id="contactUsContent1" class="floatRight">
+							<p class="boldFont fontSize20 marginBottom20">Join Now:</p>
+							<form>
+								<p class="fontSize16 marginBottom5">First Name</p>
+								<input id="contactUsContent3FirstName" type="text" name="Fname" maxlength="50" class="marginBottom15">
+								<p class="fontSize16 marginBottom5">Last Name</p>
+								<input id="contactUsContent3LastName" type="text" name="Lname" maxlength="80" class="marginBottom15">
+								<p class="fontSize16 marginBottom5">Email</p>
+								<input id="contactUsContent3Email" type="text" name="Email" maxlength="80" class="marginBottom15">
+								<p class="submitButton noSelectClick fontSize22 condensedFont floatLeft" submit-type="join">JOIN</p>
+								<img class="loading floatLeft displayNone" src="resources/images/loading.gif">
+								<div class="clearBoth"></div>
+							</form>
+						</div>
+						<div id="contactUsContent2" class="floatRight posRel">
+							<div></div>
+							<p class="boldFont fontSize18 textCenter">OR</p>
+						</div>
+						<div id="contactUsContent3" class="floatRight">
 							<p class="boldFont fontSize20 marginBottom20">Ask a question?</p>
 							<form>
 								<p class="fontSize16 marginBottom5">Topic</p>
@@ -249,24 +267,6 @@
 								<div class="clearBoth"></div>
 							</form>
 						</div>
-						<div id="contactUsContent2" class="floatLeft posRel">
-							<div></div>
-							<p class="boldFont fontSize18 textCenter">OR</p>
-						</div>
-						<div id="contactUsContent3" class="floatLeft">
-							<p class="boldFont fontSize20 marginBottom20">Join Now:</p>
-							<form>
-								<p class="fontSize16 marginBottom5">First Name</p>
-								<input id="contactUsContent3FirstName" type="text" name="Fname" maxlength="50" class="marginBottom15">
-								<p class="fontSize16 marginBottom5">Last Name</p>
-								<input id="contactUsContent3LastName" type="text" name="Lname" maxlength="80" class="marginBottom15">
-								<p class="fontSize16 marginBottom5">Email</p>
-								<input id="contactUsContent3Email" type="text" name="Email" maxlength="80" class="marginBottom15">
-								<p class="submitButton noSelectClick fontSize22 condensedFont floatLeft" submit-type="join">JOIN</p>
-								<img class="loading floatLeft displayNone" src="resources/images/loading.gif">
-								<div class="clearBoth"></div>
-							</form>
-						</div>
 						<div class="clearBoth"></div>
 					</div>
 				</div>
@@ -276,57 +276,18 @@
 		<footer id="footer">
 			<div class="contentContainer">
 				<div id="footerContent">
-					<div id="footerLinks" class="floatLeft posRel">
+					<div id="footerLinks" class="floatLeft posRel marginBottom20">
 						<img id="footerLogo" src="resources/images/dublin-kendo-club-logo-black.png" alt="Dublin Kendo Club">
-						<div id="footerLinksInner">
-							<h2 class="condensedFont fontSize25 marginBottom15 noSelectClick overlayClick" overlay="gallery">GALLERY</h2>
-							<h2 class="condensedFont fontSize25 marginBottom15 noSelectClick overlayClick" overlay="faq">FAQ</h2>
-							<h2 class="condensedFont fontSize25 marginBottom15 noSelectClick overlayClick" overlay="downloads">DOWNLOADS</h2>
-							<h2 class="condensedFont fontSize25 marginBottom15 noSelectClick overlayClick" overlay="links">USEFUL LINKS</h2>
-							<h2 class="condensedFont fontSize25 marginBottom15 noSelectClick overlayClick" overlay="privacy">PRIVACY POLICY</h2>
-						</div>
+						<div id="footerLinksInner"></div>
 					</div>
-					
-					<!-- <div id="footerPosts" class="floatRight">
-						<h2 class="condensedFont fontSize30">RECENT POSTS</h2>
-						last 3 posts 
-						
-
-					</div>
-					<div id="footerFacebook" class="floatRight">
-						<h2 class="condensedFont fontSize30 marginBottom10">FIND US ON FB</h2>
-						<div class="fb-like-box" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="292" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
-					</div> -->
-
-
 					<div id="footerFacebook" class="floatRight">
 						<h2 class="condensedFont fontSize30 marginBottom15">FIND US ON FB</h2>
 						<div id="facebookContainer"></div>
-						<!-- <div class="fb-like-box" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="600" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div> -->
 					</div>
 					<div class="clearBoth"></div>
-
-					
-				<!-- <div class="fb-like" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="150" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div> -->
-				<!-- <div class="fb-like" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="150" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div> -->
-<!-- 
--->
-<!-- <button id="showData">show data</button>
-
-
- -->
-
-
-
-
-
-
-
-				
 				</div>
 			</div>
 		</footer>
-		
 		
 		<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
 		<script type="text/javascript" src="resources/js/parallax.min.js"></script>
@@ -334,28 +295,23 @@
 		<script type="text/javascript" src="resources/js/siteData.js"></script>
 		<script type="text/javascript" src="resources/js/main.min.js"></script>
 
-		<script type="text/javascript">
-			// var facebookData;
-			// $(document).ready(function() {
-			// 	$.getJSON( "https://graph.facebook.com/48005091845/feed?limit=3", function( data ) {
-			// 		console.log(data);
-			// 		facebookData = data;
-			// 	// var items = [];
-			// 	// $.each( data, function( key, val ) {
-			// 	// items.push( "<li id='" + key + "'>" + val + "</li>" );
-			// 	// });
 
-			// 	// $( "<ul/>", {
-			// 	// "class": "my-new-list",
-			// 	// html: items.join( "" )
-			// 	// }).appendTo( "body" );
-			// 	});
-			// });
-
-			// $(document).on("click","#showData", function() {
-			// 	console.log(facebookData);
-			// });
-		</script>
-
+		<!-- <div id="kendoOverlay" class="overlayBlue">
+			X
+			<div id="kendoOverlayContent">
+				<div class="contentContainer">
+					<h2 class="contentPadding condensedFont fontSize30 marginBottom10">HEADER</h2>
+					<p class="contentPadding boldFont fontSize20">SubHeader</p>
+					<p class="shortContentPadding fontSize16Paragraph">Content Text</p>
+					<img class="contentPadding" src="resources/images/news/news-competition.jpg" alt="">
+					<a href="">
+						<div class="shortContentPadding">
+							<p class="boldFont fontSize16 colorBlue">Link Text</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div> -->
+		
 	</body>
 </html>
