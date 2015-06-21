@@ -15,7 +15,10 @@
 		<link rel="stylesheet" href="resources/css/main.min.css">
 	</head>
 	<body>
-		<img id="scrollToTop" class="noSelectClick" src="resources/images/scrollTopButton.png" alt="Scroll to top">
+		
+		<div class="fb-like" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="600" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+
+		<img id="scrollToTop" class="noSelectClick displayNone" src="resources/images/scrollTopButton.png" alt="Scroll to top">
 		<header id="header" class="contentContainer">
 			<div id="headerContent">
 
@@ -24,7 +27,7 @@
 					<h1 class="fontSize18 floatLeft">DUBLIN<br>KENDO<br>KOBUKAI</h1>
 				</a>
 
-				<div id="mobileButton" class="noSelectClick floatRight">
+				<div id="mobileButton" class="noSelectClick floatRight displayNone">
 					<div></div>
 					<div></div>
 					<div></div>
@@ -35,7 +38,7 @@
 						<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="martialArts" overlay="kendo">KENDO</p>
 						<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="martialArts" overlay="iaido">IAIDO</p>
 						<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="ourClub">OUR CLUB</p>
-						<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="footer">CONTACT</p>
+						<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="contactUs">CONTACT</p>
 						<div class="clearBoth"></div>
 					</div>
 				</div>
@@ -43,13 +46,13 @@
 				<div class="clearBoth"></div>
 
 			</div>
-			<div id="mobileNavigation">
+			<div id="mobileNavigation" class="displayNone">
 				<div id="mobileNavigationArrow" class="floatRight"></div>
 				<div id="mobileNavigationContent">
 					<p class="noSelectClick condensedFont fontSize25 scrollToClick textCenter floatLeft" scroll-to="martialArts" overlay="kendo">KENDO</p>
 					<p class="noSelectClick condensedFont fontSize25 scrollToClick textCenter floatLeft" scroll-to="martialArts" overlay="iaido">IAIDO</p>
 					<p class="noSelectClick condensedFont fontSize25 scrollToClick textCenter floatLeft" scroll-to="ourClub">OUR CLUB</p>
-					<p class="noSelectClick condensedFont fontSize25 scrollToClick textCenter floatLeft" scroll-to="footer">CONTACT</p>
+					<p class="noSelectClick condensedFont fontSize25 scrollToClick textCenter floatLeft" scroll-to="contactUs">CONTACT</p>
 					<div class="clearBoth"></div>
 				</div>
 			</div>
@@ -66,173 +69,196 @@
 			</div>
 		</section>
 		
-		<section id="iconLinks">
-			<div class="contentContainer">
-				<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="ourClub" overlay="history">
-					<div class="homeIcons homeIcon1 marginAuto marginBottom10"></div>
-					<h2 class="condensedFont fontSize30 textCenter marginBottom10">HISTORY</h2>
-					<p id="iconLinksContent1" class="fontSize20 textCenter"></p>
-				</div>
-				<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="news">
-					<div class="homeIcons homeIcon2 marginAuto marginBottom10">
-						<p id="dateText" class="boldFont fontSize25 textCenter">1</p>
-					</div>
-					<h2 class="condensedFont fontSize30 textCenter marginBottom10">NEWS</h2>
-					<p id="iconLinksContent2" class="fontSize20 textCenter"></p>
-				</div>
-				<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="dojos">
-					<div class="homeIcons homeIcon3 marginAuto marginBottom10"></div>
-					<h2 class="condensedFont fontSize30 textCenter marginBottom10">OUR DOJOS</h2>
-					<p id="iconLinksContent3" class="fontSize20 textCenter"></p>
-				</div>
-				<div class="clearBoth"></div>
+		<section id="iconLinks" class="contentContainer">
+			<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="ourClub" overlay="history">
+				<div class="homeIcons homeIcon1 marginAuto marginBottom10"></div>
+				<h2 class="condensedFont fontSize30 textCenter marginBottom10">HISTORY</h2>
+				<p id="iconLinksContent1" class="fontSize20Paragraph textCenter"></p>
 			</div>
+			<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="news">
+				<div class="homeIcons homeIcon2 marginAuto marginBottom10">
+					<p id="dateText" class="boldFont fontSize25 textCenter">1</p>
+				</div>
+				<h2 class="condensedFont fontSize30 textCenter marginBottom10">NEWS</h2>
+				<p id="iconLinksContent2" class="fontSize20Paragraph textCenter"></p>
+			</div>
+			<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="dojos">
+				<div class="homeIcons homeIcon3 marginAuto marginBottom10"></div>
+				<h2 class="condensedFont fontSize30 textCenter marginBottom10">OUR DOJOS</h2>
+				<p id="iconLinksContent3" class="fontSize20Paragraph textCenter"></p>
+			</div>
+			<div class="clearBoth"></div>
 		</section>
 		
 		<section id="ourClub">
 			<div class="contentContainer">
 				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">OUR CLUB</h2>
 				<div class="ourClubContent floatLeft">
-					<p id="ourClubContent1" class="contentPadding fontSize18Paragraph textJustify">Loading...</p>
+					<p id="ourClubContent1" class="contentPadding fontSize16Paragraph textJustify"><span class="fontSize18Paragraph">Loading...</span></p>
 				</div>
 				<div class="ourClubContent floatLeft">
-					<p id="ourClubContent2" class="contentPadding fontSize18Paragraph textJustify">&nbsp;</p>
+					<p id="ourClubContent2" class="contentPadding fontSize16Paragraph textJustify">&nbsp;</p>
 				</div>
-				<p class="boldFont contentPadding floatRight textRight fontSize18 noSelectClick overlayClick" overlay="history">READ MORE</p>
+				<p class="boldFont contentPadding floatRight textRight fontSize16Paragraph noSelectClick overlayClick" overlay="history">READ MORE</p>
 				<div class="clearBoth"></div>
 			</div>
 		</section>
 		
-		<section id="martialArts">
-			<div class="contentContainer">
-				<div class="martialArtsImageContainer floatLeft">
-					<div class="contentPadding">
-						<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="kendo" data-image-src="resources/images/catImage2.jpg" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
-							<div class="textCenter">
-								<p class="borderButton fontSize25 condensedFont">KENDO</p>
-							</div>
+		<section id="martialArts" class="contentContainer">
+			<div class="martialArtsImageContainer floatLeft">
+				<div class="contentPadding">
+					<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="kendo" data-image-src="resources/images/catImage2.jpg" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
+						<div class="textCenter">
+							<p class="borderButton fontSize25 condensedFont">KENDO</p>
 						</div>
 					</div>
 				</div>
-				<div class="martialArtsImageContainer floatLeft">
-					<div class="contentPadding">
-						<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="iaido" data-image-src="resources/images/catImage2.jpg" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
-							<div class="textCenter">
-								<p class="borderButton fontSize25 condensedFont">IAIDO</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="martialArtsImageContainer floatLeft">
-					<div class="contentPadding">
-						<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="jodo" data-image-src="resources/images/catImage2.jpg" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
-							<div class="textCenter">
-								<p class="borderButton fontSize25 condensedFont">JODO</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="clearBoth"></div>
 			</div>
+			<div class="martialArtsImageContainer floatLeft">
+				<div class="contentPadding">
+					<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="iaido" data-image-src="resources/images/catImage2.jpg" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
+						<div class="textCenter">
+							<p class="borderButton fontSize25 condensedFont">IAIDO</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="martialArtsImageContainer floatLeft">
+				<div class="contentPadding">
+					<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="jodo" data-image-src="resources/images/catImage2.jpg" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
+						<div class="textCenter">
+							<p class="borderButton fontSize25 condensedFont">JODO</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearBoth"></div>
 		</section>
 		
 		<section id="news">
 			<div class="contentContainer">
 				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">NEWS</h2>
-				
-				<!-- <div id="newsSlider" class="flexslider">
-					<ul class="slides">
-						<li>
-							<div class="contentBox1">Stuff1</div>
-						</li>
-						<li>
-							<div class="contentBox2">Stuff2</div>
-						</li>
-						<li>
-							<div class="contentBox1">Stuff3</div>
-						</li>
-						<li>
-							<div class="contentBox2">Stuff4</div>
-						</li>
-						<li>
-							<div class="contentBox1">Stuff5</div>
-						</li>
-						<li>
-							<div class="contentBox2">Stuff6</div>
-						</li>
-					</ul>
-				</div> -->
-
-			<style type="text/css">
-					/*.contentBox1,.contentBox2 {
-						width:200px;
-						height: 200px;
-					}
-					.contentBox1 {
-						background-color: red;
-					}
-					.contentBox2 {
-						background-color: pink;
-					}*/
-				</style>
-
-				<!-- <img src="resources/images/catImage3.jpg" alt="news">
-					
-				Miyagawa Sensei Visit
-				Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink.
-				
-				Kyu Grading
-				Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink.
-				
-				Kitty Ipsum
-				Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink.
-				--> 
-			</div>
-		</section>
-		
-		<section id="seiza" class="parallaxContainer" data-image-src="resources/images/catImage4.jpg" data-natural-width="1400" data-natural-height="900" data-parallax="scroll"></section>
-		
-		<section id="dojos">
-			<div class="contentContainer">
-				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">KEIKO SCHEDULE</h2>
-				<div id="dojosContent">
+				<div id="newsItems">
 					<p class="contentPadding fontSize18Paragraph">Loading...</p>
-					<!-- Dojo Template -->
-					<!--<div class="locations">
-						<div class="contentPadding floatLeft">
-							<p class="boldFont fontSize20 marginBottom20">Saturday</p>
-							<p class="fontSize16Paragraph">Iaido - Beginners (All levels)</p>
-							<p class="boldFont fontSize16 colorBlue marginBottom20">11 - 12 am</p>
-							<p class="fontSize16Paragraph">Kendo - Beginners (All levels)</p>
-							<p class="boldFont fontSize16 colorBlue marginBottom20">12 am - 2 pm</p>
-							<p class="fontSize16Paragraph">The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3</p>
-							<a href="http://maps.google.com/?q=53.360736,-6.243031" target="_blank">
-								<img class="mapImages" src="http://maps.googleapis.com/maps/api/staticmap?center=53.360736,-6.243031&markers=53.360736,-6.243031&zoom=15&size=560x300&sensor=false&scale=1">
-							</a>
-							<a href="http://maps.google.com/?q=53.360736,-6.243031" class="marginBottom20" target="_blank">
-								<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>
-								<div class="linkTriangle floatLeft"></div>
-								<div class="clearBoth"></div>
-							</a>
+					<!-- news template -->
+					<!-- <div class="newsItem">
+						<div class="contentPadding">
+							<div class="noSelectClick overlayClick" overlay="news0">
+								<img class="newsImage marginBottom15" src="resources/images/catImage3.jpg" alt="Miyagawa Sensei Visit">
+								<p class="boldFont fontSize20Paragraph marginBottom15">Miyagawa Sensei Visit</p>
+								<p class="fontSize16Paragraph textJustify marginBottom10">Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink.</p>
+								<p class="boldFont fontSize16 marginBottom30">READ MORE</p>
+							</div>
 						</div>
-					</div>-->
+					</div> -->
 				</div>
+				<div id="newsMore" class="newsPagination noSelectClick contentPadding floatRight displayNone">
+					<p class="boldFont fontSize18 floatLeft">MORE</p>
+					<div class="moreTriangle floatLeft"></div>
+					<div class="clearBoth"></div>
+				</div>
+				<div id="newsBack" class="newsPagination noSelectClick contentPadding floatLeft displayNone">
+					<div class="backTriangle floatLeft"></div>
+					<p class="boldFont fontSize18 floatLeft">BACK</p>
+					<div class="clearBoth"></div>
+				</div>
+				<div class="clearBoth"></div>
+			</div>
+		</section>
+		
+		
+		<section id="dojos" class="contentContainer">
+			<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">KEIKO SCHEDULE</h2>
+			<div id="dojosContent">
+				<p class="contentPadding fontSize18Paragraph">Loading...</p>
+				<!-- Dojo Template -->
+				<!--<div class="locations">
+					<div class="contentPadding floatLeft">
+						<p class="boldFont fontSize20 marginBottom20">Saturday</p>
+						<p class="fontSize16Paragraph">Iaido - Beginners (All levels)</p>
+						<p class="boldFont fontSize16 colorBlue marginBottom20">11 - 12 am</p>
+						<p class="fontSize16Paragraph">Kendo - Beginners (All levels)</p>
+						<p class="boldFont fontSize16 colorBlue marginBottom20">12 am - 2 pm</p>
+						<p class="fontSize16Paragraph">The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3</p>
+						<a href="http://maps.google.com/?q=53.360736,-6.243031" target="_blank">
+							<img class="mapImages" src="http://maps.googleapis.com/maps/api/staticmap?center=53.360736,-6.243031&markers=53.360736,-6.243031&zoom=15&size=560x300&sensor=false&scale=1">
+						</a>
+						<a href="http://maps.google.com/?q=53.360736,-6.243031" class="marginBottom20" target="_blank">
+							<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>
+							<div class="linkTriangle floatLeft"></div>
+							<div class="clearBoth"></div>
+						</a>
+					</div>
+				</div>-->
 			</div>
 		</section>
 
-		<footer id="footer">
+		<section id="seiza" class="parallaxContainer" data-image-src="resources/images/catImage4.jpg" data-natural-width="1400" data-natural-height="900" data-parallax="scroll"></section>
+
+		<section id="contactUs">
+			<div class="contentContainer">
+				contact us
+			</div>
+		</section>
+
+		<footer id="footer" >
 			<div class="contentContainer">
 				<img src="resources/images/dublinKendoClub-logoBlack.png" alt="Dublin Kendo Club">
-					FAQ
-					Downloads
-					Useful Links
+					
+					<div id="fb-root"></div>
+					<script>
+						(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0&appId=792008880847918";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));
+					</script>
+					<div class="fb-like" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="150" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+					<div class="fb-like" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="150" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+
+
+
+<button id="showData">show data</button>
+
+				social media
+
+				FAQ
+				Downloads
+				Useful Links
 			</div>
 		</footer>
+		</div>
+		
 		
 		<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
 		<script type="text/javascript" src="resources/js/parallax.min.js"></script>
 		<script type="text/javascript" src="resources/js/flexslider.min.js"></script>
 		<script type="text/javascript" src="resources/js/siteData.js"></script>
 		<script type="text/javascript" src="resources/js/main.js"></script>
+
+		<script type="text/javascript">
+			var facebookData;
+			$(document).ready(function() {
+				$.getJSON( "https://graph.facebook.com/48005091845/feed", function( data ) {
+					console.log(data);
+					facebookData = data;
+				// var items = [];
+				// $.each( data, function( key, val ) {
+				// items.push( "<li id='" + key + "'>" + val + "</li>" );
+				// });
+
+				// $( "<ul/>", {
+				// "class": "my-new-list",
+				// html: items.join( "" )
+				// }).appendTo( "body" );
+				});
+			});
+
+			$(document).on("click","#showData", function() {
+				console.log(facebookData);
+			});
+		</script>
 	</body>
 </html>
