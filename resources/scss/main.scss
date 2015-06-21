@@ -83,6 +83,7 @@ section, footer {
 .textJustify { text-align: justify; }
 .textRight { text-align: right; }
 
+.fontSize14 { font-size:14px; line-height:14px; }
 .fontSize16 { font-size:16px; line-height:16px; }
 .fontSize16Paragraph { font-size:16px; line-height:19px; }
 .fontSize18 { font-size:18px; line-height:18px; }
@@ -94,7 +95,7 @@ section, footer {
 .fontSize40 { font-size:40px; line-height:40px; }
 
 .marginAuto { margin: 0 auto; }
-// .marginBottom5 { margin-bottom:5px; }
+.marginBottom5 { margin-bottom:5px; }
 .marginBottom10 { margin-bottom:10px; }
 .marginBottom15 { margin-bottom:15px; }
 .marginBottom20 { margin-bottom:20px; }
@@ -106,18 +107,24 @@ section, footer {
 .floatRight { float: right; }
 .clearBoth { clear: both; }
 .contentPadding { padding: 10px; }
+.posRel { position:relative; }
 
-.linkTriangle {
+.linkTriangle14 {
 	width: 0;
 	height: 0;
-	border-top: 6px solid transparent;
-	border-bottom: 6px solid transparent;
-	border-left: 8px solid #000096;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 7px solid #000096;
 	margin: 2px 0 0 5px;
-	// &.triangleBlue {
-	// 	border-left-color: #000096;
-	// }
 }
+// .linkTriangle16 {
+// 	width: 0;
+// 	height: 0;
+// 	border-top: 6px solid transparent;
+// 	border-bottom: 6px solid transparent;
+// 	border-left: 8px solid #000096;
+// 	margin: 2px 0 0 5px;
+// }
 .moreTriangle {
 	width: 0;
 	height: 0;
@@ -215,7 +222,7 @@ header {
 		text-shadow: 0px 0px 1px rgba(0,0,0,0.75);
 	}
 	h2 {
-		margin: 45px 0 5px 0;
+		margin: 48px 0 5px 0;
 	}
 	.borderButton {
 		margin: 40px 0 45px 0;
@@ -242,6 +249,10 @@ header {
 }
 #ourClub {
 	background-color: #323232;
+	.fb-like {
+		display: block;
+		padding: 16px 0 0 5px;
+	}
 	.ourClubContent {
 		width: 50%;
 	}
@@ -285,6 +296,48 @@ header {
 }
 
 #contactUs {
+	background-color: #323232;
+	padding: 70px 0;
+	.contactUsSeperatePadding {
+		padding: 0 10px;
+	}
+	#contactUsFeedback {
+		color:#fff;
+		background-color: red;
+	}
+	#contactUsContent1,  #contactUsContent3 {
+		width: 44%;
+	}
+	#contactUsContent2 {
+		width: 12%;
+		margin-top: 150px;
+	}
+	select, input, textarea {
+		background-color: #323232;
+	}
+	select {
+		cursor: pointer;
+	}
+	input[type="text"], textarea {
+		border: 1px solid #fff;
+		width: 96%;
+		padding: 3px 1% 3px 2%;
+	}
+	input[type="text"] {
+		height: 20px;
+	}
+	textarea {
+		resize: none;
+		height: 64px;
+	}
+	input[type="submit"] {
+		color: #fff;
+		border: 2px solid #fff;
+		padding: 5px 7px;
+	}
+
+
+
 
 }
 
@@ -293,7 +346,7 @@ footer {
 }
 
 
-#welcome, #ourClub, #martialArts, #news, footer {
+#welcome, #ourClub, #martialArts, #news, #contactUs, footer {
 	color: #fff;
 }
 
@@ -356,7 +409,7 @@ footer {
 	#iconLinks {
 		.iconLinksItem {
 			width: 94%;
-			padding: 20px 3%;
+			padding: 21px 3%;
 		}
 	}
 	#ourClub {
@@ -379,6 +432,14 @@ footer {
 	}
 	#dojos .locations {
 		width: 100%;
+	}
+	#contactUs {
+		#contactUsContent1, #contactUsContent2,  #contactUsContent3 {
+			width: 100%;
+		}
+		#contactUsContent2 {
+			margin: 40px 0;
+		}
 	}
 }
 @media only screen and (max-width: 479px) {

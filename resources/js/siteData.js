@@ -11,36 +11,36 @@ var siteData = {
 	"news":[
 		{
 			"overlay":{},
-			"image":"resources/images/catImage3.jpg",
+			"image":"resources/images/news/news-competition.jpg",
 			"title":"News 1",
 			"content":"Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink."
 		},{
-			"image":"resources/images/catImage3.jpg",
+			"image":"resources/images/news/news-competition.jpg",
 			"title":"News 2",
 			"content":"Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink."
 		},{
 			"overlay":{},
-			"image":"resources/images/catImage3.jpg",
+			"image":"",
 			"title":"News 3",
 			"content":"Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink."
 		},{
 			"overlay":{},
-			"image":"resources/images/catImage3.jpg",
+			"image":"resources/images/news/news-competition.jpg",
 			"title":"News 4",
 			"content":"Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink."
 		},{
 			"overlay":{},
-			"image":"resources/images/catImage3.jpg",
+			"image":"resources/images/news/news-competition.jpg",
 			"title":"News 5",
 			"content":"Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink."
 		},{
 			"overlay":{},
-			"image":"resources/images/catImage3.jpg",
+			"image":"resources/images/news/news-competition.jpg",
 			"title":"News 6",
 			"content":"Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink."
 		},{
 			"overlay":{},
-			"image":"resources/images/catImage3.jpg",
+			"image":"resources/images/news/news-competition.jpg",
 			"title":"News 7",
 			"content":"Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink."
 		}

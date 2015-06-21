@@ -15,84 +15,94 @@
 		<link rel="stylesheet" href="resources/css/main.min.css">
 	</head>
 	<body>
+		<!-- facebook include -->
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0&appId=792008880847918";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<img id="scrollToTop" class="noSelectClick displayNone" src="resources/images/scroll-top-button.png" alt="Scroll to top">
 		
-		<div class="fb-like" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="600" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
-
-		<img id="scrollToTop" class="noSelectClick displayNone" src="resources/images/scrollTopButton.png" alt="Scroll to top">
-		<header id="header" class="contentContainer">
-			<div id="headerContent">
-
-				<a href="/" id="clubHeaderLogo" class="floatLeft">
-					<img class="floatLeft" src="resources/images/dublinKendoClub-logoBlue.png" alt="Dublin Kendo Club Logo">
-					<h1 class="fontSize18 floatLeft">DUBLIN<br>KENDO<br>KOBUKAI</h1>
-				</a>
-
-				<div id="mobileButton" class="noSelectClick floatRight displayNone">
-					<div></div>
-					<div></div>
-					<div></div>
+		<header id="header">
+			<div class="contentContainer">
+				<div id="headerContent">
+					<a href="/" id="clubHeaderLogo" class="floatLeft">
+						<img class="floatLeft" src="resources/images/dublin-kendo-club-logo-blue.png" alt="Dublin Kendo Club Logo">
+						<h1 class="fontSize18 floatLeft">DUBLIN<br>KENDO<br>KOBUKAI</h1>
+					</a>
+					<div id="mobileButton" class="noSelectClick floatRight displayNone">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div id="navigation" class="floatRight">
+						<div id="navigationContainer">
+							<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="martialArts" overlay="kendo">KENDO</p>
+							<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="martialArts" overlay="iaido">IAIDO</p>
+							<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="ourClub">OUR CLUB</p>
+							<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="contactUs">CONTACT</p>
+							<div class="clearBoth"></div>
+						</div>
+					</div>
+					<div class="clearBoth"></div>
 				</div>
-				
-				<div id="navigation" class="floatRight">
-					<div id="navigationContainer">
-						<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="martialArts" overlay="kendo">KENDO</p>
-						<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="martialArts" overlay="iaido">IAIDO</p>
-						<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="ourClub">OUR CLUB</p>
-						<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="contactUs">CONTACT</p>
+				<div id="mobileNavigation" class="displayNone">
+					<div id="mobileNavigationArrow" class="floatRight"></div>
+					<div id="mobileNavigationContent">
+						<p class="noSelectClick condensedFont fontSize25 textCenter floatLeft scrollToClick" scroll-to="martialArts" overlay="kendo">KENDO</p>
+						<p class="noSelectClick condensedFont fontSize25 textCenter floatLeft scrollToClick" scroll-to="martialArts" overlay="iaido">IAIDO</p>
+						<p class="noSelectClick condensedFont fontSize25 textCenter floatLeft scrollToClick" scroll-to="ourClub">OUR CLUB</p>
+						<p class="noSelectClick condensedFont fontSize25 textCenter floatLeft scrollToClick" scroll-to="contactUs">CONTACT</p>
 						<div class="clearBoth"></div>
 					</div>
 				</div>
-
-				<div class="clearBoth"></div>
-
 			</div>
-			<div id="mobileNavigation" class="displayNone">
-				<div id="mobileNavigationArrow" class="floatRight"></div>
-				<div id="mobileNavigationContent">
-					<p class="noSelectClick condensedFont fontSize25 scrollToClick textCenter floatLeft" scroll-to="martialArts" overlay="kendo">KENDO</p>
-					<p class="noSelectClick condensedFont fontSize25 scrollToClick textCenter floatLeft" scroll-to="martialArts" overlay="iaido">IAIDO</p>
-					<p class="noSelectClick condensedFont fontSize25 scrollToClick textCenter floatLeft" scroll-to="ourClub">OUR CLUB</p>
-					<p class="noSelectClick condensedFont fontSize25 scrollToClick textCenter floatLeft" scroll-to="contactUs">CONTACT</p>
-					<div class="clearBoth"></div>
-				</div>
-			</div>
-			
 		</header>
 
-		<section id="welcome" class="parallaxContainer" data-image-src="resources/images/catImage1.jpg" data-natural-width="1800" data-natural-height="900" data-position="top" data-parallax="scroll">
+		<section id="welcome" class="parallaxContainer" data-image-src="resources/images/dublin-kendo-background-bogu.jpg" data-natural-width="1400" data-natural-height="800" data-position="top" data-parallax="scroll">
 			<div class="contentContainer">
 				<h2 id="welcomeContent1" class="textCenter boldFont fontSize40"></h2>
 				<p id="welcomeContent2" class="textCenter fontSize40"></p>
 				<div class="textCenter">
-					<p class="borderButton noSelectClick fontSize25 condensedFont overlayClick" overlay="joinNow">JOIN NOW</p>
+					<p class="borderButton noSelectClick fontSize25 condensedFont scrollToClick" scroll-to="contactUs">JOIN NOW</p>
 				</div>
 			</div>
 		</section>
 		
-		<section id="iconLinks" class="contentContainer">
-			<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="ourClub" overlay="history">
-				<div class="homeIcons homeIcon1 marginAuto marginBottom10"></div>
-				<h2 class="condensedFont fontSize30 textCenter marginBottom10">HISTORY</h2>
-				<p id="iconLinksContent1" class="fontSize20Paragraph textCenter"></p>
-			</div>
-			<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="news">
-				<div class="homeIcons homeIcon2 marginAuto marginBottom10">
-					<p id="dateText" class="boldFont fontSize25 textCenter">1</p>
+		<section id="iconLinks">
+			<div class="contentContainer">
+				<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="ourClub" overlay="history">
+					<div class="homeIcons homeIcon1 marginAuto marginBottom10"></div>
+					<h2 class="condensedFont fontSize30 textCenter marginBottom10">HISTORY</h2>
+					<p id="iconLinksContent1" class="fontSize20Paragraph textCenter"></p>
 				</div>
-				<h2 class="condensedFont fontSize30 textCenter marginBottom10">NEWS</h2>
-				<p id="iconLinksContent2" class="fontSize20Paragraph textCenter"></p>
+				<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="news">
+					<div class="homeIcons homeIcon2 marginAuto marginBottom10">
+						<p id="dateText" class="boldFont fontSize25 textCenter">1</p>
+					</div>
+					<h2 class="condensedFont fontSize30 textCenter marginBottom10">NEWS</h2>
+					<p id="iconLinksContent2" class="fontSize20Paragraph textCenter"></p>
+				</div>
+				<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="dojos">
+					<div class="homeIcons homeIcon3 marginAuto marginBottom10"></div>
+					<h2 class="condensedFont fontSize30 textCenter marginBottom10">OUR DOJOS</h2>
+					<p id="iconLinksContent3" class="fontSize20Paragraph textCenter"></p>
+				</div>
+				<div class="clearBoth"></div>
 			</div>
-			<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="dojos">
-				<div class="homeIcons homeIcon3 marginAuto marginBottom10"></div>
-				<h2 class="condensedFont fontSize30 textCenter marginBottom10">OUR DOJOS</h2>
-				<p id="iconLinksContent3" class="fontSize20Paragraph textCenter"></p>
-			</div>
-			<div class="clearBoth"></div>
 		</section>
 		
 		<section id="ourClub">
-			<div class="contentContainer">
-				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">OUR CLUB</h2>
+			<div class="contentContainer posRel">
+				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding floatLeft">OUR CLUB</h2>
+				<div class="fb-like floatLeft" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="300" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+				<div class="clearBoth"></div>
 				<div class="ourClubContent floatLeft">
 					<p id="ourClubContent1" class="contentPadding fontSize16Paragraph textJustify"><span class="fontSize18Paragraph">Loading...</span></p>
 				</div>
@@ -104,35 +114,37 @@
 			</div>
 		</section>
 		
-		<section id="martialArts" class="contentContainer">
-			<div class="martialArtsImageContainer floatLeft">
-				<div class="contentPadding">
-					<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="kendo" data-image-src="resources/images/catImage2.jpg" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
-						<div class="textCenter">
-							<p class="borderButton fontSize25 condensedFont">KENDO</p>
+		<section id="martialArts">
+			<div class="contentContainer">
+				<div class="martialArtsImageContainer floatLeft">
+					<div class="contentPadding">
+						<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="kendo" data-image-src="resources/images/dublin-kendo-background-kendo.jpg" data-natural-width="560" data-natural-height="840" data-parallax="scroll">
+							<div class="textCenter">
+								<p class="borderButton fontSize25 condensedFont">KENDO</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="martialArtsImageContainer floatLeft">
-				<div class="contentPadding">
-					<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="iaido" data-image-src="resources/images/catImage2.jpg" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
-						<div class="textCenter">
-							<p class="borderButton fontSize25 condensedFont">IAIDO</p>
+				<div class="martialArtsImageContainer floatLeft">
+					<div class="contentPadding">
+						<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="iaido" data-image-src="resources/images/dublin-kendo-background-iaido.jpg" data-natural-width="560" data-natural-height="840" data-parallax="scroll">
+							<div class="textCenter">
+								<p class="borderButton fontSize25 condensedFont">IAIDO</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="martialArtsImageContainer floatLeft">
-				<div class="contentPadding">
-					<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="jodo" data-image-src="resources/images/catImage2.jpg" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
-						<div class="textCenter">
-							<p class="borderButton fontSize25 condensedFont">JODO</p>
+				<div class="martialArtsImageContainer floatLeft">
+					<div class="contentPadding">
+						<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="jodo" data-image-src="resources/images/dublin-kendo-background-jodo.jpg" data-natural-width="560" data-natural-height="840" data-parallax="scroll">
+							<div class="textCenter">
+								<p class="borderButton fontSize25 condensedFont">JODO</p>
+							</div>
 						</div>
 					</div>
 				</div>
+				<div class="clearBoth"></div>
 			</div>
-			<div class="clearBoth"></div>
 		</section>
 		
 		<section id="news">
@@ -144,7 +156,7 @@
 					<!-- <div class="newsItem">
 						<div class="contentPadding">
 							<div class="noSelectClick overlayClick" overlay="news0">
-								<img class="newsImage marginBottom15" src="resources/images/catImage3.jpg" alt="Miyagawa Sensei Visit">
+								<img class="newsImage marginBottom15" src="resources/images/news-default.jpg" onerror="this.src='resources/images/news-default.jpg'" alt="Miyagawa Sensei Visit">
 								<p class="boldFont fontSize20Paragraph marginBottom15">Miyagawa Sensei Visit</p>
 								<p class="fontSize16Paragraph textJustify marginBottom10">Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink.</p>
 								<p class="boldFont fontSize16 marginBottom30">READ MORE</p>
@@ -167,76 +179,147 @@
 		</section>
 		
 		
-		<section id="dojos" class="contentContainer">
-			<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">KEIKO SCHEDULE</h2>
-			<div id="dojosContent">
-				<p class="contentPadding fontSize18Paragraph">Loading...</p>
-				<!-- Dojo Template -->
-				<!--<div class="locations">
-					<div class="contentPadding floatLeft">
-						<p class="boldFont fontSize20 marginBottom20">Saturday</p>
-						<p class="fontSize16Paragraph">Iaido - Beginners (All levels)</p>
-						<p class="boldFont fontSize16 colorBlue marginBottom20">11 - 12 am</p>
-						<p class="fontSize16Paragraph">Kendo - Beginners (All levels)</p>
-						<p class="boldFont fontSize16 colorBlue marginBottom20">12 am - 2 pm</p>
-						<p class="fontSize16Paragraph">The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3</p>
-						<a href="http://maps.google.com/?q=53.360736,-6.243031" target="_blank">
-							<img class="mapImages" src="http://maps.googleapis.com/maps/api/staticmap?center=53.360736,-6.243031&markers=53.360736,-6.243031&zoom=15&size=560x300&sensor=false&scale=1">
-						</a>
-						<a href="http://maps.google.com/?q=53.360736,-6.243031" class="marginBottom20" target="_blank">
-							<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>
-							<div class="linkTriangle floatLeft"></div>
-							<div class="clearBoth"></div>
-						</a>
-					</div>
-				</div>-->
+		<section id="dojos">
+			<div class="contentContainer">
+				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">KEIKO SCHEDULE</h2>
+				<div id="dojosContent">
+					<p class="contentPadding fontSize18Paragraph">Loading...</p>
+					<!-- Dojo Template -->
+					<!--<div class="locations">
+						<div class="contentPadding floatLeft">
+							<p class="boldFont fontSize20 marginBottom20">Saturday</p>
+							<p class="fontSize16Paragraph">Iaido - Beginners (All levels)</p>
+							<p class="boldFont fontSize16 colorBlue marginBottom20">11 - 12 am</p>
+							<p class="fontSize16Paragraph">Kendo - Beginners (All levels)</p>
+							<p class="boldFont fontSize16 colorBlue marginBottom20">12 am - 2 pm</p>
+							<p class="fontSize16Paragraph">The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3</p>
+							<a href="http://maps.google.com/?q=53.360736,-6.243031" target="_blank">
+								<img class="mapImages" src="http://maps.googleapis.com/maps/api/staticmap?center=53.360736,-6.243031&markers=53.360736,-6.243031&zoom=15&size=560x300&sensor=false&scale=1">
+							</a>
+							<a href="http://maps.google.com/?q=53.360736,-6.243031" class="marginBottom20" target="_blank">
+								<p class="boldFont fontSize14 colorBlue floatLeft">Google Maps</p>
+								<div class="linkTriangle14 floatLeft"></div>
+								<div class="clearBoth"></div>
+							</a>
+						</div>
+					</div>-->
+				</div>
 			</div>
 		</section>
 
-		<section id="seiza" class="parallaxContainer" data-image-src="resources/images/catImage4.jpg" data-natural-width="1400" data-natural-height="900" data-parallax="scroll"></section>
+		<section id="seiza" class="parallaxContainer" data-image-src="resources/images/dublin-kendo-background-seiza.jpg" data-natural-width="1400" data-natural-height="800" data-parallax="scroll"></section>
 
 		<section id="contactUs">
+
 			<div class="contentContainer">
-				contact us
+				<div class="contactUsSeperatePadding">
+					<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">GET IN TOUCH</h2>
+				</div>
+			</div>
+
+			<div id="contactUsFeedback" class="displayNone">
+				<div class="contentContainer marginBottom10">
+					<div class="contactUsSeperatePadding">
+						<p class="boldFont contentPadding">Error, please try again later.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<div class="contactUsSeperatePadding">
+					<div class="contentPadding">
+						<div id="contactUsContent1" class="floatLeft">
+							<p class="boldFont fontSize20 marginBottom20">Join Now:</p>
+							<form name="contact-form" method="post" action="join2.php">
+								<p class="fontSize16 marginBottom5">First Name</p>
+								<input type="text" name="Fname" maxlength="50" class="marginBottom15">
+								<p class="fontSize16 marginBottom5">Last Name</p>
+								<input type="text" name="Lname" maxlength="80" class="marginBottom15">
+								<p class="fontSize16 marginBottom5">Email</p>
+								<input type="text" name="Email" maxlength="80" class="marginBottom15">
+								<br>
+								<input type="submit" value="JOIN" class="fontSize20 condensedFont">
+							</form>
+						</div>
+
+						<div id="contactUsContent2" class="floatLeft">
+							<p class="boldFont fontSize20 textCenter">or</p>
+						</div>
+
+						<div id="contactUsContent3" class="floatLeft">
+							<p class="boldFont fontSize20 marginBottom20">Ask a question?</p>
+							<form name="contact-form" method="post" action="contact2.php">
+								<p class="fontSize16 marginBottom5">Topic</p>
+								<select name="topic" class="marginBottom15">
+									<option value="About Kendo">About Kendo</option>
+									<option value="Where we train">Where we train</option>
+									<option value="How to Join" selected="">How to join</option>
+									<option value="Member Question">Member Questions</option>
+									<option value="Other">Other</option>
+								</select>
+								<p class="fontSize16 marginBottom5">Name</p>
+								<input type="text" name="name" maxlength="80" class="marginBottom15">
+								<p class="fontSize16 marginBottom5">Email</p>
+								<input type="text" name="email" maxlength="80" class="marginBottom15">
+								<p class="fontSize16 marginBottom5">Message</p>
+								<textarea name="message" maxlength="1000" class="marginBottom15"></textarea>
+								<br>
+								<input type="submit" value="SEND" class="fontSize20 condensedFont">
+							</form>
+						</div>
+
+						<div class="clearBoth"></div>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+
+		<section id="Gallery">
+			<div class="contentContainer">
+				GAllery stuff
 			</div>
 		</section>
 
 		<footer id="footer" >
 			<div class="contentContainer">
-				<img src="resources/images/dublinKendoClub-logoBlack.png" alt="Dublin Kendo Club">
+				<div class="contentPadding">
+
+				<img src="resources/images/dublin-kendo-club-logo-black.png" alt="Dublin Kendo Club">
 					
-					<div id="fb-root"></div>
-					<script>
-						(function(d, s, id) {
-						  var js, fjs = d.getElementsByTagName(s)[0];
-						  if (d.getElementById(id)) return;
-						  js = d.createElement(s); js.id = id;
-						  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0&appId=792008880847918";
-						  fjs.parentNode.insertBefore(js, fjs);
-						}(document, 'script', 'facebook-jssdk'));
-					</script>
-					<div class="fb-like" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="150" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
-					<div class="fb-like" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="150" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+					
+					<!-- <div class="fb-like" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="150" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div> -->
+					<!-- <div class="fb-like" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="150" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div> -->
+
+<h2 class="condensedFont fontSize30">FIND US ON FB</h2>
+full like button
+<p class="boldFont fontSize20 marginBottom20">Recent Posts</p>
+last 3 posts
+<!-- <button id="showData">show data</button> -->
+
+
+<h2 class="condensedFont fontSize30">Gallery?</h2>
+<h2 class="condensedFont fontSize30">FAQ</h2>
+<h2 class="condensedFont fontSize30">Downloads</h2>
+<h2 class="condensedFont fontSize30">Useful Links</h2>
 
 
 
-<button id="showData">show data</button>
 
-				social media
 
-				FAQ
-				Downloads
-				Useful Links
+
+
+				
+				</div>
 			</div>
 		</footer>
-		</div>
 		
 		
 		<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
 		<script type="text/javascript" src="resources/js/parallax.min.js"></script>
 		<script type="text/javascript" src="resources/js/flexslider.min.js"></script>
 		<script type="text/javascript" src="resources/js/siteData.js"></script>
-		<script type="text/javascript" src="resources/js/main.js"></script>
+		<script type="text/javascript" src="resources/js/main.min.js"></script>
 
 		<script type="text/javascript">
 			var facebookData;
@@ -256,9 +339,9 @@
 				});
 			});
 
-			$(document).on("click","#showData", function() {
-				console.log(facebookData);
-			});
+			// $(document).on("click","#showData", function() {
+			// 	console.log(facebookData);
+			// });
 		</script>
 	</body>
 </html>

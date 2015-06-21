@@ -21,8 +21,8 @@ for (var i in siteData["homepageIdMapping"]) {
     dojosString += '<img class="mapImages" src="http://maps.googleapis.com/maps/api/staticmap?center='+dojo["googleLongLat"]+'&markers='+dojo["googleLongLat"]+'&zoom=16&size=560x300&sensor=false&scale=1">';
     dojosString += '</a>';
     dojosString += '<a href="http://maps.google.com/?q='+dojo["googleAddress"]+'" class="marginBottom20" target="_blank">';
-    dojosString += '<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>';
-    dojosString += '<div class="linkTriangle floatLeft"></div><div class="clearBoth"></div>';
+    dojosString += '<p class="boldFont fontSize14 colorBlue floatLeft">Google Maps</p>';
+    dojosString += '<div class="linkTriangle14 floatLeft"></div><div class="clearBoth"></div>';
     dojosString += '</a>';
     dojosString += '</div></div>';
     if (i%2===1) {
@@ -46,7 +46,7 @@ function populateNews(pageIndex) {
   for (var i = startIndex; i < endIndex; i++) {
     var news = siteData["news"][i];
     newsString += '<div class="newsItem"><div class="contentPadding"><div' + (news["overlay"] ? ' class="noSelectClick overlayClick" overlay="news'+i+'"' :'' ) +'>';
-    newsString += '<img class="newsImage marginBottom15" src="'+news["image"]+'" alt="'+news["title"]+'">';
+    newsString += '<img class="newsImage marginBottom15" src="'+news["image"]+'" alt="'+news["title"]+'" onerror="this.src=\'resources/images/news-default.jpg\'" alt="'+news["title"]+'">';
     newsString += '<p class="boldFont fontSize20Paragraph marginBottom15">'+news["title"]+'</p>';
     newsString += '<p class="fontSize16Paragraph textJustify marginBottom10">'+news["content"]+'</p>';
     newsString += news["overlay"] ? '<p class="boldFont fontSize16 marginBottom30">READ MORE</p>' : '';
