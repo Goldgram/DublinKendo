@@ -91,10 +91,10 @@
 			<div class="contentContainer">
 				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">OUR CLUB</h2>
 				<div class="ourClubContent1">
-					<p class="normalFont contentPadding fontSize18Paragraph">Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink, chase the red dot claw jump on the table catnip jump. Kittens sleep in the sink jump on the table zzz sleep on your face sleep in the sink, lick puking purr purr give me fish. </p>
+					<p class="normalFont contentPadding fontSize18Paragraph textJustify">Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink, chase the red dot claw jump on the table catnip jump. Kittens sleep in the sink jump on the table zzz sleep on your face sleep in the sink, lick puking purr purr give me fish. </p>
 				</div>
 				<div class="ourClubContent1">
-					<p class="normalFont contentPadding fontSize18Paragraph">Attack feed me attack sleep in the sink sunbathe,catnip scratched knock over the lamp feed me give me fish attack your ankles. Bat puking bat sunbathe, lick bat chuf shed everywhere attack kittens lay down in your way. Lay down in your way I don't like that food jump zzz, give me fish run meow feed me sleep on your face catnip rip the couch.</p>
+					<p class="normalFont contentPadding fontSize18Paragraph textJustify">Attack feed me attack sleep in the sink sunbathe,catnip scratched knock over the lamp feed me give me fish attack your ankles. Bat puking bat sunbathe, lick bat chuf shed everywhere attack kittens lay down in your way. Lay down in your way I don't like that food jump zzz, give me fish run meow feed me sleep on your face catnip rip the couch.</p>
 				</div>
 				<p class="ourClubContent2 boldFont contentPadding fontSize18 noSelectClick">READ MORE</p>
 				<div class="clearBoth"></div>
@@ -154,30 +154,90 @@
 		
 		<section id="dojos">
 			<div class="contentContainer">
-				<h2 class="condensedFont fontSize30 marginBottom10">KEIKO SCHEDULE</h2>
-
-				Saturday
-				Iaido - All levels (including Beginners)
-				11 - 12 am
-				Kendo - All levels (including Beginners)
-				12 am - 2 pm
-				The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3
-
-				Monday
-				Kendo - Beginners
-				8 - 10 pm
-				Address line 1 Address line 2 Address line 3
+				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">KEIKO SCHEDULE</h2>
+				<div class="locations">
+					<div class="contentPadding">
+						<p class="boldFont fontSize20 marginBottom20">Saturday</p>
+						<p class="normalFont fontSize16Paragraph">Iaido - Beginners (All levels)</p>
+						<p class="boldFont fontSize16 colorBlue marginBottom20">11 - 12 am</p>
+						<p class="normalFont fontSize16Paragraph">Kendo - Beginners (All levels)</p>
+						<p class="boldFont fontSize16 colorBlue marginBottom20">12 am - 2 pm</p>
+						<p class="normalFont fontSize16Paragraph">The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3</p>
+						<div class="noSelectClick marginBottom20">
+							<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>
+							<div class="linkTriangle floatLeft"></div>
+							<div class="clearBoth"></div>
+						</div>
+					</div>
+				</div>
 				
-				Wednesday
-				Kendo - Advanced
-				8 - 10 pm
-				Address line 1 Address line 2 Address line 3
-				
-				Friday
-				Kendo - Advanced
-				8 - 9 pm
-				Address line 1 Address line 2 Address line 3
+				<div class="locations">
+					<div class="contentPadding">
+						<p class="boldFont fontSize20 marginBottom20">Monday</p>
+						<p class="normalFont fontSize16Paragraph">Kendo - Beginners</p>
+						<p class="boldFont fontSize16 colorBlue marginBottom20">8 - 10 pm</p>
+						<p class="normalFont fontSize16Paragraph">The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3</p>
+						<div class="noSelectClick marginBottom20">
+							<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>
+							<div class="linkTriangle floatLeft"></div>
+							<div class="clearBoth"></div>
+						</div>
+					</div>
+				</div>
 
+				<div class="clearBothLessThan768"></div><!--  add after every two and at end -->
+
+				<div class="locations">
+					<div class="contentPadding">
+						<p class="boldFont fontSize20 marginBottom20">Wednesday</p>
+						<p class="normalFont fontSize16Paragraph">Kendo - Intermediate</p>
+						<p class="boldFont fontSize16 colorBlue marginBottom20">8 - 10 pm</p>
+						<p class="normalFont fontSize16Paragraph">The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3</p>
+						<div class="noSelectClick marginBottom20">
+							<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>
+							<div class="linkTriangle floatLeft"></div>
+							<div class="clearBoth"></div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="locations">
+					<div class="contentPadding">
+						<p class="boldFont fontSize20 marginBottom20">Friday</p>
+						<p class="normalFont fontSize16">Kendo - Advanced</p>
+						<p class="boldFont fontSize16 colorBlue marginBottom20">8 - 9 pm</p>
+						<p class="normalFont fontSize16">The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3</p>
+						<div class="noSelectClick marginBottom20">
+							<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>
+							<div class="linkTriangle floatLeft"></div>
+							<div class="clearBoth"></div>
+						</div>
+					</div>
+				</div>
+
+
+	<div id="google-map-canvas"></div>
+	<a href="http://maps.google.com/?q=The Ballybough Community, Youth And Sports Centre, 49 Ballybough Road, Ballybough, Dublin 3" target="_blank">
+		<img width="100%" src="http://maps.googleapis.com/maps/api/staticmap?center=The Ballybough Community, Youth And Sports Centre, 49 Ballybough Road, Ballybough, Dublin 3&markers=The Ballybough Community, Youth And Sports Centre, 49 Ballybough Road, Ballybough, Dublin 3&zoom=15&size=560x300&sensor=false&scale=1">
+	</a>
+	<a href="http://maps.google.com/?q=The Ballybough Community, Youth And Sports Centre, 49 Ballybough Road, Ballybough, Dublin 3" target="_blank">
+		<p>View in Google Maps </p>
+	</a>
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script>
+		//initilize then loads the custom address for the large map
+		$(window).load(function() {
+		  initializeGoogleMaps();
+			codeAddress("The Ballybough Community, Youth And Sports Centre, 49 Ballybough Road, Ballybough, Dublin 3");
+		});
+	</script>
+
+
+
+				<div class="clearBoth"></div>
 			</div>
 		</section>
 

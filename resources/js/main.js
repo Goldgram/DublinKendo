@@ -13,6 +13,39 @@ $(window).load(function() {
 	$(".parallaxContainer").css("background-color","transparent");
 });
 
+// google maps api functions
+var geocoder;
+var map;
+function initializeGoogleMaps() {
+  geocoder = new google.maps.Geocoder();
+  var latlng = new google.maps.LatLng(-34.397, 150.644);
+  var mapOptions = {
+    zoom:16
+    ,center:latlng
+    ,panControl:true
+    ,mapTypeId:google.maps.MapTypeId.ROADMAP
+    ,streetViewControl:false
+  }
+  map = new google.maps.Map(document.getElementById('google-map-canvas'), mapOptions);
+}
+function codeAddress(address) {
+  geocoder.geocode( { 'address': address}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      map.setCenter(results[0].geometry.location);
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          // icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|006980'
+      });
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
+}
+
+
+
+
 // function users(dataUrl,elementId,presentation, animate) {// users list class for multiple instances
 
 // $("#welcome").load(function() {
