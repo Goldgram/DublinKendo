@@ -9,16 +9,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-// @font-face {
-// 	font-family: "helvetica55";
-// 	src: url("../fonts/helveticaneueltpro_roman-webfont.eot");
-// 	src: url("../fonts/helveticaneueltpro_roman-webfont.eot?#iefix") format("embedded-opentype"),
-// 		url("../fonts/helveticaneueltpro_roman-webfont.woff") format("woff"),
-// 		url("../fonts/helveticaneueltpro_roman-webfont.ttf") format("truetype"),
-// 		url("../fonts/helveticaneueltpro_roman-webfont.svg#helvetica55") format("svg");
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
 @font-face {
 	font-family: "helvetica75";
 	src: url("../fonts/helveticaneueltpro_bd-webfont.eot");
@@ -29,56 +19,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-// @font-face {
-// 	font-family: "helvetica95";
-// 	src: url("../fonts/helveticaneueltpro_blk-webfont.eot");
-// 	src: url("../fonts/helveticaneueltpro_blk-webfont.eot?#iefix") format("embedded-opentype"),
-// 		url("../fonts/helveticaneueltpro_blk-webfont.woff") format("woff"),
-// 		url("../fonts/helveticaneueltpro_blk-webfont.ttf") format("truetype"),
-// 		url("../fonts/helveticaneueltpro_blk-webfont.svg#helvetica95") format("svg");
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
-
-
-
-
-// @font-face {
-// 	font-family: "gill_sans_mt_condensedregular";
-// 	src: url("../fonts/ufonts.com_gill_sans_mt_condensed_1_-webfont.eot");
-// 	src: url("../fonts/ufonts.com_gill_sans_mt_condensed_1_-webfont.eot?#iefix") format("embedded-opentype"),
-// 		url("../fonts/ufonts.com_gill_sans_mt_condensed_1_-webfont.woff") format("woff"),
-// 		url("../fonts/ufonts.com_gill_sans_mt_condensed_1_-webfont.ttf") format("truetype"),
-// 		url("../fonts/ufonts.com_gill_sans_mt_condensed_1_-webfont.svg#gill_sans_mt_condensedregular") format("svg");
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
-
-
-
-
-
-
-// @font-face {
-// 	font-family:"gill_sans_mtregular";
-// 	src: url("../fonts/gill_sans_mt-webfont.eot");
-// 	src: url("../fonts/gill_sans_mt-webfont.eot?#iefix") format("embedded-opentype"),
-// 		url("../fonts/gill_sans_mt-webfont.woff") format("woff"),
-// 		url("../fonts/gill_sans_mt-webfont.ttf") format("truetype"),
-// 		url("../fonts/gill_sans_mt-webfont.svg#gill_sans_mtregular") format("svg");
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
-// @font-face {
-// 	font-family:"gill_sans_mtbold";
-// 	src: url("../fonts/gill_sans_mt_bold-webfont.eot");
-// 	src: url("../fonts/gill_sans_mt_bold-webfont.eot?#iefix") format("embedded-opentype"),
-// 		url("../fonts/gill_sans_mt_bold-webfont.woff") format("woff"),
-// 		url("../fonts/gill_sans_mt_bold-webfont.ttf") format("truetype"),
-// 		url("../fonts/gill_sans_mt_bold-webfont.svg#gill_sans_mtbold") format("svg");
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
 @font-face {
 	font-family:"roadwayregular";
 	src: url("../fonts/roadway-webfont.eot");
@@ -102,6 +42,7 @@ h1, h2, p {
 	margin:0;
 	padding:0;
 	font-weight: normal;
+	text-align: justify;
 }
 section, footer {
 	// min-height: 240px;
@@ -113,6 +54,8 @@ section, footer {
 }
 .parallaxContainer {
 	background: transparent;
+	background-color:#323232;
+	// background-color: 
 	// max-width: 1400px;
 }
 .noSelectClick {
@@ -138,20 +81,27 @@ section, footer {
 .normalFont { font-family:"helvetica45"; }
 .boldFont { font-family:"helvetica75"; }
 .textCenter { text-align: center; }
-// .marginAuto { margin: 0 auto; display: block; }
+.marginAuto { margin: 0 auto; 
+	// display: block; 
+}
 
 // .fontSize16 { font-size:16px; line-height:16px; }
-// .fontSize18 { font-size:18px; line-height:18px; }
+.fontSize18 { font-size:18px; line-height:18px; }
+.fontSize18Paragraph { font-size:18px; line-height:22px; }
+
 .fontSize20 { font-size:20px; line-height:20px; }
 .fontSize25 { font-size:25px; line-height:25px; }
-// .fontSize30 { font-size:30px; line-height:30px; }
+.fontSize30 { font-size:30px; line-height:30px; }
+// .fontSize35 { font-size:35px; line-height:35px; }
 .fontSize40 { font-size:40px; line-height:40px; }
 
 // .marginBottom5 { margin-bottom:5px; }
-// .marginBottom10 { margin-bottom:10px; }
+.marginBottom10 { margin-bottom:10px; }
+// .marginBottom20 { margin-bottom:20px; }
 // .marginBottom25 { margin-bottom:25px; }
+// .marginBottom30 { margin-bottom:30px; }
 // .marginBottom40 { margin-bottom:40px; }
-// .marginBottom10 { margin-bottom:10px; }
+
 
 
 .clearBoth { clear: both; }
@@ -227,7 +177,7 @@ header {
 			margin: 6px 4px 0 0;
 			padding: 6px 6px 0 6px;
 			div {
-				background-color: #000096;
+				background-color: #323232;
 				width: 34px;
 				height:6px;
 				margin: 0 0 6px 0;
@@ -238,7 +188,6 @@ header {
 		}
 		#navigation {
 			float: right;
-			// margin-right: 10px;
 			p {
 				float: left;
 				padding: 10px;
@@ -251,8 +200,6 @@ header {
 	}
 }
 #welcome {
-	// margin-top: 94px;
-	// background:red;
 	h2, p{
 		text-shadow: 0px 0px 1px rgba(0,0,0,0.75);
 	}
@@ -261,11 +208,41 @@ header {
 	}
 	.borderButton {
 		margin: 40px 0 45px 0;
-	}
-	
+	}	
 }
+#iconLinks {
+	.iconLinksItem {
+		float: left;
+		width: 29.333%;
+		padding: 10px 2%;
+	}
+	#dateText {
+		padding-top: 18px;
+	}
+}
+.homeIcons {
+	width: 48px;
+	height: 48px;
+	background-image:url(../images/icons.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.homeIcon1 { background-position: 0 0; }
+.homeIcon2 { background-position: -48px 0; }
+.homeIcon3 { background-position: -96px 0; }
+
+
+
 #ourClub {
 	background-color: #323232;
+	.ourClubContent1 {
+		float: left;
+		width: 50%;
+		
+	}
+	.ourClubContent2 {
+		text-align: right;
+	}
 }
 #martialArts {
 	p {
@@ -273,13 +250,17 @@ header {
 	}
 	.martialArtsImageContainer {
 		float: left;
-		width: 33.333333%;
-		// background-color: blue;
-
-
-		// height: 200px;
+		width: 33.333%;
 		.martialArtsImage {
-			min-height: 250px;
+			height: 250px;
+			// position: relative;
+			p {
+				// position: absolute;
+				// top:50%;
+				// left:50%;
+				// margin-top: -22px;
+				margin-top: 102px;
+			}
 		}
 	}
 }
@@ -324,30 +305,11 @@ footer {
 		}
 		#headerContent {
 			padding: 10px 10px 10px 20px;
-			// #clubHeaderLogo {
-			// 	margin-bottom:10px;
-			// }
 			#mobileButton {
 				display: inline;
 			}
 			#navigation {
 				display: none;
-			// 	background-color: #000096;
-			// 	color:#fff;
-			// 	width: 100%;
-			// 	margin: 0;
-			// 	padding: 0;
-			// 	#navigationContainer {
-			// 		padding: 0 5%;
-			// 	}
-			// 	p {
-			// 		width: 25%;
-			// 		margin: 0;
-			// 		padding: 15px 0;
-			// 		text-align: center;
-			// 		font-size: 24px;
-			// 		line-height: 24px;
-			// 	}
 			}
 		}
 	}
@@ -360,48 +322,43 @@ footer {
 		}
 	}
 }
+@media only screen and (max-width: 599px) {
+	#iconLinks {
+		.iconLinksItem {
+			width: 94%;
+			padding: 20px 3%;
+		}
+	}
+	#ourClub {
+		.ourClubContent1 {
+			width: 100%;
+		}
+	}
+	#martialArts {
+		
+		.martialArtsImageContainer {
+			// float: left;
+			width: 100%;
+			// max-width: 300px;
+			// width: 450px;
+			// margin: 0 auto;
+			.martialArtsImage {
+				// height: 250px;
+				p {
+
+					// margin: 100px auto 0 auto;
+				}
+			}
+		}
+	}
+}
 @media only screen and (max-width: 479px) {
-	// header #headerContent {
-	// 	#navigation {
-	// 		#navigationContainer {
-	// 			padding: 0 10%;
-	// 		}
-	// 		p {
-	// 			width: 50%;
-	// 		}
-	// 	}
-	// }
 	header {
 		#mobileNavigation {
-			// visibility: hidden;
-			// display: none;
-			// width: 100%;
-			// min-width: 320px;
-			// position: absolute;
-			// top: 59px;
-			// left: 0;
-			#mobileNavigationArrow{
-				// float: right;
-				// margin-right: 22px;
-				// width: 0; 
-				// height: 0; 
-				// border-left: 15px solid transparent;
-				// border-right: 15px solid transparent;
-				// border-bottom: 15px solid #000096;
-			}
 			#mobileNavigationContent {
-				// margin-top: 15px;
-				// background-color: #000096;
-				// color:#fff;
 				padding: 6px 10%;
 				p {
-					// float: left;
 					width: 50%;
-					// margin: 0;
-					// padding: 15px 0;
-					// text-align: center;
-					// font-size: 24px;
-					// line-height: 24px;
 				}
 			}
 		}

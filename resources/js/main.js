@@ -1,10 +1,19 @@
-// console.log(siteData);// function users(dataUrl,elementId,presentation, animate) {// users list class for multiple instances
-	
-
+// console.log(siteData);
 
 $(document).on("click", "#mobileButton", function() {
 	$("#mobileNavigation").stop(true, true).slideToggle();
 });
+
+$(document).ready(function() {
+	var today = new Date();
+	// var dd = today.getDate();
+	$("#dateText").text(today.getDate());
+});
+$(window).load(function() {
+	$(".parallaxContainer").css("background-color","transparent");
+});
+
+// function users(dataUrl,elementId,presentation, animate) {// users list class for multiple instances
 
 // $("#welcome").load(function() {
 // 	// $("#welcome").css("background","transparent");
