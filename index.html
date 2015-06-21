@@ -11,29 +11,31 @@
 		<link rel="canonical" href="http://www.dublinkendo.com/">
 		<link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="resources/css/normalize.min.css">
+		<link rel="stylesheet" href="resources/css/flexslider.css">
 		<link rel="stylesheet" href="resources/css/main.min.css">
 	</head>
 	<body>
-		<header class="contentContainer">
+		<img id="scrollToTop" class="noSelectClick" src="resources/images/scrollTopButton.png" alt="Scroll to top">
+		<header id="header" class="contentContainer">
 			<div id="headerContent">
 
-				<a href="/" id="clubHeaderLogo">
-					<img src="resources/images/dublinKendoClub-logoBlue.png" alt="Dublin Kendo Club Logo">
-					<h1 class="normalFont">DUBLIN<br>KENDO<br>KOBUKAI</h1>
+				<a href="/" id="clubHeaderLogo" class="floatLeft">
+					<img class="floatLeft" src="resources/images/dublinKendoClub-logoBlue.png" alt="Dublin Kendo Club Logo">
+					<h1 class="fontSize18 floatLeft">DUBLIN<br>KENDO<br>KOBUKAI</h1>
 				</a>
 
-				<div id="mobileButton" class="noSelectClick">
+				<div id="mobileButton" class="noSelectClick floatRight">
 					<div></div>
 					<div></div>
 					<div></div>
 				</div>
 				
-				<div id="navigation">
+				<div id="navigation" class="floatRight">
 					<div id="navigationContainer">
-						<p class="noSelectClick condensedFont fontSize20">KENDO</p>
-						<p class="noSelectClick condensedFont fontSize20">IAIDO</p>
-						<p class="noSelectClick condensedFont fontSize20">OUR CLUB</p>
-						<p class="noSelectClick condensedFont fontSize20">CONTACT</p>
+						<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="martialArts" overlay="kendo">KENDO</p>
+						<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="martialArts" overlay="iaido">IAIDO</p>
+						<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="ourClub">OUR CLUB</p>
+						<p class="noSelectClick condensedFont fontSize20 floatLeft scrollToClick" scroll-to="footer">CONTACT</p>
 						<div class="clearBoth"></div>
 					</div>
 				</div>
@@ -42,46 +44,46 @@
 
 			</div>
 			<div id="mobileNavigation">
-				<div id="mobileNavigationArrow"></div>
+				<div id="mobileNavigationArrow" class="floatRight"></div>
 				<div id="mobileNavigationContent">
-					<p class="noSelectClick condensedFont fontSize20">KENDO</p>
-					<p class="noSelectClick condensedFont fontSize20">IAIDO</p>
-					<p class="noSelectClick condensedFont fontSize20">OUR CLUB</p>
-					<p class="noSelectClick condensedFont fontSize20">CONTACT</p>
+					<p class="noSelectClick condensedFont fontSize25 scrollToClick textCenter floatLeft" scroll-to="martialArts" overlay="kendo">KENDO</p>
+					<p class="noSelectClick condensedFont fontSize25 scrollToClick textCenter floatLeft" scroll-to="martialArts" overlay="iaido">IAIDO</p>
+					<p class="noSelectClick condensedFont fontSize25 scrollToClick textCenter floatLeft" scroll-to="ourClub">OUR CLUB</p>
+					<p class="noSelectClick condensedFont fontSize25 scrollToClick textCenter floatLeft" scroll-to="footer">CONTACT</p>
 					<div class="clearBoth"></div>
 				</div>
 			</div>
 			
 		</header>
 
-		<section id="welcome" class="parallaxContainer" data-image-src="http://lorempixel.com/1400/900/cats/8" data-natural-width="1400" data-natural-height="900" data-position="top" data-parallax="scroll">
+		<section id="welcome" class="parallaxContainer" data-image-src="resources/images/catImage1.jpg" data-natural-width="1800" data-natural-height="900" data-position="top" data-parallax="scroll">
 			<div class="contentContainer">
-				<h2 class="textCenter boldFont fontSize40">Welcome to Dublin Kendo Kobukai</h2>
-				<p class="textCenter normalFont fontSize40">Dublin's longest running Kendo club</p>
+				<h2 id="welcomeContent1" class="textCenter boldFont fontSize40"></h2>
+				<p id="welcomeContent2" class="textCenter fontSize40"></p>
 				<div class="textCenter">
-					<p class="borderButton noSelectClick fontSize25 condensedFont">JOIN NOW</p>
+					<p class="borderButton noSelectClick fontSize25 condensedFont overlayClick" overlay="joinNow">JOIN NOW</p>
 				</div>
 			</div>
 		</section>
 		
 		<section id="iconLinks">
 			<div class="contentContainer">
-				<div class="iconLinksItem noSelectClick">
+				<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="ourClub" overlay="history">
 					<div class="homeIcons homeIcon1 marginAuto marginBottom10"></div>
 					<h2 class="condensedFont fontSize30 textCenter marginBottom10">HISTORY</h2>
-					<p class="normalFont fontSize20 textCenter">The history of Dublin Kendo</p>
+					<p id="iconLinksContent1" class="fontSize20 textCenter"></p>
 				</div>
-				<div class="iconLinksItem noSelectClick">
+				<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="news">
 					<div class="homeIcons homeIcon2 marginAuto marginBottom10">
 						<p id="dateText" class="boldFont fontSize25 textCenter">1</p>
 					</div>
 					<h2 class="condensedFont fontSize30 textCenter marginBottom10">NEWS</h2>
-					<p class="normalFont fontSize20 textCenter">Kitty ipsum dolor sit amet, sunbathe lay down</p>
+					<p id="iconLinksContent2" class="fontSize20 textCenter"></p>
 				</div>
-				<div class="iconLinksItem noSelectClick">
+				<div class="iconLinksItem floatLeft noSelectClick scrollToClick" scroll-to="dojos">
 					<div class="homeIcons homeIcon3 marginAuto marginBottom10"></div>
 					<h2 class="condensedFont fontSize30 textCenter marginBottom10">OUR DOJOS</h2>
-					<p class="normalFont fontSize20 textCenter">Where and when we practise</p>
+					<p id="iconLinksContent3" class="fontSize20 textCenter"></p>
 				</div>
 				<div class="clearBoth"></div>
 			</div>
@@ -90,40 +92,40 @@
 		<section id="ourClub">
 			<div class="contentContainer">
 				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">OUR CLUB</h2>
-				<div class="ourClubContent1">
-					<p class="normalFont contentPadding fontSize18Paragraph textJustify">Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink, chase the red dot claw jump on the table catnip jump. Kittens sleep in the sink jump on the table zzz sleep on your face sleep in the sink, lick puking purr purr give me fish. </p>
+				<div class="ourClubContent floatLeft">
+					<p id="ourClubContent1" class="contentPadding fontSize18Paragraph textJustify">Loading...</p>
 				</div>
-				<div class="ourClubContent1">
-					<p class="normalFont contentPadding fontSize18Paragraph textJustify">Attack feed me attack sleep in the sink sunbathe,catnip scratched knock over the lamp feed me give me fish attack your ankles. Bat puking bat sunbathe, lick bat chuf shed everywhere attack kittens lay down in your way. Lay down in your way I don't like that food jump zzz, give me fish run meow feed me sleep on your face catnip rip the couch.</p>
+				<div class="ourClubContent floatLeft">
+					<p id="ourClubContent2" class="contentPadding fontSize18Paragraph textJustify">&nbsp;</p>
 				</div>
-				<p class="ourClubContent2 boldFont contentPadding fontSize18 noSelectClick">READ MORE</p>
+				<p class="boldFont contentPadding floatRight textRight fontSize18 noSelectClick overlayClick" overlay="history">READ MORE</p>
 				<div class="clearBoth"></div>
 			</div>
 		</section>
 		
 		<section id="martialArts">
 			<div class="contentContainer">
-				<div class="martialArtsImageContainer">
+				<div class="martialArtsImageContainer floatLeft">
 					<div class="contentPadding">
-						<div class="martialArtsImage noSelectClick parallaxContainer" data-image-src="http://lorempixel.com/600/900/cats/8" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
+						<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="kendo" data-image-src="resources/images/catImage2.jpg" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
 							<div class="textCenter">
 								<p class="borderButton fontSize25 condensedFont">KENDO</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="martialArtsImageContainer">
+				<div class="martialArtsImageContainer floatLeft">
 					<div class="contentPadding">
-						<div class="martialArtsImage noSelectClick parallaxContainer" data-image-src="http://lorempixel.com/600/900/cats/8" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
+						<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="iaido" data-image-src="resources/images/catImage2.jpg" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
 							<div class="textCenter">
 								<p class="borderButton fontSize25 condensedFont">IAIDO</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="martialArtsImageContainer">
+				<div class="martialArtsImageContainer floatLeft">
 					<div class="contentPadding">
-						<div class="martialArtsImage noSelectClick parallaxContainer" data-image-src="http://lorempixel.com/600/900/cats/8" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
+						<div class="martialArtsImage noSelectClick parallaxContainer overlayClick" overlay="jodo" data-image-src="resources/images/catImage2.jpg" data-natural-width="600" data-natural-height="900" data-parallax="scroll">
 							<div class="textCenter">
 								<p class="borderButton fontSize25 condensedFont">JODO</p>
 							</div>
@@ -137,7 +139,45 @@
 		<section id="news">
 			<div class="contentContainer">
 				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">NEWS</h2>
+				
+				<!-- <div id="newsSlider" class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="contentBox1">Stuff1</div>
+						</li>
+						<li>
+							<div class="contentBox2">Stuff2</div>
+						</li>
+						<li>
+							<div class="contentBox1">Stuff3</div>
+						</li>
+						<li>
+							<div class="contentBox2">Stuff4</div>
+						</li>
+						<li>
+							<div class="contentBox1">Stuff5</div>
+						</li>
+						<li>
+							<div class="contentBox2">Stuff6</div>
+						</li>
+					</ul>
+				</div> -->
 
+			<style type="text/css">
+					/*.contentBox1,.contentBox2 {
+						width:200px;
+						height: 200px;
+					}
+					.contentBox1 {
+						background-color: red;
+					}
+					.contentBox2 {
+						background-color: pink;
+					}*/
+				</style>
+
+				<!-- <img src="resources/images/catImage3.jpg" alt="news">
+					
 				Miyagawa Sensei Visit
 				Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink.
 				
@@ -146,102 +186,41 @@
 				
 				Kitty Ipsum
 				Kitty ipsum dolor sit amet, sunbathe lay down in your way run judging you sleep in the sink, attack your ankles sleep on your face sunbathe judging you sleep in the sink. Litter box knock over the lamp leap fluffy fur stretching sleep in the sink.
-				
+				--> 
 			</div>
 		</section>
 		
-		<section id="seiza" class="parallaxContainer" data-image-src="http://lorempixel.com/1400/900/cats/4" data-natural-width="1400" data-natural-height="900" data-parallax="scroll"></section>
+		<section id="seiza" class="parallaxContainer" data-image-src="resources/images/catImage4.jpg" data-natural-width="1400" data-natural-height="900" data-parallax="scroll"></section>
 		
 		<section id="dojos">
 			<div class="contentContainer">
 				<h2 class="condensedFont fontSize30 marginBottom10 contentPadding">KEIKO SCHEDULE</h2>
-				<div class="locations">
-					<div class="contentPadding">
-						<p class="boldFont fontSize20 marginBottom20">Saturday</p>
-						<p class="normalFont fontSize16Paragraph">Iaido - Beginners (All levels)</p>
-						<p class="boldFont fontSize16 colorBlue marginBottom20">11 - 12 am</p>
-						<p class="normalFont fontSize16Paragraph">Kendo - Beginners (All levels)</p>
-						<p class="boldFont fontSize16 colorBlue marginBottom20">12 am - 2 pm</p>
-						<p class="normalFont fontSize16Paragraph">The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3</p>
-						<div class="noSelectClick marginBottom20">
-							<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>
-							<div class="linkTriangle floatLeft"></div>
-							<div class="clearBoth"></div>
+				<div id="dojosContent">
+					<p class="contentPadding fontSize18Paragraph">Loading...</p>
+					<!-- Dojo Template -->
+					<!--<div class="locations">
+						<div class="contentPadding floatLeft">
+							<p class="boldFont fontSize20 marginBottom20">Saturday</p>
+							<p class="fontSize16Paragraph">Iaido - Beginners (All levels)</p>
+							<p class="boldFont fontSize16 colorBlue marginBottom20">11 - 12 am</p>
+							<p class="fontSize16Paragraph">Kendo - Beginners (All levels)</p>
+							<p class="boldFont fontSize16 colorBlue marginBottom20">12 am - 2 pm</p>
+							<p class="fontSize16Paragraph">The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3</p>
+							<a href="http://maps.google.com/?q=53.360736,-6.243031" target="_blank">
+								<img class="mapImages" src="http://maps.googleapis.com/maps/api/staticmap?center=53.360736,-6.243031&markers=53.360736,-6.243031&zoom=15&size=560x300&sensor=false&scale=1">
+							</a>
+							<a href="http://maps.google.com/?q=53.360736,-6.243031" class="marginBottom20" target="_blank">
+								<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>
+								<div class="linkTriangle floatLeft"></div>
+								<div class="clearBoth"></div>
+							</a>
 						</div>
-					</div>
+					</div>-->
 				</div>
-				
-				<div class="locations">
-					<div class="contentPadding">
-						<p class="boldFont fontSize20 marginBottom20">Monday</p>
-						<p class="normalFont fontSize16Paragraph">Kendo - Beginners</p>
-						<p class="boldFont fontSize16 colorBlue marginBottom20">8 - 10 pm</p>
-						<p class="normalFont fontSize16Paragraph">The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3</p>
-						<div class="noSelectClick marginBottom20">
-							<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>
-							<div class="linkTriangle floatLeft"></div>
-							<div class="clearBoth"></div>
-						</div>
-					</div>
-				</div>
-
-				<div class="clearBothLessThan768"></div><!--  add after every two and at end -->
-
-				<div class="locations">
-					<div class="contentPadding">
-						<p class="boldFont fontSize20 marginBottom20">Wednesday</p>
-						<p class="normalFont fontSize16Paragraph">Kendo - Intermediate</p>
-						<p class="boldFont fontSize16 colorBlue marginBottom20">8 - 10 pm</p>
-						<p class="normalFont fontSize16Paragraph">The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3</p>
-						<div class="noSelectClick marginBottom20">
-							<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>
-							<div class="linkTriangle floatLeft"></div>
-							<div class="clearBoth"></div>
-						</div>
-					</div>
-				</div>
-
-
-
-				<div class="locations">
-					<div class="contentPadding">
-						<p class="boldFont fontSize20 marginBottom20">Friday</p>
-						<p class="normalFont fontSize16">Kendo - Advanced</p>
-						<p class="boldFont fontSize16 colorBlue marginBottom20">8 - 9 pm</p>
-						<p class="normalFont fontSize16">The Ballybough Community, Youth &amp; Sports, Ballybough Road, Dublin 3</p>
-						<div class="noSelectClick marginBottom20">
-							<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>
-							<div class="linkTriangle floatLeft"></div>
-							<div class="clearBoth"></div>
-						</div>
-					</div>
-				</div>
-
-
-	<div id="google-map-canvas"></div>
-	<a href="http://maps.google.com/?q=The Ballybough Community, Youth And Sports Centre, 49 Ballybough Road, Ballybough, Dublin 3" target="_blank">
-		<img width="100%" src="http://maps.googleapis.com/maps/api/staticmap?center=The Ballybough Community, Youth And Sports Centre, 49 Ballybough Road, Ballybough, Dublin 3&markers=The Ballybough Community, Youth And Sports Centre, 49 Ballybough Road, Ballybough, Dublin 3&zoom=15&size=560x300&sensor=false&scale=1">
-	</a>
-	<a href="http://maps.google.com/?q=The Ballybough Community, Youth And Sports Centre, 49 Ballybough Road, Ballybough, Dublin 3" target="_blank">
-		<p>View in Google Maps </p>
-	</a>
-
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-	<script>
-		//initilize then loads the custom address for the large map
-		$(window).load(function() {
-		  initializeGoogleMaps();
-			codeAddress("The Ballybough Community, Youth And Sports Centre, 49 Ballybough Road, Ballybough, Dublin 3");
-		});
-	</script>
-
-
-
-				<div class="clearBoth"></div>
 			</div>
 		</section>
 
-		<footer>
+		<footer id="footer">
 			<div class="contentContainer">
 				<img src="resources/images/dublinKendoClub-logoBlack.png" alt="Dublin Kendo Club">
 					FAQ
@@ -252,7 +231,8 @@
 		
 		<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
 		<script type="text/javascript" src="resources/js/parallax.min.js"></script>
+		<script type="text/javascript" src="resources/js/flexslider.min.js"></script>
 		<script type="text/javascript" src="resources/js/siteData.js"></script>
-		<script type="text/javascript" src="resources/js/main.min.js"></script>
+		<script type="text/javascript" src="resources/js/main.js"></script>
 	</body>
 </html>

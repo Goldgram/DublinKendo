@@ -33,10 +33,10 @@
 
 /* main style */
 body {
-  /*font-family: Arial, Helvetica, sans-serif;*/
   color: #323232;
   min-width: 320px;
   background-color: #fff;
+  font-family: "helvetica45", Arial, Helvetica, sans-serif;
 }
 h1, h2, p {
 	margin:0;
@@ -78,16 +78,13 @@ section, footer {
 .colorBlue { color: #000096; }
 
 .condensedFont { font-family:"roadwayregular"; }
-.normalFont { font-family:"helvetica45"; }
 .boldFont { font-family:"helvetica75"; }
+
 .textCenter { text-align: center; }
 .textJustify { text-align: justify; }
+.textRight { text-align: right; }
 
-.marginAuto { margin: 0 auto; 
-	// display: block; 
-}
-
-// .fontSize16 { font-size:16px; line-height:16px; }
+.fontSize16 { font-size:16px; line-height:16px; }
 .fontSize16Paragraph { font-size:16px; line-height:18px; }
 .fontSize18 { font-size:18px; line-height:18px; }
 .fontSize18Paragraph { font-size:18px; line-height:22px; }
@@ -98,7 +95,7 @@ section, footer {
 // .fontSize35 { font-size:35px; line-height:35px; }
 .fontSize40 { font-size:40px; line-height:40px; }
 
-
+.marginAuto { margin: 0 auto; }
 // .marginBottom5 { margin-bottom:5px; }
 .marginBottom10 { margin-bottom:10px; }
 .marginBottom20 { margin-bottom:20px; }
@@ -106,15 +103,20 @@ section, footer {
 // .marginBottom30 { margin-bottom:30px; }
 // .marginBottom40 { margin-bottom:40px; }
 
-
-
-.floatLeft {
-	float: left;
-}
+.floatLeft { float: left; }
+.floatRight { float: right; }
 .clearBoth { clear: both; }
 .contentPadding { padding: 10px; }
 
-/* header */
+
+#scrollToTop {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+}
 header {
 	#mobileNavigation {
 		visibility: hidden;
@@ -125,7 +127,6 @@ header {
 		top: 59px;
 		left: 0;
 		#mobileNavigationArrow{
-			float: right;
 			margin-right: 22px;
 			width: 0; 
 			height: 0; 
@@ -139,46 +140,28 @@ header {
 			color:#fff;
 			padding: 0 5%;
 			p {
-				float: left;
 				width: 25%;
 				margin: 0;
 				padding: 15px 0;
-				text-align: center;
-				font-size: 24px;
-				line-height: 24px;
 			}
 		}
 	}
 	#headerContent {
 		padding: 20px 10px 20px 20px;
-
-
-
-
-
-
 		#clubHeaderLogo {
-			float: left;
-			// margin: 0 0 20px 20px;
 			&:link, &:visited, &:hover, &:focus, &:active {
 				color: #000096;
 			}
 			img {
-				float: left;
 				width: 54px;
 				height:54px;
 			}
 			h1 {
-				float: left;
-				line-height: 18px;
-				font-size: 18px;
 				padding-left: 10px;
 			}
-			
 		}
 		#mobileButton {
 			display: none;
-			float: right;
 			height: 36px;
 			width: 34px;
 			margin: 6px 4px 0 0;
@@ -194,9 +177,7 @@ header {
 			}
 		}
 		#navigation {
-			float: right;
 			p {
-				float: left;
 				padding: 10px;
 				margin: 7px 0 7px 40px;
 				&:first-child {
@@ -219,36 +200,27 @@ header {
 }
 #iconLinks {
 	.iconLinksItem {
-		float: left;
 		width: 29.333%;
 		padding: 10px 2%;
 	}
 	#dateText {
 		padding-top: 18px;
 	}
+	.homeIcons {
+		width: 48px;
+		height: 48px;
+		background-image:url(../images/icons.png);
+		background-position: 0 0;
+		background-repeat: no-repeat;
+	}
+	.homeIcon1 { background-position: 0 0; }
+	.homeIcon2 { background-position: -48px 0; }
+	.homeIcon3 { background-position: -96px 0; }
 }
-.homeIcons {
-	width: 48px;
-	height: 48px;
-	background-image:url(../images/icons.png);
-	background-position: 0 0;
-	background-repeat: no-repeat;
-}
-.homeIcon1 { background-position: 0 0; }
-.homeIcon2 { background-position: -48px 0; }
-.homeIcon3 { background-position: -96px 0; }
-
-
-
 #ourClub {
 	background-color: #323232;
-	.ourClubContent1 {
-		float: left;
+	.ourClubContent {
 		width: 50%;
-		
-	}
-	.ourClubContent2 {
-		text-align: right;
 	}
 }
 #martialArts {
@@ -256,22 +228,15 @@ header {
 		text-shadow: 0px 0px 1px rgba(0,0,0,0.75);
 	}
 	.martialArtsImageContainer {
-		float: left;
 		width: 33.333%;
 		.martialArtsImage {
 			height: 250px;
-			// position: relative;
 			p {
-				// position: absolute;
-				// top:50%;
-				// left:50%;
-				// margin-top: -22px;
 				margin-top: 102px;
 			}
 		}
 	}
 }
-
 #news {
 	background-color: #000096;
 }
@@ -281,7 +246,11 @@ header {
 #dojos {
 	.locations {
 		width: 25%;
-		float: left;
+		.mapImages {
+			width: 100%;
+			display: block;
+			margin: 5px 0;
+		}
 	}
 	.linkTriangle {
 		width: 0;
@@ -296,11 +265,6 @@ footer {
 	background-color: #000;
 }
 
-
-
-
-
-
 #welcome, #ourClub, #martialArts, #news, footer {
 	color: #fff;
 }
@@ -312,6 +276,16 @@ footer {
 
 
 /* Media Queries */
+@media only screen and (min-width: 1200px) {
+	#scrollToTop {
+		position: fixed;
+		bottom: 30px;
+		left: 50%;
+		margin-left: 520px;
+		width: 50px;
+		height: 50px;
+	}
+}
 @media only screen and (max-width: 999px) {
 	.contentContainer {
 		width: 100%;
@@ -363,20 +337,8 @@ footer {
 		}
 	}
 	#martialArts {
-		
 		.martialArtsImageContainer {
-			// float: left;
 			width: 100%;
-			// max-width: 300px;
-			// width: 450px;
-			// margin: 0 auto;
-			.martialArtsImage {
-				// height: 250px;
-				p {
-
-					// margin: 100px auto 0 auto;
-				}
-			}
 		}
 	}
 	#dojos .locations {
