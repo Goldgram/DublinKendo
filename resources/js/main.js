@@ -20,7 +20,7 @@ function populateNews(pageIndex) {
   for (var i = startIndex; i < endIndex; i++) {
     var news = siteData["news"][i];
     newsString += '<div class="newsItem"><div class="contentPadding"><div' + (news["overlayId"] ? ' class="noSelectClick overlayClick" overlay="'+news["overlayId"]+'"' :'' ) +'>';
-    newsString += '<img class="newsImage marginBottom15" src="'+news["image"]+'" alt="'+news["title"]+'" onerror="this.src=\'resources/images/news-default.jpg\'" alt="'+news["title"]+'">';
+    newsString += '<img class="newsImage marginBottom15" src="'+ (news["image"]==="" ? "resources/images/news-default.jpg" : news["image"]) +'" alt="'+news["title"]+'" onerror="this.src=\'resources/images/news-default.jpg\'" alt="'+news["title"]+'">';
     newsString += '<p class="boldFont fontSize20Paragraph marginBottom15">'+news["title"]+'</p>';
     newsString += '<p class="fontSize16Paragraph textJustify marginBottom10">'+news["content"]+'</p>';
     newsString += news["overlayId"] ? '<p class="boldFont fontSize16 marginBottom30 textRight">READ MORE</p>' : '';
@@ -113,7 +113,7 @@ var scrollSpeed =  isMobile ? 0.4 : 0.75;
 var scrollingToTop = false;
 $(document).on("click", "#scrollToTop", function() {
   scrollingToTop = true;
-  $("html body").animate({ scrollTop: 0 }, $(window).scrollTop()*scrollSpeed,function(){
+  $("html, body").animate({ scrollTop: 0 }, $(window).scrollTop()*scrollSpeed,function(){
     scrollingToTop = false;
   });
   $("#scrollToTop").fadeOut("slow");
@@ -137,7 +137,7 @@ $(document).on("click", ".scrollToClick", function() {
   if (elementHeight<screenHeight) {
     elementOffsetTop -= (screenHeight-elementHeight)/2;
   }
-  $("html body").animate({ scrollTop: elementOffsetTop }, elementOffsetTop*scrollSpeed, function() {
+  $("html, body").animate({ scrollTop: elementOffsetTop }, elementOffsetTop*scrollSpeed, function() {
     clickElement && showOverlay(clickElement);
     if (elementScrollTo==="contactUs") {
       $( "#contactUsContent1FirstName" ).focus();
@@ -191,14 +191,14 @@ $(document).on("click", ".submitButton", function() {
     errorText += ".";
     $("#contactUsFeedback p").text(errorText);
     $("#contactUsFeedback").css("background-color","#d75452");
-    $("html body").animate({ scrollTop: $("#contactUs").offset().top + 10 },300);
+    $("html, body").animate({ scrollTop: $("#contactUs").offset().top + 10 },300);
     $("#contactUsFeedback").slideDown();
   } else {
     $(dataSource+" .loading").show();
     var data = $(dataSource+" form").serialize();
     $.post(postTo, data, function(response) {
       $(dataSource+" .loading").hide();
-      $("html body").animate({ scrollTop: $("#contactUs").offset().top + 10 },300);
+      $("html, body").animate({ scrollTop: $("#contactUs").offset().top + 10 },300);
       if (response["success"]===true) {
         if (postTo==="contact.php") {
           $("#contactUsFeedback p").text("Thanks, a reply will be sent as soon as possible.");
@@ -256,7 +256,7 @@ function showOverlay(overlay){
             rowString += '<a href="'+row["source"]+'" target="_blank"><div class="shortContentPadding"><p class="boldFont fontSize16 colorBlue floatLeft">'+row["text"]+'</p><div class="linkTriangle16 floatLeft"></div><div class="clearBoth"></div></div></a>';
             break;
           case "document":
-            rowString += '<a href="'+row["source"]+'" target="_blank"><div class="shortContentPadding"><div class="documentIcon floatLeft"></div><p class="boldFont fontSize16 colorBlue">'+row["text"]+'</p></div></a>';
+            rowString += '<a href="'+row["source"]+'" target="_blank"><div class="shortContentPadding posRel"><div class="documentIcon"></div><p class="documentText boldFont fontSize16 colorBlue">'+row["text"]+'</p></div></a>';
             break;
           case "gallery":
             rowString += '<div class="contentPadding"><img src="'+row["source"]+'" alt="'+row["altText"]+'"><p class="fontSize16Paragraph">'+row["text"]+'</p></div>';
