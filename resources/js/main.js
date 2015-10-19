@@ -1,11 +1,5 @@
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-function elementInView(element) {
-  var elementTop = element.getBoundingClientRect().top,
-  elementBottom = element.getBoundingClientRect().bottom;
-  return elementTop >= 0 && elementBottom <= window.innerHeight;
-}
-
 /* map id's*/
 for (var i in siteData["homepageIdMapping"]) {
   $("#"+i).html(siteData["homepageIdMapping"][i]);
@@ -103,7 +97,6 @@ for (var i in siteData["homepageIdMapping"]) {
   $("#footerFacebook").append('<div class="fb-like-box" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="'+fbWidth+'" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>');
 })();
 
-
 $(window).load(function() {
   /* parallax show on load*/
   $(".parallaxContainer").css("background-color","transparent");
@@ -134,6 +127,9 @@ $(window).scroll(function() {
 });
 $(document).on("click", ".scrollToClick", function() {
   if (!toggleOverlay()) {
+    if ($(this).attr("join-now") === "true") {
+      $("#contactUsTopic").val("join-now");
+    }
     var screenHeight = $(window).height();
     var clickElement = $(this).attr("overlay");
     var elementScrollTo = $(this).attr("scroll-to");
@@ -149,6 +145,11 @@ $(document).on("click", ".scrollToClick", function() {
   }
 });
 /* submit forms */
+function elementInView(element) {
+  var elementTop = element.getBoundingClientRect().top,
+  elementBottom = element.getBoundingClientRect().bottom;
+  return elementTop >= 0 && elementBottom <= window.innerHeight;
+}
 $(document).on("click", "#submitButton", function() {
   var emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   var errorArray = [];
