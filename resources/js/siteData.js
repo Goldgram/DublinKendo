@@ -3,10 +3,15 @@ var siteData = {
 		"welcomeContent1":"Welcome to Dublin Kendo Kobukai",
 		"welcomeContent2":"Dublin's longest running Kendo club",
 		"iconLinksContent1":"The history of Dublin Kendo",
-		"iconLinksContent2":"Our latest news and events",
+		// "iconLinksContent2":"Our latest news and events",
 		"iconLinksContent3":"Where and when we practise",
+		"iconLinksContent4":"How to get started",
 		"ourClubContent1":"Dublin Kendo Kobukai was established more than 10 years ago. Our members come from a diverse age and fitness background. Men, women and children all can train Kendo, from a beginner's level, through to our intermediate courses and eventually into the Kendo armour.<br>We have beginners' classes for both for adults and children every Saturday morning at 12:00 in The Ballybough Community, Youth &amp; Sports Centre, 49 Ballybough Road, Ballybough, Dublin 3.",
-		"ourClubContent2":"Our introductory course will provide you with all the instruction you need to begin to learn the basics of Kendo: reigi (etiquette), footwork, suburi (practice cuts) and attacking practice. After completing the beginners' course students can progress into more advanced classes."
+		"ourClubContent2":"Our introductory course will provide you with all the instruction you need to begin to learn the basics of Kendo: reigi (etiquette), footwork, suburi (practice cuts) and attacking practice. After completing the beginners' course students can progress into more advanced classes.",
+		"howToJoinContent0":"<span class='boldFont'>Beginners:</span>",
+		"howToJoinContent1":"Our beginners' course has a rolling start date, so you can join any time. The beginners' course will run for three months from when you start, although we can make allowances for missed dates. Beginners can attend one or more sessions a week, how much you choose to train is up to you!<br><br>Don't worry about equipment, you just need comfortable workout clothes and we will provide the rest. Come along and try out your first session for free. We will explain everything and provide you with the necessary paperwork to join up.",
+		"howToJoinContent2":"All beginners' courses costs &euro;60. This covers you for three months of training, as well as temporary membership of the Irish Kendo Federation (the National Governing Body for Kendo, Iaido and Jodo in Ireland).<br><br>The beginners' course and regular training fees also allow you to practice any of the martial arts that we teach. Some people choose to train in one art only, others practice two or even all three. Because we have fewer Iaido and Jodo training sessions per week, after your beginners' course we offer a special rate to people who practice these arts but not Kendo (see below).",
+		"howToJoinContent3":"<br><span class='boldFont'>After your beginners' course training fees are as follows:</span><br><br>Regular Membership: &euro;50 per month<br>Concessionary Membership (students or unwaged): &euro;25 per month<br>Children up to fourteen years old: Free<br>Juniors fourteen to eighteen: &euro;25 per month<br>Iaido/Jodo only: &euro;20 per month<br><br>See our <span class='boldFont colorLightBlue noSelectClick scrollToClick' scroll-to='dojos'>TRAINING SCHEDULE</span> to find our training times and locations, or use our <span class='boldFont colorLightBlue noSelectClick scrollToClick' scroll-to='contactUs'>CONTACT US</span> section to request more information or ask a specific question."
 	},
 	"dojoLocations":[
 		{
@@ -73,13 +78,12 @@ var siteData = {
 		}
 	],
 	"contact":{
-		"email":{ "href":"mailto:dublinkendo@gmail.com?Subject=Contact%20Dublin%20Kendo", "text":"dublinkendo@gmail.com"},
-		"phone":{ "href":"tel:5551234567", "text":"+353 1 876 5432"}
+		"email":{ "href":"mailto:dublinkendo@gmail.com?Subject=contact%20Dublin%20Kendo", "text":"dublinkendo@gmail.com"}
 	},
 	"footerLinks":[
 		{"overlayId":"faq", "text":"FAQ"},
 		{"overlayId":"gallery", "text":"GALLERY"},
-		{"overlayId":"downloads", "text":"DOWNLOADS"},
+		// {"overlayId":"downloads", "text":"DOWNLOADS"},
 		{"overlayId":"links", "text":"USEFUL LINKS"},
 		{"overlayId":"privacy", "text":"PRIVACY POLICY"}
 	],
@@ -88,7 +92,12 @@ var siteData = {
 			"style":"grey",
 			"data":[
 				{ "type":"header", "text":"History" },
-				{ "type":"paragraph", "text":"History Text" }
+				{ "type":"paragraph", "text":"The Dublin Kendo club began in the 1990s with a small number of people practicing kendo and Iaido. In 1998 Shunji Hasanuma sensei, a Japanese kendo player who was living in Dublin at the time, began teaching at the club. It was around this time that the club was formalised with the name Dublin Kendo Kobukai and the design of the club logo." },
+				{ "type":"paragraph", "text":"The Dublin Kendo Club was one of the driving forces, along with the Cork Budokai club, in creating Kendo na hÉireann, the governing body for Kendo, Seitei Iaido and Jodo in Ireland. Through our membership of Kendo na hÉireann, we are a recognised Kendo, Iaido and Jodo dojo under the European and International Kendo Federations, as well as the Irish Martial Arts Commission (IMAC), the official National Governing Body for Martial Arts in Ireland." },
+				{ "type":"paragraph", "text":"Over the years, the club has maintained a strong tradition in Kendo, but also has expanded at times to complementary arts of Iaido and Jodo. Members of the Dublin Club have represented Ireland at the European & World Kendo Championships and, in 2012, we sent our first delegation to the European Iaido Championships." },
+				{ "type":"paragraph", "text":"Since its humble beginnings the club has grown to become the largest Kendo, Iaido and Jodo Club in Ireland, with several training locations throughout the city. Our club has hosted many national and international events over the years, including the Irish National Championships and the Irish International Goodwill Taikai competition." },
+				{ "type":"paragraph", "text":"We are active in the local communities in which we train and regularly run demonstrations and workshops to promote Japanese Martial Arts in Ireland." },
+				{ "type":"paragraph", "text":"With several training locations throughout the city and sessions four days a week, we have endeavoured to make our arts as accessible as possible to both veterans of the sport and those looking to try them for the first time." }
 			]
 		},
 		"kendo":{
@@ -128,29 +137,29 @@ var siteData = {
 			"style":"black",
 			"data":[
 				{ "type":"header", "text":"Frequently Asked Questions" },
-				{ "type":"subheader", "text":"I've never practiced Kendo before, can I join the club?" },
-				{ "type":"paragraph", "text":"Absolutely, the club has a very strong beginners programme. No prior experience is necessary. Please send us a message through the contact form so we can arrange for you to come down to our beginners' class on Sunday mornings in Marino Institute of Education. Please arrive at least five minutes early so we can register you correctly." },
+				{ "type":"subheader", "text":"Do you run childrens' classes?" },
+				{ "type":"paragraph", "text":"Yes we accept children from eight years old in our Kendo classes. Our coaches are qualified Coaching Ireland / Irish Martial Arts Commission Martial Arts Coaches and have undergone Garda vetting and child protection training." },
+				{ "type":"paragraph", "text":"The club provides a fun and safe environment for younger children to be active and learn the fundamentals of kendo, with a focus on building overall non-sports-specific skills in line with the Irish Sorts Council's Long Term Athlete Development strategy." },
+				{ "type":"paragraph", "text":"For older children we encourage a phased introduction to competition with an emphasis on participation and rewarding effort rather than results. Older children also have the opportunity to practice Iaido and Kendo along with our senior members." },
+				{ "type":"paragraph", "text":"We believe that young people deserve every chance to become physically literate, and so in our club children up to fourteen years old train for free. We also subsidise event participation for juniors where possible to help them develop their skills and to promote their participation in the sport." },
 				{ "type":"break" },
-				{ "type":"subheader", "text":"How much does it cost to train in Kendo?" },
-				{ "type":"paragraph", "text":"Our beginner's class costs 70 Euro and this will cover your insurance for the calendar year and training fee during the 10 week beginner's course and the cost of you equipment. After your beginner's course is finished, the monthly fees are Euro 50 for adults, 25 fullt time students and 20 for children. This allows you to train Mondays, Tusedays, Wendsdays Fridays, Saturdays and Sundays and when you move to armor, Wednesdays as well." },
+				{ "type":"subheader", "text":"Am I too old to start?" },
+				{ "type":"paragraph", "text":"Not at all! Kendo, Iaido and Jodo can be practiced by people of all ages. In Japan, where these arts originate, it is not uncommon for people to continue to practice into their 90s." },
+				{ "type":"paragraph", "text":"Although Kendo is a full-contact combat sport, the protective equipment ensures that injuries are relatively rare compared to other martial arts. Iaido and Jodo, as non-full-contact sports are a gentler way to stay fit and build strength and stamina and are very popular among older practitioners." },
+				{ "type":"paragraph", "text":"Taking up a martial art in later life can help keep improve your fitness and self-confidence and keep you healthy in mind, body and spirit." },
 				{ "type":"break" },
-				{ "type":"subheader", "text":"What kind of equipment do I need?" },
-				{ "type":"paragraph", "text":"Initially you will not require any equipment. We will provide you with all necessary equipment to commence training Kendo. However, most students purchase their own shinai after a month or so. It is a personal choice when to buy a Kendo uniform. If you decide to continue with your Kendo training there is a potential to initially borrow a club bogu (armor) before you purchase your own set." },
+				{ "type":"subheader", "text":"Do men and women practice together?" },
+				{ "type":"paragraph", "text":"Yes, in all of our arts men and women practice and compete together. Kendo is one of the few full-contact sports where women can take on men on a level playing field. Because the emphasis is on technique and timing rather than strength or raw speed, a woman, or smaller person is not at a disadvantage when fighting a larger or stronger opponent." },
 				{ "type":"break" },
-				{ "type":"subheader", "text":"Can children practice Kendo?" },
-				{ "type":"paragraph", "text":"Yes, in feudal Japan, children of the samurai class would wear twin swords and learn swordsmanship from the age of eight, and this is still considered the ideal age at which to begin Kendo. Dublin Kendo Kobukai has many years of experience in teaching and welcomes all children from the age of eight to join." },
+				{ "type":"subheader", "text":"What equipment do I need?" },
+				{ "type":"paragraph", "text":"To begin your training you just need comfortable gym clothing or a tracksuit. We practice bare-foot, so you don't need any special footwear. The club provides you with your practice swords and all other equipment at the beginning." },
+				{ "type":"paragraph", "text":"As you progress you will also need a uniform and armour, and the club can also provide these for you too. Over time, many people choose to invest in their own equipment once they have decided to continue with their training." },
 				{ "type":"break" },
-				{ "type":"subheader", "text":"Can women practice Kendo?" },
-				{ "type":"paragraph", "text":"Yes both sexes train in Kendo and together. While Kendo can appear highly aggressive due to the amount of noise Kendo make while training, it does not generally attract or retain those who wish to acquire street-fighting skills. Consequently the atmosphere in the dojo is at all times respectful towards every member and is welcoming to all. Our female members range from beginner level to Dan grades (Black belts)." },
+				{ "type":"subheader", "text":"Do I have to be very fit or sporty to excel in Kendo/Iaido/Jodo?" },
+				{ "type":"paragraph", "text":"You do not have to be super-fit to start training. By practicing Kendo, Iaido or Jodo, you will find that your fitness, strength, balance and coordination will naturally improve, but people of all fitness levels can enjoy these martial arts." },
 				{ "type":"break" },
-				{ "type":"subheader", "text":"Is Kendo dangerous?" },
-				{ "type":"paragraph", "text":"Because Kendo is a full-contact martial art safety is our primary concern, Kendo has developed a number of safe-guards, such as effective body armor for protection and strictly-observed rules of behavior within in the dojo and its surrounding area. However, as in any physical activity, injuries may result from ordinary accidents such as trips, collisions or the worsening of existing physical issues. The continual monitoring of our members by our instructors, who have considerable experience ensures we have minimal issues." },
-				{ "type":"break" },
-				{ "type":"subheader", "text":"Does the club sell all of the necessary equipment?" },
-				{ "type":"paragraph", "text":"Yes. We have an agreement with an official supplier, who provides us with shinai, bokken, and uniforms and bogu. It is also may be possible to borrow armors through the club. If you wish to purchase armor or other kendo-related equipment it can also be done through the club secretary." },
-				{ "type":"break" },
-				{ "type":"subheader", "text":"I have more questions. Who can I contact?" },
-				{ "type":"paragraph", "text":"For questions/issues regarding the club or our site, please send us a message through our contact form." }
+				{ "type":"subheader", "text":"How much does it cost?" },
+				{ "type":"paragraph", "text":"We aim to keep the cost of training as low as possible. Children up to fourteen years old train for free and we offer concessionary membership rates for juniors up to eighteen years old, students and those currently without a steady income. You can find information on our current rates in the <span class='boldFont colorLightBlue noSelectClick scrollToClick' scroll-to='howToJoin'>HOW TO JOIN</span> section." }
 			]
 		},
 		"gallery":{
@@ -166,64 +175,59 @@ var siteData = {
 				{ "type":"gallery", "size":"50", "source":"resources/images/gallery/gallery-template.jpg", "altText":"gallery template image", "text":"where and when the picture was taken" }
 			]
 		},
-		"downloads":{
-			"style":"black",
-			"data":[
-				{ "type":"header", "text":"Downloads" },
-				{ "type":"paragraph", "text":"Below you will find some useful documents that are relating to Kendo, armor, competition, kata and Dublin Kendo Kobukai's guiding documents." },
-				{ "type":"break" },
-				{ "type":"subheader", "text":"Information about Kendo" },
-				{ "type":"document", "source":"resources/documents/kendo-pamphlet.pdf", "text":"Kendo Introduction pamphlet" },
-				{ "type":"document", "source":"resources/documents/dublin-kendo-dojo-commands.pdf", "text":"Common Commands in the Dojo" },
-				{ "type":"document", "source":"resources/documents/kendo-glossary.pdf", "text":"Small Kendo Glossary" },
-				{ "type":"document", "source":"resources/documents/dublin-kendo-club-rules.pdf", "text":"Dublin Kendo Club Rules" },
-				{ "type":"document", "source":"resources/documents/kendo-etiquette.pdf", "text":"General Kendo Reigi (Ettiquett)" },
-				{ "type":"break" },
-				{ "type":"subheader", "text":"Equipment Manual and Care" },
-				{ "type":"document", "source":"resources/documents/equipment-manual.pdf", "text":"The Kendo Equipment Manual" },
-				{ "type":"break" },
-				{ "type":"subheader", "text":"Guiding Documents for Dublin Kendo Kobukai" },
-				{ "type":"document", "source":"resources/documents/dublin-kendo-constitution.pdf", "text":"The Constitution of Dublin Kendo Kobukai" },
-				{ "type":"document", "source":"resources/documents/dublin-kendo-health-safety-statement.pdf", "text":"Health & Safety Statement for Dublin Kendo Kobukai" },
-				{ "type":"document", "source":"resources/documents/flyer.pdf", "text":"Dublin Kendo Kobukai Marketing Flyer" },
-				{ "type":"document", "source":"resources/documents/kendo-grading-guidelines.pdf", "text":"Grading Guidelines for Dublin International Open" },
-				{ "type":"break" },
-				{ "type":"subheader", "text":"Annual General Meetings" },
-				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2010.pdf", "text":"Minutes from AGM 2010" },
-				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2009.pdf", "text":"Minutes from AGM 2009" },
-				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2008.pdf", "text":"Minutes from AGM 2008" },
-				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2007.pdf", "text":"Minutes from AGM 2007" },
-				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2006.pdf", "text":"Minutes from AGM 2006" },
-				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2005.pdf", "text":"Minutes from AGM 2005" }
-			]
-		},
+		// "downloads":{
+		// 	"style":"black",
+		// 	"data":[
+		// 		{ "type":"header", "text":"Downloads" },
+		// 		{ "type":"paragraph", "text":"Below you will find some useful documents that are relating to Kendo, armor, competition, kata and Dublin Kendo Kobukai's guiding documents." },
+		// 		{ "type":"break" },
+		// 		{ "type":"subheader", "text":"Information about Kendo" },
+		// 		{ "type":"document", "source":"resources/documents/kendo-pamphlet.pdf", "text":"Kendo Introduction pamphlet" },
+		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-dojo-commands.pdf", "text":"Common Commands in the Dojo" },
+		// 		{ "type":"document", "source":"resources/documents/kendo-glossary.pdf", "text":"Small Kendo Glossary" },
+		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-club-rules.pdf", "text":"Dublin Kendo Club Rules" },
+		// 		{ "type":"document", "source":"resources/documents/kendo-etiquette.pdf", "text":"General Kendo Reigi (Ettiquett)" },
+		// 		{ "type":"break" },
+		// 		{ "type":"subheader", "text":"Equipment Manual and Care" },
+		// 		{ "type":"document", "source":"resources/documents/equipment-manual.pdf", "text":"The Kendo Equipment Manual" },
+		// 		{ "type":"break" },
+		// 		{ "type":"subheader", "text":"Guiding Documents for Dublin Kendo Kobukai" },
+		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-constitution.pdf", "text":"The Constitution of Dublin Kendo Kobukai" },
+		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-health-safety-statement.pdf", "text":"Health & Safety Statement for Dublin Kendo Kobukai" },
+		// 		{ "type":"document", "source":"resources/documents/flyer.pdf", "text":"Dublin Kendo Kobukai Marketing Flyer" },
+		// 		{ "type":"document", "source":"resources/documents/kendo-grading-guidelines.pdf", "text":"Grading Guidelines for Dublin International Open" },
+		// 		{ "type":"break" },
+		// 		{ "type":"subheader", "text":"Annual General Meetings" },
+		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-agm2010.pdf", "text":"Minutes from AGM 2010" },
+		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-agm2009.pdf", "text":"Minutes from AGM 2009" },
+		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-agm2008.pdf", "text":"Minutes from AGM 2008" },
+		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-agm2007.pdf", "text":"Minutes from AGM 2007" },
+		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-agm2006.pdf", "text":"Minutes from AGM 2006" },
+		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-agm2005.pdf", "text":"Minutes from AGM 2005" }
+		// 	]
+		// },
 		"links":{
 			"style":"black",
 			"data":[
 				{ "type":"header", "text":"Useful Links" },
 				{ "type":"paragraph", "text":"Below you will find some useful links relating to Kendo and Dublin Kendo Kobukai's Club." },
 				{ "type":"break" },
-				{ "type":"subheader", "text":"Kendo Clubs" },
-				{ "type":"link", "source":"http://www.corkbudokai.org/beginners.php", "text":"Cork Kendo Club" },
-				{ "type":"link", "source":"http://mumeishi.co.uk/kendo/", "text":"Mumeishi Kendo Club" },
-				{ "type":"link", "source":"http://www.fska.se/", "text":"FSKA Stockholm" },
+				{ "type":"subheader", "text":"Affiliated Organisations" },
+				{ "type":"link", "source":"http://irishkendofederation.org/", "text":"Kendo na hÉireann (Irish Kendo Federation)" },
+				{ "type":"link", "source":"http://www.ekf-eu.com/", "text":"European Kendo Federation" },
+				{ "type":"link", "source":"https://www.kendo-fik.org/", "text":"International Kendo Federation" },
+				{ "type":"link", "source":"http://www.imac.ie/", "text":"Irish Martial Arts Commission" },
+				{ "type":"link", "source":"http://www.irishsportscouncil.ie/", "text":"Irish Sports Council" },
+				{ "type":"link", "source":"http://www.irishsport.ie/", "text":"Federation of Irish Sport" },
 				{ "type":"break" },
-				{ "type":"subheader", "text":"Official Suppliers of Equipment" },
+				{ "type":"subheader", "text":"Equipment Suppliers recommended by our members" },
 				{ "type":"link", "source":"http://www.eurokendo.co.uk/", "text":"Eurokendo" },
 				{ "type":"link", "source":"http://www.ninecircles.co.uk/", "text":"Nine Circles" },
-				{ "type":"link", "source":"http://www.onlinekendo.com/", "text":"OnlineKendo" },
+				{ "type":"link", "source":"http://www.alljapanbudogu.com/", "text":"All Japan Bogudo" },
+				{ "type":"link", "source":"http://www.tozandoshop.com/", "text":"Tozando" },
 				{ "type":"break" },
 				{ "type":"subheader", "text":"Kendo Forums" },
-				{ "type":"link", "source":"http://www.kendo-world.com/forum/", "text":"Kendo World Online Forum" },
-				{ "type":"break" },
-				{ "type":"subheader", "text":"International Federations" },
-				{ "type":"link", "source":"http://www.kendo.or.jp/", "text":"All Japan Kendo Federation" },
-				{ "type":"link", "source":"http://www.bkr.be/ABKF.asp", "text":"Belgium Kendo Federation" },
-				{ "type":"link", "source":"http://www.kendo.org.uk/", "text":"British Kendo Association" },
-				{ "type":"link", "source":"http://www.ekf-eu.com/", "text":"European Kendo Federation" },
-				{ "type":"link", "source":"http://www.kenseirho.com/", "text":"Ken Sei Dojo-Kendo Rho" },
-				{ "type":"link", "source":"http://irishkendofederation.org/", "text":"Kendo na h'Eireann" },
-				{ "type":"link", "source":"http://www.kendo.pl/", "text":"Polish Kendo Federation" }
+				{ "type":"link", "source":"http://www.kendo-world.com/forum/", "text":"Kendo World Online Forum" }
 			]
 		},
 		"privacy":{
@@ -247,7 +251,7 @@ var siteData = {
 				{ "type":"paragraph", "text":"If you feel that this site is not following its stated information policy, please let us know by emailing us at above address." },
 				{ "type":"paragraph", "text":"Copyright 2009. Dublin Kendo Kobukai All rights reserved" }
 			]
-		},
+		}/*,
 		"newsTemplate":{
 			"style":"blue",
 			"data":[
@@ -294,6 +298,6 @@ var siteData = {
 				{ "type":"paragraph", "size":"75", "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." },
 				{ "type":"paragraph", "size":"75", "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." }
 			]
-		}
+		}*/
 	}
 };

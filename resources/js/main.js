@@ -1,58 +1,65 @@
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+function elementInView(element) {
+  var elementTop = element.getBoundingClientRect().top,
+  elementBottom = element.getBoundingClientRect().bottom;
+  return elementTop >= 0 && elementBottom <= window.innerHeight;
+}
+
 /* map id's*/
 for (var i in siteData["homepageIdMapping"]) {
   $("#"+i).html(siteData["homepageIdMapping"][i]);
 }
 /* date easter egg */
-var today = new Date();
-$("#dateText").text(today.getDate());
+// var today = new Date();
+// $("#dateText").text(today.getDate());
 /* add news content*/
-var newsCurrentPageIndex = 1;
-var newsMaxPages = Math.ceil(siteData["news"].length/3);
-function populateNews(pageIndex) {
-  var newsString = "";
-  var endIndex = pageIndex*3;
-  var startIndex = endIndex-3;
-  var newsItemsMax = siteData["news"].length;
-  if (endIndex>newsItemsMax) {
-    endIndex = newsItemsMax;
-  }
-  for (var i = startIndex; i < endIndex; i++) {
-    var news = siteData["news"][i];
-    newsString += '<div class="newsItem"><div class="contentPadding"><div' + (news["overlayId"] ? ' class="noSelectClick overlayClick" overlay="'+news["overlayId"]+'"' :'' ) +'>';
-    newsString += '<img class="newsImage marginBottom15" src="'+ (news["image"]==="" ? "resources/images/news-default.jpg" : news["image"]) +'" alt="'+news["title"]+'" onerror="this.src=\'resources/images/news-default.jpg\'" alt="'+news["title"]+'">';
-    newsString += '<p class="boldFont fontSize20Paragraph marginBottom15">'+news["title"]+'</p>';
-    newsString += '<p class="fontSize16Paragraph textJustify marginBottom10">'+news["content"]+'</p>';
-    newsString += news["overlayId"] ? '<p class="boldFont fontSize16 marginBottom30 textRight">READ MORE</p>' : '';
-    newsString += '</div></div></div>';
-  }
-  newsString += '<div class="clearBoth"></div>';
-  $("#newsItems").html(newsString);
- }
-populateNews(newsCurrentPageIndex);
-if (siteData["news"].length>3) {
-  $("#newsMore").show();
-}
-$(document).on("click", ".newsPagination", function() {
-  if ($(this).attr("id")==="newsMore") {
-    newsCurrentPageIndex++;
-  } else if ($(this).attr("id")==="newsBack") {
-    newsCurrentPageIndex--;
-  }
-  if (newsCurrentPageIndex<=newsMaxPages) {
-    populateNews(newsCurrentPageIndex);
-     if (newsCurrentPageIndex===1) {
-      $("#newsMore").show();
-      $("#newsBack").hide();
-    } else if (newsCurrentPageIndex===newsMaxPages) {
-      $("#newsMore").hide();
-      $("#newsBack").show();
-    } else {
-      $("#newsMore").show();
-      $("#newsBack").show();
-    }
-  }
-});
+// var newsCurrentPageIndex = 1;
+// var newsMaxPages = Math.ceil(siteData["news"].length/3);
+// function populateNews(pageIndex) {
+//   var newsString = "";
+//   var endIndex = pageIndex*3;
+//   var startIndex = endIndex-3;
+//   var newsItemsMax = siteData["news"].length;
+//   if (endIndex>newsItemsMax) {
+//     endIndex = newsItemsMax;
+//   }
+//   for (var i = startIndex; i < endIndex; i++) {
+//     var news = siteData["news"][i];
+//     newsString += '<div class="newsItem"><div class="contentPadding"><div' + (news["overlayId"] ? ' class="noSelectClick overlayClick" overlay="'+news["overlayId"]+'"' :'' ) +'>';
+//     newsString += '<img class="newsImage marginBottom15" src="'+ (news["image"]==="" ? "resources/images/news-default.jpg" : news["image"]) +'" alt="'+news["title"]+'" onerror="this.src=\'resources/images/news-default.jpg\'" alt="'+news["title"]+'">';
+//     newsString += '<p class="boldFont fontSize20Paragraph marginBottom15">'+news["title"]+'</p>';
+//     newsString += '<p class="fontSize16Paragraph textJustify marginBottom10">'+news["content"]+'</p>';
+//     newsString += news["overlayId"] ? '<p class="boldFont fontSize16 marginBottom30 textRight">READ MORE</p>' : '';
+//     newsString += '</div></div></div>';
+//   }
+//   newsString += '<div class="clearBoth"></div>';
+//   $("#newsItems").html(newsString);
+//  }
+// populateNews(newsCurrentPageIndex);
+// if (siteData["news"].length>3) {
+//   $("#newsMore").show();
+// }
+// $(document).on("click", ".newsPagination", function() {
+//   if ($(this).attr("id")==="newsMore") {
+//     newsCurrentPageIndex++;
+//   } else if ($(this).attr("id")==="newsBack") {
+//     newsCurrentPageIndex--;
+//   }
+//   if (newsCurrentPageIndex<=newsMaxPages) {
+//     populateNews(newsCurrentPageIndex);
+//      if (newsCurrentPageIndex===1) {
+//       $("#newsMore").show();
+//       $("#newsBack").hide();
+//     } else if (newsCurrentPageIndex===newsMaxPages) {
+//       $("#newsMore").hide();
+//       $("#newsBack").show();
+//     } else {
+//       $("#newsMore").show();
+//       $("#newsBack").show();
+//     }
+//   }
+// });
 
 (function() {
   /* add dojo content */
@@ -85,8 +92,6 @@ $(document).on("click", ".newsPagination", function() {
   /* Contact Us Links*/
   $("#contactUsEmailLink").attr("href",siteData["contact"]["email"]["href"]);
   $("#contactUsEmailLink").text(siteData["contact"]["email"]["text"]);
-  $("#contactUsPhoneLink").attr("href",siteData["contact"]["phone"]["href"]);
-  $("#contactUsPhoneLink").text(siteData["contact"]["phone"]["text"]);
   
   /* footer links */
   for (var k = 0; k < siteData["footerLinks"].length; k++) {
@@ -128,53 +133,37 @@ $(window).scroll(function() {
   }
 });
 $(document).on("click", ".scrollToClick", function() {
-  var screenHeight = $(window).height();
-  var clickElement = $(this).attr("overlay");
-  var elementScrollTo = $(this).attr("scroll-to");
-  var element = $("#"+elementScrollTo);
-  var elementHeight = element.outerHeight();
-  var elementOffsetTop = element.offset().top + 10;
-  if (elementHeight<screenHeight) {
-    elementOffsetTop -= (screenHeight-elementHeight)/2;
-  }
-  $("html, body").animate({ scrollTop: elementOffsetTop }, elementOffsetTop*scrollSpeed, function() {
-    clickElement && showOverlay(clickElement);
-    if (elementScrollTo==="contactUs") {
-      $( "#contactUsContent1FirstName" ).focus();
+  if (!toggleOverlay()) {
+    var screenHeight = $(window).height();
+    var clickElement = $(this).attr("overlay");
+    var elementScrollTo = $(this).attr("scroll-to");
+    var element = $("#"+elementScrollTo);
+    var elementHeight = element.outerHeight();
+    var elementOffsetTop = element.offset().top + 10;
+    if (elementHeight<screenHeight) {
+      elementOffsetTop -= (screenHeight-elementHeight)/2;
     }
-  });
+    $("html, body").animate({ scrollTop: elementOffsetTop }, elementOffsetTop*scrollSpeed, function() {
+      clickElement && showOverlay(clickElement);
+    });
+  }
 });
 /* submit forms */
-$(document).on("click", ".submitButton", function() {
-  var postTo,dataSource;
+$(document).on("click", "#submitButton", function() {
   var emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   var errorArray = [];
-  if ($(this).attr("submit-type")==="question") {
-    postTo = "contact.php";
-    dataSource = "#contactUsContent3";
-    if ($(dataSource+"Name").val()==="") {
-      errorArray.push("Name");
-    }
-    if ($(dataSource+"Email").val()==="" || !$(dataSource+"Email").val().match(emailRegex)) {
-      errorArray.push("Email Address");
-    }
-    if ($(dataSource+"Text").val()==="") {
-      errorArray.push("Message");
-    }
-  } else {
-    postTo = "join.php";
-    dataSource = "#contactUsContent1";
-    if ($(dataSource+"FirstName").val()==="") {
-      errorArray.push("First Name");
-    }
-    if ($(dataSource+"LastName").val()==="") {
-      errorArray.push("Last Name");
-    }
-    if ($(dataSource+"Email").val()==="" || !$(dataSource+"Email").val().match(emailRegex)) {
-      errorArray.push("Email Address");
-    }
+  if ($("#contactUsName").val()==="") {
+    errorArray.push("Name");
   }
-  $(".loading").hide();
+  if ($("#contactUsEmail").val()==="" || !$("#contactUsEmail").val().match(emailRegex)) {
+    errorArray.push("Email Address");
+  }
+  if ($("#contactUsMessage").val()==="") {
+    errorArray.push("Message");
+  }
+  $("#contactUsLoading").hide();
+  $("#submitButton").show();
+  
   if (errorArray.length>0) {
     var errorText = "Error: you must enter a valid ";
     var errorCount = 1;
@@ -191,26 +180,24 @@ $(document).on("click", ".submitButton", function() {
     errorText += ".";
     $("#contactUsFeedback p").text(errorText);
     $("#contactUsFeedback").css("background-color","#d75452");
-    $("html, body").animate({ scrollTop: $("#contactUs").offset().top + 10 },300);
     $("#contactUsFeedback").slideDown();
+    !elementInView($("#contactUsFeedback").get(0)) && $("html, body").animate({ scrollTop: $("#contactUsFeedback").offset().top },300);
   } else {
-    $(dataSource+" .loading").show();
-    var data = $(dataSource+" form").serialize();
-    $.post(postTo, data, function(response) {
-      $(dataSource+" .loading").hide();
-      $("html, body").animate({ scrollTop: $("#contactUs").offset().top + 10 },300);
+    $("#submitButton").hide();
+    $("#contactUsLoading").show();
+    var data = $("#contactUsForm").serialize();
+    $.post("contact.php", data, function(response) {
+      $("#contactUsLoading").hide();
+      $("#submitButton").show();
       if (response["success"]===true) {
-        if (postTo==="contact.php") {
-          $("#contactUsFeedback p").text("Thanks, a reply will be sent as soon as possible.");
-        } else if (postTo==="join.php") {
-          $("#contactUsFeedback p").text("Thanks for your interest, an email have been sent your email.");
-        }
+        $("#contactUsFeedback p").text("Thanks, a reply will be sent as soon as possible.");
         $("#contactUsFeedback").css("background-color","#000096");
       } else {
         $("#contactUsFeedback p").text("Error: please try again later.");
         $("#contactUsFeedback").css("background-color","#d75452");
       }
       $("#contactUsFeedback").slideDown();
+      !elementInView($("#contactUsFeedback").get(0)) && $("html, body").animate({ scrollTop: $("#contactUsFeedback").offset().top },300);
     });
   }
 });
@@ -253,10 +240,10 @@ function showOverlay(overlay){
             rowString += '<div class="contentPadding"><img src="'+row["source"]+'" alt="'+row["altText"]+'"></div>';
             break;
           case "link":
-            rowString += '<a href="'+row["source"]+'" target="_blank"><div class="shortContentPadding"><p class="boldFont fontSize16Paragraph colorBlue floatLeft">'+row["text"]+'</p><div class="linkTriangle16 floatLeft"></div><div class="clearBoth"></div></div></a>';
+            rowString += '<a href="'+row["source"]+'" class="noSelectClick" target="_blank"><div class="shortContentPadding"><p class="boldFont fontSize16Paragraph colorBlue floatLeft">'+row["text"]+'</p><div class="linkTriangle16 floatLeft"></div><div class="clearBoth"></div></div></a>';
             break;
           case "document":
-            rowString += '<a href="'+row["source"]+'" target="_blank"><div class="shortContentPadding posRel"><div class="documentIcon"></div><p class="documentText boldFont fontSize16Paragraph colorBlue">'+row["text"]+'</p></div></a>';
+            rowString += '<a href="'+row["source"]+'" class="noSelectClick" target="_blank"><div class="shortContentPadding posRel"><div class="documentIcon"></div><p class="documentText boldFont fontSize16Paragraph colorBlue">'+row["text"]+'</p></div></a>';
             break;
           case "gallery":
             rowString += '<div class="contentPadding"><img src="'+row["source"]+'" alt="'+row["altText"]+'"><p class="fontSize16Paragraph">'+row["text"]+'</p></div>';
@@ -282,11 +269,14 @@ function showOverlay(overlay){
     });
   }
 }
-$(document).on("click", ".overlayClick", function() {
+
+var toggleOverlay = function() {
   if ($(this).attr("overlay")) {
     showOverlay($(this).attr("overlay"));
-  } else {
-    $("body").css("overflow","auto");
-    $("#kendoOverlay").css("overflow","hidden").fadeOut();
+    return true;
   }
-});
+  $("body").css("overflow","auto");
+  $("#kendoOverlay").css("overflow","hidden").fadeOut();
+  return false;
+};
+$(document).on("click", ".overlayClick", toggleOverlay);
