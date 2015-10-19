@@ -8,10 +8,8 @@ var siteData = {
 		"iconLinksContent4":"How to get started",
 		"ourClubContent1":"Dublin Kendo Kobukai was established more than 10 years ago. Our members come from a diverse age and fitness background. Men, women and children all can train Kendo, from a beginner's level, through to our intermediate courses and eventually into the Kendo armour.<br>We have beginners' classes for both for adults and children every Saturday morning at 12:00 in The Ballybough Community, Youth &amp; Sports Centre, 49 Ballybough Road, Ballybough, Dublin 3.",
 		"ourClubContent2":"Our introductory course will provide you with all the instruction you need to begin to learn the basics of Kendo: reigi (etiquette), footwork, suburi (practice cuts) and attacking practice. After completing the beginners' course students can progress into more advanced classes.",
-		"howToJoinContent0":"<span class='boldFont'>Beginners:</span>",
-		"howToJoinContent1":"Our beginners' course has a rolling start date, so you can join any time. The beginners' course will run for three months from when you start, although we can make allowances for missed dates. Beginners can attend one or more sessions a week, how much you choose to train is up to you!<br><br>Don't worry about equipment, you just need comfortable workout clothes and we will provide the rest. Come along and try out your first session for free. We will explain everything and provide you with the necessary paperwork to join up.",
-		"howToJoinContent2":"All beginners' courses costs &euro;60. This covers you for three months of training, as well as temporary membership of the Irish Kendo Federation (the National Governing Body for Kendo, Iaido and Jodo in Ireland).<br><br>The beginners' course and regular training fees also allow you to practice any of the martial arts that we teach. Some people choose to train in one art only, others practice two or even all three. Because we have fewer Iaido and Jodo training sessions per week, after your beginners' course we offer a special rate to people who practice these arts but not Kendo (see below).",
-		"howToJoinContent3":"<br><span class='boldFont'>After your beginners' course training fees are as follows:</span><br><br>Regular Membership: &euro;50 per month<br>Concessionary Membership (students or unwaged): &euro;25 per month<br>Children up to fourteen years old: Free<br>Juniors fourteen to eighteen: &euro;25 per month<br>Iaido/Jodo only: &euro;20 per month<br><br>See our <span class='boldFont colorLightBlue noSelectClick scrollToClick' scroll-to='dojos'>TRAINING SCHEDULE</span> to find our training times and locations, or use our <span class='boldFont colorLightBlue noSelectClick scrollToClick' scroll-to='contactUs'>CONTACT US</span> section to request more information or ask a specific question."
+		"howToJoinContent1":"Come along and <span class='boldFont'>try out your first session for free</span> and you can join any time. Don't worry about equipment, you just need comfortable workout clothes and we will provide the rest. Our beginners' course is <span class='boldFont'>&euro;60 for three months</span>. Some people choose to train in one art only, others practice two or even all three.",
+		"howToJoinContent2":"See our <span class='boldFont colorLightBlue noSelectClick scrollToClick' scroll-to='dojos'>TRAINING SCHEDULE</span> to find our training times and locations, or use our <span class='boldFont colorLightBlue noSelectClick scrollToClick' scroll-to='contactUs'>CONTACT US</span> section to request more information or ask a specific question."
 	},
 	"dojoLocations":[
 		{
@@ -137,6 +135,7 @@ var siteData = {
 			"style":"black",
 			"data":[
 				{ "type":"header", "text":"Frequently Asked Questions" },
+				{ "type":"break" },
 				{ "type":"subheader", "text":"Do you run childrens' classes?" },
 				{ "type":"paragraph", "text":"Yes we accept children from eight years old in our Kendo classes. Our coaches are qualified Coaching Ireland / Irish Martial Arts Commission Martial Arts Coaches and have undergone Garda vetting and child protection training." },
 				{ "type":"paragraph", "text":"The club provides a fun and safe environment for younger children to be active and learn the fundamentals of kendo, with a focus on building overall non-sports-specific skills in line with the Irish Sorts Council's Long Term Athlete Development strategy." },
@@ -175,37 +174,54 @@ var siteData = {
 				{ "type":"gallery", "size":"50", "source":"resources/images/gallery/gallery-template.jpg", "altText":"gallery template image", "text":"where and when the picture was taken" }
 			]
 		},
-		// "downloads":{
-		// 	"style":"black",
-		// 	"data":[
-		// 		{ "type":"header", "text":"Downloads" },
-		// 		{ "type":"paragraph", "text":"Below you will find some useful documents that are relating to Kendo, armor, competition, kata and Dublin Kendo Kobukai's guiding documents." },
-		// 		{ "type":"break" },
-		// 		{ "type":"subheader", "text":"Information about Kendo" },
-		// 		{ "type":"document", "source":"resources/documents/kendo-pamphlet.pdf", "text":"Kendo Introduction pamphlet" },
-		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-dojo-commands.pdf", "text":"Common Commands in the Dojo" },
-		// 		{ "type":"document", "source":"resources/documents/kendo-glossary.pdf", "text":"Small Kendo Glossary" },
-		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-club-rules.pdf", "text":"Dublin Kendo Club Rules" },
-		// 		{ "type":"document", "source":"resources/documents/kendo-etiquette.pdf", "text":"General Kendo Reigi (Ettiquett)" },
-		// 		{ "type":"break" },
-		// 		{ "type":"subheader", "text":"Equipment Manual and Care" },
-		// 		{ "type":"document", "source":"resources/documents/equipment-manual.pdf", "text":"The Kendo Equipment Manual" },
-		// 		{ "type":"break" },
-		// 		{ "type":"subheader", "text":"Guiding Documents for Dublin Kendo Kobukai" },
-		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-constitution.pdf", "text":"The Constitution of Dublin Kendo Kobukai" },
-		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-health-safety-statement.pdf", "text":"Health & Safety Statement for Dublin Kendo Kobukai" },
-		// 		{ "type":"document", "source":"resources/documents/flyer.pdf", "text":"Dublin Kendo Kobukai Marketing Flyer" },
-		// 		{ "type":"document", "source":"resources/documents/kendo-grading-guidelines.pdf", "text":"Grading Guidelines for Dublin International Open" },
-		// 		{ "type":"break" },
-		// 		{ "type":"subheader", "text":"Annual General Meetings" },
-		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-agm2010.pdf", "text":"Minutes from AGM 2010" },
-		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-agm2009.pdf", "text":"Minutes from AGM 2009" },
-		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-agm2008.pdf", "text":"Minutes from AGM 2008" },
-		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-agm2007.pdf", "text":"Minutes from AGM 2007" },
-		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-agm2006.pdf", "text":"Minutes from AGM 2006" },
-		// 		{ "type":"document", "source":"resources/documents/dublin-kendo-agm2005.pdf", "text":"Minutes from AGM 2005" }
-		// 	]
-		// },
+		"downloads":{
+			"style":"black",
+			"data":[
+				{ "type":"header", "text":"Downloads" },
+				{ "type":"paragraph", "text":"Below you will find some useful documents that are relating to Kendo, armor, competition, kata and Dublin Kendo Kobukai's guiding documents." },
+				{ "type":"break" },
+				{ "type":"subheader", "text":"Information about Kendo" },
+				{ "type":"document", "source":"resources/documents/kendo-pamphlet.pdf", "text":"Kendo Introduction pamphlet" },
+				{ "type":"document", "source":"resources/documents/dublin-kendo-dojo-commands.pdf", "text":"Common Commands in the Dojo" },
+				{ "type":"document", "source":"resources/documents/kendo-glossary.pdf", "text":"Small Kendo Glossary" },
+				{ "type":"document", "source":"resources/documents/dublin-kendo-club-rules.pdf", "text":"Dublin Kendo Club Rules" },
+				{ "type":"document", "source":"resources/documents/kendo-etiquette.pdf", "text":"General Kendo Reigi (Ettiquett)" },
+				{ "type":"break" },
+				{ "type":"subheader", "text":"Equipment Manual and Care" },
+				{ "type":"document", "source":"resources/documents/equipment-manual.pdf", "text":"The Kendo Equipment Manual" },
+				{ "type":"break" },
+				{ "type":"subheader", "text":"Guiding Documents for Dublin Kendo Kobukai" },
+				{ "type":"document", "source":"resources/documents/dublin-kendo-constitution.pdf", "text":"The Constitution of Dublin Kendo Kobukai" },
+				{ "type":"document", "source":"resources/documents/dublin-kendo-health-safety-statement.pdf", "text":"Health & Safety Statement for Dublin Kendo Kobukai" },
+				{ "type":"document", "source":"resources/documents/flyer.pdf", "text":"Dublin Kendo Kobukai Marketing Flyer" },
+				{ "type":"document", "source":"resources/documents/kendo-grading-guidelines.pdf", "text":"Grading Guidelines for Dublin International Open" },
+				{ "type":"break" },
+				{ "type":"subheader", "text":"Annual General Meetings" },
+				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2010.pdf", "text":"Minutes from AGM 2010" },
+				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2009.pdf", "text":"Minutes from AGM 2009" },
+				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2008.pdf", "text":"Minutes from AGM 2008" },
+				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2007.pdf", "text":"Minutes from AGM 2007" },
+				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2006.pdf", "text":"Minutes from AGM 2006" },
+				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2005.pdf", "text":"Minutes from AGM 2005" }
+			]
+		},
+		"joining":{
+			"style":"blue",
+			"data":[
+				{ "type":"header", "text":"Joining and Membership" },
+				{ "type":"break" },
+				{ "type":"subheader", "text":"Beginners" },
+				{ "type":"paragraph", "text":"Our beginners' course has a rolling start date, so you can join any time. The beginners' course will run for three months from when you start, although we can make allowances for missed dates. Beginners can attend one or more sessions a week, how much you choose to train is up to you!" },
+				{ "type":"paragraph", "text":"Don't worry about equipment, you just need comfortable workout clothes and we will provide the rest. Come along and try out your first session for free. We will explain everything and provide you with the necessary paperwork to join up." },
+				{ "type":"paragraph", "text":"All beginners' courses costs &euro;60. This covers you for three months of training, as well as temporary membership of the Irish Kendo Federation (the National Governing Body for Kendo, Iaido and Jodo in Ireland)." },
+				{ "type":"paragraph", "text":"The beginners' course and regular training fees also allow you to practice any of the martial arts that we teach. Some people choose to train in one art only, others practice two or even all three. Because we have fewer Iaido and Jodo training sessions per week, after your beginners' course we offer a special rate to people who practice these arts but not Kendo (see below)." },
+				{ "type":"break" },
+				{ "type":"subheader", "text":"Membership" },
+				{ "type":"paragraph", "text":"After your beginners' course training fees are as follows:" },
+				{ "type":"paragraph", "text":"Regular Membership: &euro;50 per month<br>Concessionary Membership (students or unwaged): &euro;25 per month<br>Children (up to 14 years old): Free<br>Juniors (14 to 18 years old): &euro;25 per month<br>Iaido/Jodo only: &euro;20 per month" }
+
+			]
+		},
 		"links":{
 			"style":"black",
 			"data":[
@@ -235,15 +251,18 @@ var siteData = {
 			"data":[
 				{ "type":"header", "text":"Privacy Policy" },
 				{ "type":"paragraph", "text":"The Dublin Kendo Club operates in compliance with the Data Protection Acts 1988 and 2003 in terms of the collection and use of personal data made available to it via this website." },
+				{ "type":"break" },
 				{ "type":"subheader", "text":"Information we collect" },
 				{ "type":"paragraph", "text":"- Information about your use of our site including details of your visits such as pages viewed and the resources that you access. Such information includes traffic data, location data and other communication data" },
 				{ "type":"paragraph", "text":"- Information provided voluntarily by you. For example, when you register for an event" },
 				{ "type":"paragraph", "text":"- Information that you provide when you communicate with us by any means" },
+				{ "type":"break" },
 				{ "type":"subheader", "text":"Use of cookies" },
 				{ "type":"paragraph", "text":"A cookie is a small piece of information which a web site stores through the web browser on your PC that it can later retrieve when you log back on to the website." },
 				{ "type":"paragraph", "text":"We may gather information about your use of the website by using the cookie. Where used, these cookies are downloaded to your computer and stored on the computer’s hard drive. Such information will not identify you personally." },
 				{ "type":"paragraph", "text":"You can adjust the settings on your computer to decline any cookies if you wish. This can easily be done by activating the reject cookies setting on your computer." },
 				{ "type":"paragraph", "text":"We use Google Analytics to analyse the use of this website. Google Analytics generates statistical and other information about website use by means of cookies, which are stored on users' computers. The information generated relating to our website is used solely to create aggregated reports about the use of the website and cannot be used to identify you. Google will store this information. Google's privacy policy is available at: <a href='http://www.google.com/intl/en/policies/privacy/' class='noSelectClick boldFont colorBlue' target='_blank'>www.google.com/intl/en/privacy/</a>" },
+				{ "type":"break" },
 				{ "type":"subheader", "text":"Use of your information" },
 				{ "type":"paragraph", "text":"We may use any information that we collect from you to provide our services to you. In addition to this we may use the information for one or more of the following purposes:" },
 				{ "type":"paragraph", "text":"- to provide information to you that you request from us relating to club training and activities" },
@@ -252,21 +271,27 @@ var siteData = {
 				{ "type":"paragraph", "text":"- to send statements and invoices to you, and collect payments from you" },
 				{ "type":"paragraph", "text":"- to send you email notifications which you have specifically requested such as newsletters, training and event information and other marketing communications relating to the Dublin Kendo Club" },
 				{ "type":"paragraph", "text":"- deal with enquiries and complaints made by you relating to the website" },
+				{ "type":"break" },
 				{ "type":"subheader", "text":"Disclosing Your Information" },
 				{ "type":"paragraph", "text":"We will not disclose your personal information to any other party other than in accordance with this Privacy Policy and in the circumstances detailed below:" },
 				{ "type":"paragraph", "text":"- where you have filled in and returned a Kendo na hÉireann membership form, we may share this information with Kendo na hÉireann, the national governing body for Kendo, Iaido and Jodo in Ireland" },
 				{ "type":"paragraph", "text":"- where we are legally required by law to disclose your personal information" },
 				{ "type":"paragraph", "text":"- if we have received explicit authorisation from you to do so" },
+				{ "type":"break" },
 				{ "type":"subheader", "text":"Membership Management Software" },
 				{ "type":"paragraph", "text":"We use the website <a href='http://www.dojoexpert.com/' class='noSelectClick boldFont colorBlue' target='_blank'>http://www.dojoexpert.com/</a> to manage our membership database. This site is operated in an EU country and is subject to EU privacy and data protection legislation. We may periodically send communications to you via the DojoExpert website. You can find the DojoExpert privacy policy at <a href='http://www.dojoexpert.com/privacy-policy/' class='noSelectClick boldFont colorBlue' target='_blank'>http://www.dojoexpert.com/privacy-policy/</a> and their Security and Data Protection Policy at <a href='http://www.dojoexpert.com/security/' class='noSelectClick boldFont colorBlue' target='_blank'>http://www.dojoexpert.com/security/</a>" },
+				{ "type":"break" },
 				{ "type":"subheader", "text":"Security of your personal data" },
 				{ "type":"paragraph", "text":"We will take reasonable technical and organisational precautions to prevent the loss, misuse or alteration of your personal information." },
 				{ "type":"paragraph", "text":"Of course, data transmission over the internet is inherently insecure, and we cannot guarantee the security of data sent over the internet." },
 				{ "type":"paragraph", "text":"If you have a user account you are responsible for keeping your password and user details confidential." },
+				{ "type":"break" },
 				{ "type":"subheader", "text":"Third party websites" },
 				{ "type":"paragraph", "text":"The website contains links to other websites. We are not responsible for the privacy policies or practices of third party websites." },
+				{ "type":"break" },
 				{ "type":"subheader", "text":"Updating information" },
 				{ "type":"paragraph", "text":"Please let us know if the personal information which we hold about you needs to be corrected or updated." },
+				{ "type":"break" },
 				{ "type":"subheader", "text":"Contact" },
 				{ "type":"paragraph", "text":"If you have any questions about this privacy policy or our treatment of your personal information, please email us at <a href='mailto:dublinkendo@gmail.com?Subject=contact%20Dublin%20Kendo' class='noSelectClick boldFont colorBlue' target='_blank'>dublinkendo@gmail.com</a>." }
 			]

@@ -107,11 +107,11 @@ $(document).on("click", "#mobileButton", function() {
   $("#mobileNavigation").stop(true, true).slideToggle();
 });
 /* scroll functionality */
-var scrollSpeed =  isMobile ? 0.4 : 0.75;
+var scrollSpeed =  isMobile ? 0.5 : 0.85;
 var scrollingToTop = false;
 $(document).on("click", "#scrollToTop", function() {
   scrollingToTop = true;
-  $("html, body").animate({ scrollTop: 0 }, $(window).scrollTop()*scrollSpeed,function(){
+  $("html, body").animate({ scrollTop: 0 }, $(window).scrollTop()*scrollSpeed*1.25,function(){
     scrollingToTop = false;
   });
   $("#scrollToTop").fadeOut("slow");
@@ -131,6 +131,7 @@ $(document).on("click", ".scrollToClick", function() {
       $("#contactUsTopic").val("join-now");
     }
     var screenHeight = $(window).height();
+    var screenOffsetTop = $(window).scrollTop()
     var clickElement = $(this).attr("overlay");
     var elementScrollTo = $(this).attr("scroll-to");
     var element = $("#"+elementScrollTo);
@@ -139,7 +140,7 @@ $(document).on("click", ".scrollToClick", function() {
     if (elementHeight<screenHeight) {
       elementOffsetTop -= (screenHeight-elementHeight)/2;
     }
-    $("html, body").animate({ scrollTop: elementOffsetTop }, elementOffsetTop*scrollSpeed, function() {
+    $("html, body").animate({ scrollTop: elementOffsetTop }, Math.abs(elementOffsetTop-screenOffsetTop)*scrollSpeed, function() {
       clickElement && showOverlay(clickElement);
     });
   }
