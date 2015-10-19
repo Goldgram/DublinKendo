@@ -190,16 +190,16 @@ var siteData = {
 			"style":"black",
 			"data":[
 				{ "type":"header", "text":"Gallery" },
-				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-1.jpg", "altText":"gallery image 1" },
-				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-7.jpg", "altText":"gallery image 7" },
-				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-8.jpg", "altText":"gallery image 8" },
-				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-10.jpg", "altText":"gallery image 10" },
-				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-4.jpg", "altText":"gallery image 4" },
-				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-9.jpg", "altText":"gallery image 9" },
-				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-2.jpg", "altText":"gallery image 2" },
-				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-3.jpg", "altText":"gallery image 3" },
-				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-5.jpg", "altText":"gallery image 5" },
-				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-6.jpg", "altText":"gallery image 6" }
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-01.jpg", "altText":"gallery image 1" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-02.jpg", "altText":"gallery image 2" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-03.jpg", "altText":"gallery image 3" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-04.jpg", "altText":"gallery image 4" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-05.jpg", "altText":"gallery image 5" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-06.jpg", "altText":"gallery image 6" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-07.jpg", "altText":"gallery image 7" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-08.jpg", "altText":"gallery image 8" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-09.jpg", "altText":"gallery image 9" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-10.jpg", "altText":"gallery image 10" }
 			]
 		},
 		"downloads":{

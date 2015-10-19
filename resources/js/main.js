@@ -111,7 +111,7 @@ var scrollSpeed =  isMobile ? 0.5 : 0.85;
 var scrollingToTop = false;
 $(document).on("click", "#scrollToTop", function() {
   scrollingToTop = true;
-  $("html, body").animate({ scrollTop: 0 }, $(window).scrollTop()*scrollSpeed*1.25,function(){
+  $("html, body").animate({ scrollTop: 0 }, $(window).scrollTop()*scrollSpeed*0.8,function(){
     scrollingToTop = false;
   });
   $("#scrollToTop").fadeOut("slow");
