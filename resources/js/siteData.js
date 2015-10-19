@@ -90,37 +90,44 @@ var siteData = {
 			"style":"grey",
 			"data":[
 				{ "type":"header", "text":"History" },
-				{ "type":"paragraph", "text":"The Dublin Kendo club began in the 1990s with a small number of people practicing kendo and Iaido. In 1998 Shunji Hasanuma sensei, a Japanese kendo player who was living in Dublin at the time, began teaching at the club. It was around this time that the club was formalised with the name Dublin Kendo Kobukai and the design of the club logo." },
-				{ "type":"paragraph", "text":"The Dublin Kendo Club was one of the driving forces, along with the Cork Budokai club, in creating Kendo na hÉireann, the governing body for Kendo, Seitei Iaido and Jodo in Ireland. Through our membership of Kendo na hÉireann, we are a recognised Kendo, Iaido and Jodo dojo under the European and International Kendo Federations, as well as the Irish Martial Arts Commission (IMAC), the official National Governing Body for Martial Arts in Ireland." },
-				{ "type":"paragraph", "text":"Over the years, the club has maintained a strong tradition in Kendo, but also has expanded at times to complementary arts of Iaido and Jodo. Members of the Dublin Club have represented Ireland at the European & World Kendo Championships and, in 2012, we sent our first delegation to the European Iaido Championships." },
-				{ "type":"paragraph", "text":"Since its humble beginnings the club has grown to become the largest Kendo, Iaido and Jodo Club in Ireland, with several training locations throughout the city. Our club has hosted many national and international events over the years, including the Irish National Championships and the Irish International Goodwill Taikai competition." },
-				{ "type":"paragraph", "text":"We are active in the local communities in which we train and regularly run demonstrations and workshops to promote Japanese Martial Arts in Ireland." },
-				{ "type":"paragraph", "text":"With several training locations throughout the city and sessions four days a week, we have endeavoured to make our arts as accessible as possible to both veterans of the sport and those looking to try them for the first time." }
+				{ "type":"break" },
+				{ "type":"subheader", "text":"Origin" },
+				{ "type":"paragraph", "size":"50", "text":"The Dublin Kendo club began in the 1990s with a small number of people practicing kendo and Iaido. In 1998 Shunji Hasanuma sensei, a Japanese kendo player who was living in Dublin at the time, began teaching at the club. It was around this time that the club was formalised with the name Dublin Kendo Kobukai and the design of the club logo." },
+				{ "type":"paragraph", "size":"50", "text":"The Dublin Kendo Club was one of the driving forces, along with the Cork Budokai club, in creating Kendo na hÉireann, the governing body for Kendo, Seitei Iaido and Jodo in Ireland. Through our membership of Kendo na hÉireann, we are a recognised Kendo, Iaido and Jodo dojo under the European and International Kendo Federations, as well as the Irish Martial Arts Commission (IMAC), the official National Governing Body for Martial Arts in Ireland." },
+				{ "type":"break" },
+				{ "type":"subheader", "text":"Development" },
+				{ "type":"paragraph", "size":"50", "text":"Since its humble beginnings the club has grown to become the largest Kendo, Iaido and Jodo Club in Ireland, with several training locations throughout the city. Our club has hosted many national and international events over the years, including the Irish National Championships and the Irish International Goodwill Taikai competition." },
+				{ "type":"paragraph", "size":"50", "text":"Over the years, the club has maintained a strong tradition in Kendo, but also has expanded at times to complementary arts of Iaido and Jodo. Members of the Dublin Club have represented Ireland at the European & World Kendo Championships and, in 2012, we sent our first delegation to the European Iaido Championships." },
+				{ "type":"clear" },
+				{ "type":"paragraph", "size":"50", "text":"With several training locations throughout the city and sessions four days a week, we have endeavoured to make our arts as accessible as possible to both veterans of the sport and those looking to try them for the first time." },
+				{ "type":"paragraph", "size":"50", "text":"We are active in the local communities in which we train and regularly run demonstrations and workshops to promote Japanese Martial Arts in Ireland." }
 			]
 		},
 		"kendo":{
 			"style":"white",
 			"data":[
 				{ "type":"header", "text":"Kendo" },
+				{ "type":"break" },
 				{ "type":"subheader", "text":"What is Kendo?" },
-				{ "type":"image", "size":"25", "float":"right", "source":"resources/images/overlays/kendo-origin.jpg", "altText":"kendo origin" },
-				{ "type":"paragraph", "size":"75", "text":"Kendo means \"Way of the Sword\". It is a traditional Japanese martial art of sword-fighting which was developed as a safe way for Samurai to practice their swordsmanship." },
-				{ "type":"paragraph", "size":"75", "text":"Kendo is a physically and mentally challenging activity that combines Martial Arts etiquette such as respect for your teachers and opponent, with regular physical practice. Physical practice or \"Keiko\" can be demanding, but students are never placed in a situation where they may feel uncomfortable." },
-				{ "type":"paragraph", "size":"75", "text":"Practitioners of Kendo are called Kendoka, meaning \"One Who Practices Kendo\". Most Kendoka would follow the concept of Kendo as defined by the International Kendo Federation (of which Dublin Kendo Kobukai is a member)." },
+				{ "type":"paragraph", "text":"Kendo means \"Way of the Sword\". It is a traditional Japanese martial art of sword-fighting which was developed as a safe way for Samurai to practice their swordsmanship." },
+				{ "type":"paragraph", "size":"50", "text":"Kendo is a physically and mentally challenging activity that combines Martial Arts etiquette such as respect for your teachers and opponent, with regular physical practice. Physical practice or \"Keiko\" can be demanding, but students are never placed in a situation where they may feel uncomfortable." },
+				{ "type":"paragraph", "size":"50", "text":"Practitioners of Kendo are called Kendoka, meaning \"One Who Practices Kendo\". Most Kendoka would follow the concept of Kendo as defined by the International Kendo Federation (of which Dublin Kendo Kobukai is a member)." },
+				{ "type":"break" },
 				{ "type":"subheader", "text":"Origin" },
-				{ "type":"paragraph", "text":"For the Japanese Samurai Swordsmanship was a way of life. During the 14th Century, many different schools of teaching formed around Japan, each school being different. Teachings were based on practical experience from the battlefield and practice moved from using real swords to using wooden swords, known as Bokken." },
-				{ "type":"paragraph", "text":"The introduction of the bamboo sword, Shinai, around 1711- 1715 was a major breakthrough in the development of Kendo. Shortly after this the Kote (gauntlets), Do (breast plate), Tare (hip/groin protector), and Men (head protector) were invented and gained popular usage in the Dojo (fencing hall). With the advent of the new equipment, the swordsman was no longer hindered by the risk of injury during practice and could concentrate totally on his technique." }
+				{ "type":"paragraph", "size":"50", "text":"For the Japanese Samurai Swordsmanship was a way of life. During the 14th Century, many different schools of teaching formed around Japan, each school being different. Teachings were based on practical experience from the battlefield and practice moved from using real swords to using wooden swords, known as Bokken." },
+				{ "type":"paragraph", "size":"50", "text":"The introduction of the bamboo sword, Shinai, around 1711- 1715 was a major breakthrough in the development of Kendo. Shortly after this the Kote (gauntlets), Do (breast plate), Tare (hip/groin protector), and Men (head protector) were invented and gained popular usage in the Dojo (fencing hall). With the advent of the new equipment, the swordsman was no longer hindered by the risk of injury during practice and could concentrate totally on his technique." }
 			]
 		},
 		"iaido":{
 			"style":"white",
 			"data":[
 				{ "type":"header", "text":"Iaido" },
-				{ "type":"image", "size":"25", "float":"right", "source":"resources/images/overlays/iaido-origin.jpg", "altText":"kendo origin" },
-				{ "type":"paragraph", "size":"75", "text":"Iaido (居合道 Iaidō?) is a modern Japanese martial art associated with the smooth, controlled movements of drawing the sword from its scabbard, striking or cutting an opponent, removing blood from the blade, and then replacing the sword in the scabbard." },
-				{ "type":"paragraph", "size":"75", "text":"While new students of iaido may start learning with a wooden sword (bokken) depending on the teaching style of a particular instructor, many of those who study iaido use a blunt edged sword (iaitō). Few, more experienced, iaido practitioners use a sharp edged sword (shinken)." },
-				{ "type":"paragraph", "size":"75", "text":"Practitioners of iaido are often referred to as iaidoka." },
-				{ "type":"paragraph", "size":"75", "text":"Because iaido is practiced with a weapon, it is almost entirely practiced using forms, or kata." }
+				{ "type":"break" },
+				{ "type":"subheader", "text":"What is Iaido?" },
+				{ "type":"paragraph", "text":"Iaido (居合道 Iaidō?) is a modern Japanese martial art associated with the smooth, controlled movements of drawing the sword from its scabbard, striking or cutting an opponent, removing blood from the blade, and then replacing the sword in the scabbard." },
+				{ "type":"paragraph", "size":"50", "text":"While new students of iaido may start learning with a wooden sword (bokken) depending on the teaching style of a particular instructor, many of those who study iaido use a blunt edged sword (iaitō). Few, more experienced, iaido practitioners use a sharp edged sword (shinken)." },
+				{ "type":"paragraph", "size":"50", "text":"Because iaido is practiced with a weapon, it is almost entirely practiced using forms, or kata." },
+				{ "type":"paragraph", "size":"50", "text":"Practitioners of iaido are often referred to as iaidoka." }
 			]
 		},
 		"jodo":{
@@ -129,6 +136,24 @@ var siteData = {
 				{ "type":"header", "text":"Jodo" },
 				{ "type":"subheader", "text":"jodo Subheader" },
 				{ "type":"paragraph", "text":"jodo Paragraph Text" }
+			]
+		},
+		"joining":{
+			"style":"blue",
+			"data":[
+				{ "type":"header", "text":"Joining and Membership" },
+				{ "type":"break" },
+				{ "type":"subheader", "text":"Beginners" },
+				{ "type":"paragraph", "size":"50", "text":"Our beginners' course has a rolling start date, so you can join any time. The beginners' course will run for three months from when you start, although we can make allowances for missed dates. Beginners can attend one or more sessions a week, how much you choose to train is up to you!" },
+				{ "type":"paragraph", "size":"50", "text":"Don't worry about equipment, you just need comfortable workout clothes and we will provide the rest. Come along and try out your first session for free. We will explain everything and provide you with the necessary paperwork to join up." },
+				{ "type":"clear" },
+				{ "type":"paragraph", "size":"50", "text":"The beginners' course and regular training fees also allow you to practice any of the martial arts that we teach. Some people choose to train in one art only, others practice two or even all three. Because we have fewer Iaido and Jodo training sessions per week, after your beginners' course we offer a special rate to people who practice these arts but not Kendo (see below)." },
+				{ "type":"paragraph", "size":"50", "text":"All beginners' courses costs &euro;60. This covers you for three months of training, as well as temporary membership of the Irish Kendo Federation (the National Governing Body for Kendo, Iaido and Jodo in Ireland)." },
+				{ "type":"break" },
+				{ "type":"subheader", "text":"Membership" },
+				{ "type":"paragraph", "text":"After your beginners' course training fees are as follows:" },
+				{ "type":"paragraph", "text":"Regular Membership: &euro;50 per month<br>Concessionary Membership (students or unwaged): &euro;25 per month<br>Children (up to 14 years old): Free<br>Juniors (14 to 18 years old): &euro;25 per month<br>Iaido/Jodo only: &euro;20 per month" }
+
 			]
 		},
 		"faq":{
@@ -158,20 +183,23 @@ var siteData = {
 				{ "type":"paragraph", "text":"You do not have to be super-fit to start training. By practicing Kendo, Iaido or Jodo, you will find that your fitness, strength, balance and coordination will naturally improve, but people of all fitness levels can enjoy these martial arts." },
 				{ "type":"break" },
 				{ "type":"subheader", "text":"How much does it cost?" },
-				{ "type":"paragraph", "text":"We aim to keep the cost of training as low as possible. Children up to fourteen years old train for free and we offer concessionary membership rates for juniors up to eighteen years old, students and those currently without a steady income. You can find information on our current rates in the <span class='boldFont colorLightBlue noSelectClick scrollToClick' scroll-to='howToJoin'>HOW TO JOIN</span> section." }
+				{ "type":"paragraph", "text":"We aim to keep the cost of training as low as possible. Children up to fourteen years old train for free and we offer concessionary membership rates for juniors up to eighteen years old, students and those currently without a steady income. You can find information on our current rates in the <span class='boldFont colorLightBlue noSelectClick scrollToClick' scroll-to='howToJoin' overlay='joining'>HOW TO JOIN</span> section." }
 			]
 		},
 		"gallery":{
 			"style":"black",
 			"data":[
 				{ "type":"header", "text":"Gallery" },
-				{ "type":"gallery", "size":"50", "source":"resources/images/gallery/gallery-template.jpg", "altText":"gallery template image", "text":"where and when the picture was taken" },
-				{ "type":"gallery", "size":"50", "source":"resources/images/gallery/gallery-template.jpg", "altText":"gallery template image", "text":"where and when the picture was taken" },
-				{ "type":"gallery", "size":"50", "source":"resources/images/gallery/gallery-template.jpg", "altText":"gallery template image", "text":"where and when the picture was taken" },
-				{ "type":"gallery", "size":"50", "source":"resources/images/gallery/gallery-template.jpg", "altText":"gallery template image", "text":"where and when the picture was taken" },
-				{ "type":"gallery", "size":"50", "source":"resources/images/gallery/gallery-template.jpg", "altText":"gallery template image", "text":"where and when the picture was taken" },
-				{ "type":"gallery", "size":"50", "source":"resources/images/gallery/gallery-template.jpg", "altText":"gallery template image", "text":"where and when the picture was taken" },
-				{ "type":"gallery", "size":"50", "source":"resources/images/gallery/gallery-template.jpg", "altText":"gallery template image", "text":"where and when the picture was taken" }
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-1.jpg", "altText":"gallery image 1" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-7.jpg", "altText":"gallery image 7" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-8.jpg", "altText":"gallery image 8" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-10.jpg", "altText":"gallery image 10" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-4.jpg", "altText":"gallery image 4" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-9.jpg", "altText":"gallery image 9" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-2.jpg", "altText":"gallery image 2" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-3.jpg", "altText":"gallery image 3" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-5.jpg", "altText":"gallery image 5" },
+				{ "type":"image", "size":"50", "source":"resources/images/gallery/gallery-6.jpg", "altText":"gallery image 6" }
 			]
 		},
 		"downloads":{
@@ -203,23 +231,6 @@ var siteData = {
 				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2007.pdf", "text":"Minutes from AGM 2007" },
 				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2006.pdf", "text":"Minutes from AGM 2006" },
 				{ "type":"document", "source":"resources/documents/dublin-kendo-agm2005.pdf", "text":"Minutes from AGM 2005" }
-			]
-		},
-		"joining":{
-			"style":"blue",
-			"data":[
-				{ "type":"header", "text":"Joining and Membership" },
-				{ "type":"break" },
-				{ "type":"subheader", "text":"Beginners" },
-				{ "type":"paragraph", "text":"Our beginners' course has a rolling start date, so you can join any time. The beginners' course will run for three months from when you start, although we can make allowances for missed dates. Beginners can attend one or more sessions a week, how much you choose to train is up to you!" },
-				{ "type":"paragraph", "text":"Don't worry about equipment, you just need comfortable workout clothes and we will provide the rest. Come along and try out your first session for free. We will explain everything and provide you with the necessary paperwork to join up." },
-				{ "type":"paragraph", "text":"All beginners' courses costs &euro;60. This covers you for three months of training, as well as temporary membership of the Irish Kendo Federation (the National Governing Body for Kendo, Iaido and Jodo in Ireland)." },
-				{ "type":"paragraph", "text":"The beginners' course and regular training fees also allow you to practice any of the martial arts that we teach. Some people choose to train in one art only, others practice two or even all three. Because we have fewer Iaido and Jodo training sessions per week, after your beginners' course we offer a special rate to people who practice these arts but not Kendo (see below)." },
-				{ "type":"break" },
-				{ "type":"subheader", "text":"Membership" },
-				{ "type":"paragraph", "text":"After your beginners' course training fees are as follows:" },
-				{ "type":"paragraph", "text":"Regular Membership: &euro;50 per month<br>Concessionary Membership (students or unwaged): &euro;25 per month<br>Children (up to 14 years old): Free<br>Juniors (14 to 18 years old): &euro;25 per month<br>Iaido/Jodo only: &euro;20 per month" }
-
 			]
 		},
 		"links":{
@@ -293,7 +304,7 @@ var siteData = {
 				{ "type":"paragraph", "text":"Please let us know if the personal information which we hold about you needs to be corrected or updated." },
 				{ "type":"break" },
 				{ "type":"subheader", "text":"Contact" },
-				{ "type":"paragraph", "text":"If you have any questions about this privacy policy or our treatment of your personal information, please email us at <a href='mailto:dublinkendo@gmail.com?Subject=contact%20Dublin%20Kendo' class='noSelectClick boldFont colorBlue' target='_blank'>dublinkendo@gmail.com</a>." }
+				{ "type":"paragraph", "text":"If you have any questions about this privacy policy or our treatment of your personal information, please email us at <a href='mailto:dublinkendo@gmail.com?Subject=contact%20Dublin%20Kendo' class='noSelectClick boldFont colorBlue' target='_top'>dublinkendo@gmail.com</a>." }
 			]
 		}/*,
 		"newsTemplate":{
