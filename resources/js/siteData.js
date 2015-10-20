@@ -252,6 +252,7 @@ var siteData = {
 				{ "type":"link", "source":"http://www.ninecircles.co.uk/", "text":"Nine Circles" },
 				{ "type":"link", "source":"http://www.alljapanbudogu.com/", "text":"All Japan Bogudo" },
 				{ "type":"link", "source":"http://www.tozandoshop.com/", "text":"Tozando" },
+				{ "type":"link", "source":"http://tenpudo.co.uk/", "text":"Tenpudo" },
 				{ "type":"break" },
 				{ "type":"subheader", "text":"Kendo Forums" },
 				{ "type":"link", "source":"http://www.kendo-world.com/forum/", "text":"Kendo World Online Forum" }
