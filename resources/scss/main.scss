@@ -315,6 +315,7 @@ a {
 	#contactUsFeedback {
 		color:#fff;
 		background-color: #d75452;
+		.contactUsFeedbackPadding { padding: 10px 24px; }
 	}
 	select, input, textarea, #submitButton {
 		background-color: #fff;
@@ -458,9 +459,6 @@ a {
 @media only screen and (max-width: 1019px) {
 	.contentContainer {
 		width: 100%;
-	}
-	#contactUs #contactUsFeedback {
-		padding: 0 14px;
 	}
 	#footer {
 		#footerLinks #footerLinksInner {

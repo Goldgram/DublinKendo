@@ -189,8 +189,7 @@ $(document).on("click", "#submitButton", function() {
     $("#contactUsLoading").show();
     var data = $("#contactUsForm").serialize();
     $.post("contact.php", data, function(response) {
-      $("#contactUsLoading").hide();
-      $("#submitButton").show();
+      $("#contactUsLoading").css("visibility","hidden");
       if (response["success"]===true) {
         $("#contactUsFeedback p").text("Thanks, a reply will be sent as soon as possible.");
         $("#contactUsFeedback").css("background-color","#000096");
