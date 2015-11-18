@@ -9,7 +9,7 @@
 
     require './phpmailer/PHPMailerAutoload.php';
     $mail = new PHPMailer;
-    $mail->setFrom('dublinkendo@gmail.com', 'Dublin Kendo Site');
+    $mail->setFrom($email, 'User Query');
     $mail->addAddress('dublinkendo@gmail.com', 'Dublin Kendo Email');
     $mail->IsHTML(true);
     $mail->Subject = "Website Contact";

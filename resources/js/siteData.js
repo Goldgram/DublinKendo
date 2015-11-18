@@ -26,7 +26,7 @@ var siteData = {
 			"googleLongLat":"53.335245,-6.317716"
 		},{
 			"day":"Wednesday",
-			"times":[{"type":"Kendo - Intermediate","time":"8:15 - 10:15 pm"}],
+			"times":[{"type":"Kendo / Iaido - Intermediate","time":"8:15 - 10:15 pm"}],
 			"address":"Nagle Rice Hall,<br>Marino Institute of Education,<br>Griffith Avenue,<br>Dublin 9",
 			"googleAddress":"Nagle Rice Hall, Marino Institute of Education, Griffith Avenue, Dublin",
 			"googleLongLat":"53.3734577,-6.234251"
