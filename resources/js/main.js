@@ -75,9 +75,13 @@ for (var i in siteData["homepageIdMapping"]) {
     dojosString += '<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>';
     dojosString += '<div class="linkTriangle16 floatLeft"></div><div class="clearBoth"></div>';
     dojosString += '</a>';
+    dojosString += '<br/>';
     dojosString += '</div></div>';
     if (i%2===1) {
       dojosString += '<div class="clearBothLessThan768"></div>';
+    }
+    if (i%3===2) {
+      dojosString += '<div class="clearBothMoreThan768"></div>';
     }
   }
   dojosString += '<div class="clearBoth"></div>';

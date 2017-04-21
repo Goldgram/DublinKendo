@@ -292,7 +292,7 @@ a {
 }
 #dojos {
 	.locations {
-		width: 25%;
+		width: 33.333%;
 		.mapImages {
 			width: 100%;
 			display: block;
@@ -454,6 +454,11 @@ a {
 		margin-left: 520px;
 		width: 48px;
 		height: 48px;
+	}
+}
+@media only screen and (min-width: 768px) {
+  .clearBothMoreThan768 {
+		clear: both;
 	}
 }
 @media only screen and (max-width: 1019px) {

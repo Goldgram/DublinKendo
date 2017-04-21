@@ -31,6 +31,12 @@ var siteData = {
 			"googleAddress":"Nagle Rice Hall, Marino Institute of Education, Griffith Avenue, Dublin",
 			"googleLongLat":"53.3734577,-6.234251"
 		},{
+			"day":"Thursday",
+			"times":[{"type":"Jodo (All levels)","time":"7:30 - 9:30 pm"}],
+			"address":"St Andrew's Presbyterian Church,<br>Mount Merrion Avenue,<br>Blackrock,<br>Co. Dublin",
+			"googleAddress":"Saint Andrew's Church, Mount Merrion Ave, Blackrock, Co. Dublin",
+			"googleLongLat":"53.301583,-6.184595"
+		},{
 			"day":"Friday",
 			"times":[{"type":"Kendo - Advanced","time":"8 - 9 pm"}],
 			"address":"St. Joseph's C.B.S.,<br>Secondary School,<br>Fairview,<br>Dublin 3",
@@ -124,7 +130,7 @@ var siteData = {
 				{ "type":"header", "text":"Iaido" },
 				{ "type":"break" },
 				{ "type":"subheader", "text":"What is Iaido?" },
-				{ "type":"paragraph", "text":"Iaido (居合道 Iaidō?) is a modern Japanese martial art associated with the smooth, controlled movements of drawing the sword from its scabbard, striking or cutting an opponent, removing blood from the blade, and then replacing the sword in the scabbard." },
+				{ "type":"paragraph", "text":"Iaido (居合道 Iaidō) is a modern Japanese martial art associated with the smooth, controlled movements of drawing the sword from its scabbard, striking or cutting an opponent, removing blood from the blade, and then replacing the sword in the scabbard." },
 				{ "type":"paragraph", "size":"50", "text":"While new students of iaido may start learning with a wooden sword (bokken) depending on the teaching style of a particular instructor, many of those who study iaido use a blunt edged sword (iaitō). Few, more experienced, iaido practitioners use a sharp edged sword (shinken)." },
 				{ "type":"paragraph", "size":"50", "text":"Because iaido is practiced with a weapon, it is almost entirely practiced using forms, or kata." },
 				{ "type":"paragraph", "size":"50", "text":"Practitioners of iaido are often referred to as iaidoka." }
@@ -134,8 +140,9 @@ var siteData = {
 			"style":"white",
 			"data":[
 				{ "type":"header", "text":"Jodo" },
-				{ "type":"subheader", "text":"jodo Subheader" },
-				{ "type":"paragraph", "text":"jodo Paragraph Text" }
+				{ "type":"break" },
+				{ "type":"subheader", "text":"What is Iaido?" },
+				{ "type":"paragraph", "text":"Jodo (杖道 Jōdō), meaning \"the way of the jō\" is a Japanese martial art using a short staff called jō. It is strongly focused upon defense against the Japanese sword. The jō is a short staff, usually about 3 to 5 feet (0.9 to 1.5 m) long." },
 			]
 		},
 		"joining":{
