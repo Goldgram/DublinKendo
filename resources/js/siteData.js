@@ -9,18 +9,19 @@ var siteData = {
 		"ourClubContent1":"Dublin Kendo Kobukai was established more than 10 years ago. Our members come from a diverse age and fitness background. Men, women and children all can train Kendo, from a beginner's level, through to our intermediate courses and eventually into the Kendo armour.<br>We have beginners' classes for both for adults and children every Saturday morning at 12:00 in The Ballybough Community, Youth &amp; Sports Centre, 49 Ballybough Road, Ballybough, Dublin 3.",
 		"ourClubContent2":"Our introductory course will provide you with all the instruction you need to begin to learn the basics of Kendo: reigi (etiquette), footwork, suburi (practice cuts) and attacking practice. After completing the beginners' course students can progress into more advanced classes.",
 		"howToJoinContent1":"Come along and <span class='boldFont'>try out your first session for free</span> and you can join any time. Don't worry about equipment, you just need comfortable workout clothes and we will provide the rest. Our beginners' course is <span class='boldFont'>&euro;60 for three months</span>. Some people choose to train in one art only, others practice two or even all three.",
-		"howToJoinContent2":"See our <span class='boldFont colorLightBlue noSelectClick scrollToClick' scroll-to='dojos'>TRAINING SCHEDULE</span> to find our training times and locations, or use our <span class='boldFont colorLightBlue noSelectClick scrollToClick' scroll-to='contactUs'>CONTACT US</span> section to request more information or ask a specific question."
+		"howToJoinContent2":"See our <span class='boldFont colorLightBlue noSelectClick scrollToClick' scroll-to='dojos'>TRAINING SCHEDULE</span> to find our training times and locations, or use our <span class='boldFont colorLightBlue noSelectClick scrollToClick' scroll-to='contactUs'>CONTACT US</span> section to request more information or ask a specific question.",
+		"dojoLocationsFooter":"* Due to building restrictions, Saturday and Monday classes are unfortunately cancelled on bank holiday weekends."
 	},
 	"dojoLocations":[
 		{
 			"day":"Saturday",
-			"times":[{"type":"Iaido - Beginners (All levels)","time":"11 am - 12 pm"},{"type":"Kendo - Beginners (All levels)","time":"12 pm - 2 pm"}],
+			"times":[{"type":"Iaido - Beginners (All levels)","time":"11 am - 12 pm *"},{"type":"Kendo - Beginners (All levels)","time":"12 pm - 2 pm *"}],
 			"address":"The Ballybough Community,<br>Youth &amp; Sports Centre,<br>49 Ballybough Road,<br>Ballybough,<br>Dublin 3",
 			"googleAddress":"Ballybough Community Centre, 49 Ballybough Road, Dublin",
 			"googleLongLat":"53.360736,-6.243031"
 		},{
 			"day":"Monday",
-			"times":[{"type":"Kendo - Beginners","time":"8 - 10 pm"}],
+			"times":[{"type":"Kendo - Beginners","time":"8 - 10 pm *"}],
 			"address":"St. John Bosco Youth Centre,<br>Davitt Road,<br>Drimnagh,<br>Dublin 12",
 			"googleAddress":"St John Bosco Youth Centre, Davitt Road, Dublin12",
 			"googleLongLat":"53.335245,-6.317716"
