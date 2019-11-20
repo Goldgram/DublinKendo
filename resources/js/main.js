@@ -67,10 +67,10 @@ for (var i in siteData["homepageIdMapping"]) {
       dojosString += '<p class="fontSize16Paragraph">'+dojo["times"][j]["type"]+'</p>';
       dojosString += '<p class="boldFont fontSize16 colorBlue marginBottom20">'+dojo["times"][j]["time"]+'</p>';
     }
-    dojosString += '<p class="fontSize16Paragraph">'+dojo["address"]+'</p>';
-    dojosString += '<a href="http://maps.google.com/?q='+dojo["googleAddress"]+'" target="_blank">';
-    dojosString += '<img class="mapImages" src="http://maps.googleapis.com/maps/api/staticmap?center='+dojo["googleLongLat"]+'&markers='+dojo["googleLongLat"]+'&zoom=16&size=560x300&sensor=false&scale=1">';
-    dojosString += '</a>';
+    dojosString += '<p class="fontSize16Paragraph marginBottom10">'+dojo["address"]+'</p>';
+    // dojosString += '<a href="http://maps.google.com/?q='+dojo["googleAddress"]+'" target="_blank">';
+    // dojosString += '<img class="mapImages" src="http://maps.googleapis.com/maps/api/staticmap?center='+dojo["googleLongLat"]+'&markers='+dojo["googleLongLat"]+'&zoom=16&size=560x300&sensor=false&scale=1">';
+    // dojosString += '</a>';
     dojosString += '<a href="http://maps.google.com/?q='+dojo["googleAddress"]+'" class="marginBottom20" target="_blank">';
     dojosString += '<p class="boldFont fontSize16 colorBlue floatLeft">Google Maps</p>';
     dojosString += '<div class="linkTriangle16 floatLeft"></div><div class="clearBoth"></div>';
@@ -90,12 +90,12 @@ for (var i in siteData["homepageIdMapping"]) {
   /* Contact Us Links*/
   $("#contactUsEmailLink").attr("href",siteData["contact"]["email"]["href"]);
   $("#contactUsEmailLink").text(siteData["contact"]["email"]["text"]);
-  
+
   /* footer links */
   for (var k = 0; k < siteData["footerLinks"].length; k++) {
     $("#footerLinksInner").append('<h2 class="condensedFont fontSize25 marginBottom15 noSelectClick overlayClick" overlay="'+siteData["footerLinks"][k]["overlayId"]+'">'+siteData["footerLinks"][k]["text"]+'</h2>');
   }
-  
+
   /* get FB footer include */
   var fbWidth = $("#footerFacebook").width()+10;
   $("#footerFacebook").append('<div class="fb-like-box" data-href="https://www.facebook.com/pages/Dublin-Kendo-Kobukai/48005091845" data-width="'+fbWidth+'" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>');
@@ -169,7 +169,7 @@ $(document).on("click", "#submitButton", function() {
   }
   $("#contactUsLoading").hide();
   $("#submitButton").show();
-  
+
   if (errorArray.length>0) {
     var errorText = "Error: you must enter a valid ";
     var errorCount = 1;
